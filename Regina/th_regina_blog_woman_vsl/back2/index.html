@@ -1,0 +1,527 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" href="./images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Regina</title>
+    <script src="./js/jQuery.js"></script>
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <script src="./js/scripts.min.js"></script>
+    <script src="./js/date.js"></script>
+</head>
+
+<body class="content is-size-4 is-size-5-touch is-unselectable">
+    <div class="cbh">
+        <div class="topCBblock"></div>
+    </div>
+    <div class="navbar-spacer-desktop is-hidden-touch"></div>
+    <div class="navbar-spacer-tablet is-hidden-mobile is-hidden-desktop"></div>
+    <div class="navbar-spacer-mobile is-hidden-tablet"></div>
+    <nav class="navbar is-fixed-top is-link is-size-5" role="navigation" aria-label="main navigation">
+        <div class="container container-limit">
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <img src="./images/logo.png" width="180" class="is-hidden-touch">
+                    <img src="./images/logo.png" width="150" class="is-hidden-desktop">
+                </div>
+                <a href="#order" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasic">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarBasic" class="navbar-menu">
+                <div class="navbar-start">
+                </div>
+                <div class="navbar-end">
+                    <a class="navbar-item px-5 topbar" href="#about">
+                        เกี่ยวกับ</a>
+                    <a class="navbar-item px-5 topbar" href="#ingredients">
+                        วัตถุดิบ
+                    </a>
+                    <a class="navbar-item px-5 topbar" href="#faq">
+                        คำถาม
+                    </a>
+                    <div class="navbar-item pr-3 pl-5">
+                        <div class="buttons">
+                            <a href="#order" class="button is-link is-size-5 is-size-6-touch topbar">
+                                <strong>สั่งซื้อ</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section green-solid-background">
+        <div class="container container-limit has-text-white">
+            <div class="columns is-variable is-1">
+                <div class="column is-5-desktop is-5-tablet has-text-centered pb-0">
+                    <img src="./images/product-home.png" style="max-width:460px;width:100%" alt="">
+                </div>
+                <div class="column pb-0">
+                    <p class="title block-headline is-capitalized mb-4">ลดน้ำหนักเพื่อสุขภาพ <span
+                            class="greenHigh">บริสุทธิ์</span> ด้วยธรรมชาติที่ควรจะเป็น</p>
+                    <p class="is-size-4 is-size-5-touch">ลดน้ำหนักอย่างมีสุขภาพดีด้วยแคปซูลที่ได้รับสิทธิบัตรของ
+                        <span class="greenHigh"><strong>Regina</strong></span><span
+                            class="greenHigh"><strong>จากสารอาหารเขตร้อนอันทรงประสิทธิภาพ 8 ชนิด</strong></span>
+                        และพฤกษศาสตร์ที่ได้รับการสนับสนุนจากการวิจัยทางการแพทย์
+                    </p>
+                    <div class="has-text-centered mt-4 mb-0"><img src="./images/icons-fda.png" class="fda-logosetc">
+                    </div>
+                    <div class="is-size-6 m-0 pt-1 pb-0 lh1 has-text-white"><strong>ผลิตในประเทศไทย</strong>
+                        จากวัตถุดิบชั้นดีจากต่างประเทศและในประเทศ</div>
+                    <a href="#order" class="btn_pay first_btn button   topbar">
+                        <strong>สั่งซื้อ</strong>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="about" id="about"></div>
+    <section class="section is-paddingless">
+        <div class="container container-limit px-2 py-5">
+            <div class="columns is-mobile">
+                <div class="column index-column index-column-2 mr-5 is-hidden-desktop"></div>
+                <div class="column is-8-desktop is-9-touch">
+                    <p class="has-text-weight-bold has-text-left is-size-3 is-size-4-touch lh1 mb-3 pt-3"
+                        style="color:#098974;"><span>
+                            <script>
+                                date('th', 0, 0, 0, false, true, true)
+                            </script>
+                        </span> - การค้นพบทางวิทยาศาสตร์ครั้งใหม่</p>
+                    <p class="title is-size-1-desktop is-size-2-tablet is-size-3-mobile is-capitalized lh1 mb-5">
+                        นักวิทยาศาสตร์ไทยค้นพบ เหตุผลที่น่าตกใจครั้งใหม่ ของไขมันหน้าท้องและมันไม่ใช่สิ่งที่คุณ
+                        คุณคิด... </p>
+                    <p>คุณลดน้ำหนักได้ยากแม้ว่าคุณจะควบคุมอาหารมากแค่ไหนก็ตาม คุณเล่นกีฬาไหม?
+                        <strong>นี่ไม่ใช่ความผิดของคุณ</strong>.
+                    </p>
+                    <p>จากการศึกษาปี 2567 ที่ตีพิมพ์ในวารสาร Nature Medicine ที่มีผู้หญิงและผู้ชายกว่า 52000,000 คน
+                        ที่มีน้ำหนักเกิน
+                        ซึ่งที่เข้าร่วมการทดลองและพบว่า <strong>ระดับเนื้อเยื่อไขมันสีน้ำตาลต่ำ</strong>!
+                        และการศึกษายังพบว่าคนผอมทุกคน เนื้อเยื่อไขมันสีน้ำตาลในระดับสูง<sup></sup></p>
+                    <p class="notification" style="border:2px solid #136e73;">เนื้อเยื่อไขมันสีน้ำตาล (BAT)
+                        หรือที่เรียกว่าไขมันสีน้ำตาลนั้นไม่ใช่ไขมันเลย
+                        แต่เป็น <strong>ตัวเผาผลาญไขมัน</strong>. สีน้ำตาลของมันเกิดจากไมโตคอนเดรียที่อัดแน่นซึ่งทำงาน
+                        24 ชั่วโมงต่อวัน เจ็ดวันต่อสัปดาห์ใน<strong>bการเผาผลาญแคลอรี่</strong>
+                        จากแหล่งสะสมไขมันและอาหารที่คุณรับประทานสู่ธรรมชาติอันบริสุทธิ์
+
+                        คุณกินเข้าไปเป็นพลังงานธรรมชาติอันบริสุทธิ์</p>
+                    <p>
+                    </p>
+                    <p>แม้ว่า BAT จะเป็นเพียงส่วนเล็กๆ ของน้ำหนักของคุณ แต่ก็สามารถทำได้
+                        เผาผลาญแคลอรี่ได้มากกว่าเซลล์อื่นๆ ในร่างกายถึง <strong>300 เท่า!</strong></p>
+                </div>
+                <div class="column index-column index-column-2 ml-5 is-hidden-touch"></div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section blue-background is-paddingless">
+        <div class="container container-limit has-text-white px-2 pt-5 pb-6">
+            <p class="block-12 has-text-centered mb-1 yellow-text has-text-weight-bold">นั่นเป็นเหตุผลที่เราคิดค้น...
+            </p>
+            <p class="has-text-centered mb-1"><img src="./images/logo-green.png" width="450" alt=""></p>
+            <p class="is-size-2 is-size-3-touch is-capitalized mb-4 has-text-centered lh1"><strong><span
+                        class="greenHigh">เคล็ดลับใหม่ของประเทศไทย</span> เพื่อการลดน้ำหนักที่ดีต่อสุขภาพ</strong></p>
+
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <img src="./images/full-product.png">
+                </div>
+                <div class="column">
+                    <p>Regina แตกต่างจากสิ่งที่คุณเคยลองหรือสัมผัสมาในชีวิต เป็นหนึ่งใน <strong
+                            class="greenHigh">สินค้าไม่กี่ชิ้นในโลก</strong>ที่มีส่วนผสมของเอกสิทธิ์เฉพาะของ <strong
+                            class="greenHigh">8 สารอาหารและพฤกษศาสตร์ที่มีคุณสมบัติโดดเด่น</strong>
+                        คิดค้นมาเพื่อกำหนดเป้าหมายและเพิ่มประสิทธิภาพเนื้อเยื่อไขมันสีน้ำตาล (BAT) ในระดับต่ำ <strong
+                            class="greenHigh">สาเหตุที่เกิดขึ้น</strong>
+                        ของน้ำหนักที่เพิ่มขึ้นโดยไม่ทราบสาเหตุ</p>
+                    <p>การเพิ่มขึ้นของ BAT เพียงเล็กน้อยหมายถึงการเผาผลาญแคลอรี่ที่เพิ่มขึ้นอย่างมาก!
+                        กระตุ้นการเผาผลาญไม่ทำงาน
+                        ให้เข้าสู่โหมดการเผาผลาญไขมันและการเพิ่มพลังงานเต็มรูปแบบ!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="ingredients" id="ingredients"></div>
+    <section class="section">
+        <div class="container container-limit  px-2">
+            <p class="has-text-weight-bold block-10 has-text-centered lh1 mb-3">ภายในแต่ละแคปซูลของ Regina คุณจะพบกับ:
+            </p>
+            <p class="has-text-centered lh1 block-13">7
+                ส่วนผสมที่ได้รับการพิสูจน์ทางการแพทย์ซึ่งเพิ่มขึ้น<strong>การเผาผลาญแคลอรี่</strong>
+                ในเนื้อเยื่อไขมันสีน้ำตาล (BAT)
+            </p>
+            <div class="columns is-multiline is-mobile is-variable is-1 is-centered">
+                <div class="has-text-centered"><img src="./images/perilla.jpg" width="300" height="300"
+                        class="ingredientimg" alt="">
+                </div>
+                <div class="has-text-centered"><img src="./images/kudzu.jpg" width="300" height="300"
+                        class="ingredientimg" alt="">
+                </div>
+                <div class="has-text-centered"><img src="./images/holybasil.jpg" width="300" height="300"
+                        class="ingredientimg" alt="">
+                </div>
+                <div class="has-text-centered"><img src="./images/ginseng.jpg" width="300" height="300"
+                        class="ingredientimg" alt="">
+                </div>
+                <div class="has-text-centered"><img src="./images/amur.jpg" width="300" height="300"
+                        class="ingredientimg" alt="">
+                </div>
+                <div class="has-text-centered"><img src="./images/propolis.jpg" width="300" height="300"
+                        class="ingredientimg" alt="">
+                </div>
+                <div class="has-text-centered"><img src="./images/quercetin.jpg" width="300" height="300"
+                        class="ingredientimg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="section off-white-background is-paddingless">
+        <div class="container container-limit  px-2 py-5">
+            <div class="has-text-centered mb-3"><img src="./images/logo-green.png" width="280"></div>
+            <div class="columns is-mobile is-multiline is-variable is-1">
+                <div class="column is-one-third-desktop is-half-touch">
+                    <div class="columns is-vcentered is-mobile is-variable is-2">
+                        <div class="column is-3"><img src="./images/thumb.png"></div>
+                        <div class="column">
+                            <p class="block-13">สูตรธรรมชาติ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third-desktop is-half-touch">
+                    <div class="columns is-vcentered is-mobile is-variable is-2">
+                        <div class="column is-3"><img src="./images/thumb.png"></div>
+                        <div class="column">
+
+                            <p class="block-13">ส่วนผสมสมุนไพร</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third-desktop is-half-touch">
+                    <div class="columns is-vcentered is-mobile is-variable is-2">
+                        <div class="column is-3"><img src="./images/thumb.png"></div>
+                        <div class="column">
+
+                            <p class="block-13">ปราศจากจีเอ็มโอ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third-desktop is-half-touch">
+                    <div class="columns is-vcentered is-mobile is-variable is-2">
+                        <div class="column is-3"><img src="./images/thumb.png"></div>
+                        <div class="column">
+
+                            <p class="block-13">ไม่มีสารกระตุ้น</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third-desktop is-half-touch">
+                    <div class="columns is-vcentered is-mobile is-variable is-2">
+                        <div class="column is-3"><img src="./images/thumb.png"></div>
+                        <div class="column">
+
+                            <p class="block-13">กลืนง่าย</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-one-third-desktop is-half-touch">
+                    <div class="columns is-vcentered is-mobile is-variable is-2">
+                        <div class="column is-3"><img src="./images/thumb.png"></div>
+                        <div class="column">
+
+                            <p class="block-13">ไม่เสพติด</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section green-darker is-paddingless">
+        <div class="container container-limit px-2 py-6 has-text-white">
+            <div class="columns is-vcentered has-text-left-desktop has-text-centered-tablet has-text-centered-mobile">
+                <div class="column is-narrow"><img src="./images/shipping.png" width="180" alt=""></div>
+                <div class="column">
+                    <p class="block-10b has-text-white lh1 has-text-weight-bold mb-2 pb-2">จัดส่งด่วนทั่วไทย!
+                        ไม่มีการชำระล่วงหน้า</p>
+                    <p class="is-capitalized block-10c lh1">*96% ของลูกค้าสั่ง Regina 6 กล่อง <br
+                            class="is-hidden-desktop">(<strong class="light-blue">ตัวเลือกที่เราแนะนำ</strong>)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section is-paddingless">
+        <div class="container container-limit py-5 px-2">
+            <p class="has-text-weight-bold block-9 has-text-centered lh1 mb-5"><span class="">รีวิวจากผู้ใช้จริง
+                    <br><span class="blueunder">ผลลัพธ์ที่เปลี่ยนแปลงชีวิต</span>.</p>
+            <div class="pb-2"></div>
+            <div class="columns is-mobile is-multiline is-gapless product-shots is-vcentered mx-5">
+
+
+
+
+                <div class="column is-one-third-mobile product-shot-static">
+                    <img alt="" src="./images/1.jpg">
+                </div>
+                <div class="column is-one-third-mobile product-shot-static">
+                    <img alt="" src="./images/2.jpg">
+                </div>
+                <div class="column is-one-third-mobile product-shot-static">
+                    <img alt="" src="./images/3.jpg">
+                </div>
+                <div class="column is-one-third-mobile product-shot-static">
+                    <img alt="" src="./images/4.jpg">
+                </div>
+
+
+
+
+            </div>
+            <div class="columns is-mobile is-variable is-0 mb-5">
+                <div class="column is-1 pr-2"><img src="./images/test-1.jpg" class="t-image" width="100%"></div>
+                <div class="column">
+                    <p class="has-text-weight-bold mb-2 is-size-3 is-size-4-touch lh1 gt">มินตรา - หญิงอายุ 40 ปี</p>
+                    <p class="verified mb-2 is-size-5"><img src="./images/rating.png" width="90"
+                            alt="">ยืนยันการซื้อแล้ว
+                    </p>
+                    <p class="mb-2"><img src="./images/quote.jpg" width="39"
+                            style="padding-right:10px;">ก่อนหน้านี้ไม่ออกจากบ้านเลยค่ะ เพราะไปไหนมาไหนลำบาก
+                        นั่งรถสาธาณะก็กลัวจะเป็นปัญหากับคนรอบข้าง แต่พอได้กิน Regina
+                        น้ำหนักหายไป 15 กิโล ดีใจมากกกก รู้สีกสบายตัวมากขึ้นด้วย ตอนนี้สามารถใส่เสื้อผ้าสวย ๆ
+                        เหมือนคนอื่นได้แล้วค่ะ
+                        เที่ยวห้างทำทุกอย่างได้อย่างมั่นใจ ขอบคุณมากเลยค่ะ</p>
+                    <div class="columns is-mobile is-variable is-2 is-vcentered">
+                        <div class="column is-narrow"><img src="./images/6-bottles.png" width="90px" alt=""></div>
+                        <div class="column">
+                            <p class="is-size-5 mb-2 lh1">มินตรา- หญิงอายุ 40 ปี</p>
+                            <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1">ซื้อ Regina 6 กล่อง</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-mobile is-variable is-0 mb-5">
+                <div class="column is-1 pr-2"><img src="./images/test-2.jpg" class="t-image" width="100%"></div>
+                <div class="column">
+                    <p class="has-text-weight-bold mb-2 is-size-3 is-size-4-touch lh1 gt">โน๊ต - ชายอายุ 50 ปี</p>
+                    <p class="verified mb-0 is-size-5 mb-2"><img src="./images/rating.png" width="90"
+                            alt="">ยืนยันการซื้อแล้ว</p>
+                    <p class="mb-2"><img src="./images/quote.jpg" width="39"
+                            style="padding-right:10px;">ผมรู้สึกอายมากเวลาลูกชายจับท้องแล้วถามว่า “พ่อคะ
+                        ทำไมท้องพ่อนิ่มจัง” ผมเลยคิดว่าคงต้องลดน้ำหนักแล้ง พอได้เห็นวิดีโอของ
+                        Regina พร้อมผลการวิจัยที่ได้รับการยืนยัน เลยซื้อมาลองกิน น้ำหนักลดไป 11 กิโล
+                        ไม่นอนกรนเหมือนเมื่อก่อน รู้สึก รู้สึกดีขึ้นและมีความสุขมากกว่าตอนอายุ 30 อีกครับ</p>
+                    <div class="columns is-mobile is-variable is-2 is-vcentered">
+                        <div class="column is-narrow"><img src="./images/3-bottles.png" width="90px" alt=""></div>
+                        <div class="column">
+                            <p class="is-size-5 mb-2 lh1">โน๊ต - ชายอายุ 50 ปี</p>
+                            <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1">ซื้อ Regina 3 กล่อง</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-mobile is-variable is-0">
+                <div class="column is-1 pr-2"><img src="./images/test-3.jpg" class="t-image" width="100%"></div>
+                <div class="column">
+                    <p class="has-text-weight-bold mb-2 is-size-3 is-size-4-touch lh1 gt">วรินทร - หญิงอายุ 30 ปี</p>
+                    <p class="verified mb-2 is-size-5"><img src="./images/rating.png" width="90" alt="">
+                        ยืนยันการซื้อแล้ว
+                    </p>
+                    <p class="mb-2"><img src="./images/quote.jpg" width="39" style="padding-right:10px;">ตั้งแต่กิน
+                        Regina
+                        ทุกวัน ถึงแม้จะกินตามใจปาก แต่น้ำหนักยังคงลดลงอยู่! ลดเสื้อผ้าไป 4 ไซส์ ประมาณ 20 กิโล
+                        ใครจะคิดว่ามันจะง่ายขนาดนี้? รู้สึกเซ็กซี่ รู้สึกสวยมาก!
+                        ไม่ต้องกังวลว่าใครจะมองว่าอ้วนว่าไม่สวยอีกแล้วล่ะค่ะ</p>
+                    <div class="columns is-mobile is-variable is-2 is-vcentered">
+                        <div class="column is-narrow"><img src="./images/6-bottles.png" width="90px" alt=""></div>
+                        <div class="column">
+                            <p class="is-size-5 mb-2 lh1">วรินทร - หญิงอายุ 30 ปี</p>
+                            <p class="is-size-5 is-size-6-mobile thorn has-text-weight-bold lh1">ซื้อ Regina 5 กล่อง</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="columns is-mobile is-multiline is-gapless product-shots is-vcentered mx-5">
+
+                <div class="column is-one-third-mobile product-shot-static">
+                    <img alt="" src="./images/5.jpg">
+                </div>
+                <div class="column is-one-third-mobile product-shot-static">
+                    <img alt="" src="./images/6.jpg">
+                </div>
+                <div class="column is-one-third-mobile product-shot-static">
+                    <img alt="" src="./images/7.jpg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="section is-paddingless">
+    </section>
+
+
+    <section class="section is-paddingless">
+        <div class="container container-limit p-5">
+            <p class="has-text-weight-bold gt lh1 has-text-centered is-uppercase block-9 mb-5">รับประกันความพึงพอใจ 100%
+                <br>
+                รับประกันคืนเงินภายใน 180 วัน
+            </p>
+            <img src="./images/guarantee.png" class="guarantee-img is-pulled-left pr-5 is-hidden-touch">
+            <p class="is-size-4 is-size-5-mobile pb-0 mb-0">
+                คำสั่งซื้อของคุณวันนี้ได้รับการคุ้มครองโดยการรับประกันคืนเงิน 100% ภายใน 30 วัน
+                คุณจะไม่แปลกใจที่ไขมันสะสมที่สะสมไว้ละลายเป็นพลังงานได้เร็วแค่ไหน
+                หรือตกใจเมื่อเห็นรูปร่างเพรียวบางของคุณในกระจก
+                หากไม่พอใจโปรดแจ้งให้เราทราบภายใน 180 วัน คืนเงินเต็มจำนวน ไม่มีคำถามถาม
+            </p>
+            <div class="is-clearfix"></div>
+            <div class="has-text-centered mt-4"><img src="./images/icons-fda.png" class="fda-logosetc"></div>
+        </div>
+    </section>
+    <div class="faq" id="faq"></div>
+    <section class="section blue-background is-paddingless">
+        <div class="container container-limit py-5 px-2">
+            <p class="block-9 has-text-weight-bold has-text-centered has-text-white mb-5">คำถามที่พบบ่อย</p>
+            <ul class="accordion">
+                <li>
+                    <a class="actoggle">Regina เหมาะกับฉันหรือไหม? <span class="is-pulled-right"><img
+                                src="./images/arrow-down.png" width="32" class="pr-3"></span></a>
+                    <p class="inner">
+                        หากคุณมีไขมันสะสมอยู่มาก ไม่สามารถควบคุมอาหารและออกกำลังกายได้ Regina เหมาะสำหรับคุณ
+                        วิธีนี้ได้เปลี่ยนชีวิตของผู้หญิงและผู้ชายหลายพันคนในช่วงอายุ 18 ถึง 80 ปี
+                        โดยให้ไขมันผอมบางอย่างรวดเร็ว
+                        แม้ในคนที่อ้วนมาก
+                    </p>
+                </li>
+                <li>
+                    <a class="actoggle" href="#">Regina ปลอดภัยไหม? <span class="is-pulled-right"><img
+                                src="./images/arrow-down.png" width="32" class="pr-3"></span></a>
+                    <p class="inner">
+                        Regina มีความปลอดภัยอย่างแน่นอน
+                        เนื่องจากเป็นผลิตภัณฑ์จากธรรมชาติที่ได้รับการจดสิทธิบัตรซึ่งผลิตในประเทศไทยในโรงงานที่ได้รับการจดทะเบียน
+                        (อ.ย.:
+                        1110635310260) ผลิตในโรงงานที่มีเครื่องมือที่มีความแม่นยำล้ำสมัยและตรงตามมาตรฐานที่เข้มงวดที่สุด
+                        ส่วนผสมทุกตัวทำจากพืช
+                        100% , ปราศจากถั่วเหลือง , ปราศจากนม , GMO
+                        และผ่านการทดสอบคุณภาพเพิ่มเติมเพื่อให้มั่นใจถึงประสิทธิภาพและความปลอดภัยสูง
+                        ขอแนะนำให้คุณปรึกษาแพทย์ก่อนรับประทาน
+
+                    </p>
+                </li>
+                <li>
+                    <a class="actoggle" href="#">ต้องสั่งกี่กล่อง? <span class="is-pulled-right"><img
+                                src="./images/arrow-down.png" width="32" class="pr-3"></span></a>
+                    <p class="inner">
+                        หากคุณอายุเกิน 35 ปีหรือมีน้ำหนักเกิน แนะนำให้ทาน Regina เป็นเวลา 3-6
+                        เดือนเพื่อให้ได้ผลลัพธ์ตามที่ต้องการ ทุกคำสั่งซื้อ
+                        Regina 3 กล่องจะมีหนังสือโบนัสฟรี คุณยังสามารถเลือกโปรโมชั่นลดราคา 5 กล่อง
+                        ที่ประกอบด้วยหนังสือโบนัส 2
+                        เล่มและการจัดส่งฟรี
+                    </p>
+                </li>
+                <li>
+                    <a class="actoggle" href="#">วิธีที่ดีที่สุดในการรับประทาน Regina คืออะไร? <span
+                            class="is-pulled-right"><img src="./images/arrow-down.png" width="32"
+                                class="pr-3"></span></a>
+                    <p class="inner">
+                        รับประทาน Regina หนึ่งแคปซูลกับน้ำเย็นแก้วใหญ่ทุกวัน
+                        ซึ่งจะช่วยให้คุณละลายไขมันได้แม้ในขณะที่คุณนอนหลับ
+                    </p>
+                </li>
+                <li>
+                    <a class="actoggle" href="#">นี่เป็นการชำระเงินแบบครั้งเดียวหรือไม่?<span
+                            class="is-pulled-right"><img src="./images/arrow-down.png" width="32"
+                                class="pr-3"></span></a>
+                    <p class="inner">
+                        ใช่
+                        คำสั่งซื้อของคุณวันนี้เป็นการชำระเงินแบบครั้งเดียวโดยไม่มีการสมัครสมาชิกหรือค่าธรรมเนียมแอบแฝง
+                        หรือคุณสามารถชำระค่าสินค้าเมื่อได้รับ
+
+                    </p>
+                </li>
+                <li>
+                    <a class="actoggle" href="#">จะเป็นอย่างไรถ้า Regina ไม่เหมาะกับฉัน?<span
+                            class="is-pulled-right"><img src="./images/arrow-down.png" width="32"
+                                class="pr-3"></span></a>
+                    <p class="inner">
+                        Regina ทุกกล่องมาพร้อมกับการรับประกันคืนเงิน 100% ภายใน 180 วัน
+                        หากคุณไม่พอใจกับผลลัพธ์ไม่ว่าด้วยเหตุผลใดก็ตาม
+                        เพียงส่งคืนพัสดุทั้งหมด (แม้จะเป็นกล่องเปล่า) เพื่อรับเงินคืนเต็มจำนวน โดยไม่มีคำถามใดๆ
+
+                    </p>
+                </li>
+                <li>
+                    <a class="actoggle" href="#">ตอนนี้ฉันควรทำอะไรดี?<span class="is-pulled-right"><img
+                                src="./images/arrow-down.png" width="32" class="pr-3"></span></a>
+                    <p class="inner">
+                        เลือกหนึ่งในตัวเลือกคอมโบ ป้อนรายละเอียดคำสั่งซื้อของคุณในหน้าชำระเงินที่ปลอดภัย
+                        แล้วเราจะโทรกลับหาคุณและจัดส่งไปที่
+                        Regina หากคุณสั่งซื้อ 3 กล่อง คุณจะได้รับหนังสือโบนัส 1 เล่ม และหากคุณสั่งซื้อ 5 กล่อง
+                        คุณจะได้รับหนังสือโบนัสฟรี 2
+                        เล่มพร้อมค่าจัดส่งฟรี
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="on-buys">
+        <section class="section buying-background b-section is-paddingless">
+            <div class="container container-limit pt-4 pb-0 px-2">
+                <p class="has-text-centered block-10 has-text-white lh1 has-text-weight-bold mb-0 pb-2">รับ Regina
+                    ในราคาโปรโมชั่นพิเศษ<br><span class="">ในขณะที่สินค้าอยู่ในสต็อก</span>
+                </p>
+            </div>
+        </section>
+        <div class="off-white-background" style="border-top:none;">
+            <div class="buying-background p-4 g-arrow" style="max-width:600px;top:-1px;"></div>
+        </div>
+        <div class="order"></div>
+        <section id="order" class="section off-white-background is-paddingless">
+
+            <form id="form" action="<?php echo $action; ?>" method="post">
+                <input type="hidden" name="subid5" value="back_vsl_form">
+                <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+                <div class="form_box">
+                    <p class="form_text">หากต้องการรับ Regina พร้อมส่วนลด ให้กรอกชื่อ
+                        และหมายเลขติดต่อของคุณในช่องว่างด้านล่าง และคลิกปุ่ม
+                        "สั่งซื้อ"</p>
+                        <div>
+                            <span class="old_price">1980 บาท</span>
+                            <span class="new_price">990 บาท</span>
+                        </div>
+                    <input type="text" name="name" required minlength="2" placeholder="ชื่อ" class="form-style" />
+                    <input type="tel" name="phone" required minlength="8" maxlength="16" placeholder="เบอร์โทรศัพท์"
+                        class="form-style" />
+                    <button class="button is-link" type="submit">สั่งซื้อ</button>
+                </div>
+            </form>
+
+        </section>
+    </div>
+
+    <footer class=" green-solid-background ">
+        <p>ลิขสิทธิ์ © 2568 โดย Copyrightindex.com</p>
+        <p> สงวนลิขสิทธิ์ ห้ามทำซ้ำ แจกจ่าย หรือส่งในรูปแบบใด ๆ หรือด้วยวิธีการใด ๆ รวมถึงการทำสำเนา บันทึก
+            หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้ เผยแพร่
+            ยกเว้นในกรณีที่มีการอ้างอิงโดยย่อในรีวิวสำคัญและการใช้งานที่ไม่ใช่เชิงพาณิชย์อื่น ๆ
+            ที่ได้รับอนุญาตตามกฎหมายลิขสิทธิ์
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

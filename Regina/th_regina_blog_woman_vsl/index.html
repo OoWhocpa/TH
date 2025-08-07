@@ -1,0 +1,932 @@
+<?php include("../q.php"); ?>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>ความลับของหุ่นเพรียวที่เทรนเนอร์ฟิตเนสไม่เคยบอกคุณ</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./images/product.png" type="image/x-icon">
+  <script src="./js/back.js"></script>
+  <script src="./js/dateMx.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.vitBack(window.location.href, true);
+    });
+  </script>
+</head>
+
+<body>
+
+  <h1 class="main_title"><span class="highlight">ความลับของหุ่นเพรียวที่</span>เทรนเนอร์ฟิตเนสไม่เคยบอกคุณ</h1>
+  <div id="container_video">
+    <div id="play" onclick="playVideo()">
+      <div>
+        <h4>วีดีโอเริ่มขึ้นแล้ว</h4>
+        <h4>คลิกเพื่อฟัง!</h4>
+      </div>
+    </div>
+    <div class="spinner-container">
+      <div class="spinner-sub-container">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <video id="video" autoplay="autoplay" muted="" playsinline="" webkit-playsinline="" poster="./images/poster.png">
+      <source src="https://pub-bbcd86335e924092a9d274baed5a5a09.r2.dev/18an/0806.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div id="progress-container" style="width: 100%; background-color: white; height: 10px; margin-top: 20px;">
+    <div id="progress-bar" style="width: 0%; height: 100%; background-color: red;"></div>
+  </div>
+
+  <p class="sound"><img height="20" src="./images/sound.png" alt=""> (โปรดตรวจสอบว่าเปิดเสียงไว้แล้ว
+    วิดีโอนี้อาจใช้เวลาประมาณ 10 วินาทีในการโหลด)</p>
+  <div id="order">
+    <div class="terbatas">
+      <p>รีบหน่อย ข้อเสนอมีจำนวนจำกัด!</p>
+      <img src="./images/BlPE.gif" alt="">
+    </div>
+    <div class="diet-section text-center">
+      <form class="diet-container" action="<?php getRoutelink(); ?>" method="post">
+
+        <div class="img-with-button">
+          <img src="./images/product.png" class="product" alt="">
+        </div>
+        <h2 class="form_title">ใกล้หมดโปรโมชั่นแล้ว! จาก <del>1980 บาท</del> เหลือเพียง <span class="green-text">990
+            บาท</span>
+        </h2>
+        <a class="main-btn" rel="nofollow">
+          รับส่วนลด 50% เปอร์เซ็นต์
+          ใช่ ฉันต้องการลดน้ำหนัก
+          <span>ใช่! ฉันอยากลดน้ำหนัก</span>
+          <img src="./images/small-days.png" alt="">
+        </a>
+        <div class="clearfix hide">
+          <input type="hidden" name="subid5" value="main_vsl_form">
+          <input type="hidden" id="clickId" name="click_id" value="<?php print $_SESSION['binom_click_id']; ?>">
+          <span class="label">กรุณากรอกชื่อของคุณ: </span>
+          <input name="name" type="text" required minlength="2" placeholder="กรุณากรอกชื่อของคุณ" class="inputs">
+          <span class="label">กรุณากรอกเบอร์โทรศัพท์: </span>
+          <input name="phone" type="tel" required minlength="8" maxlength="16" placeholder="กรุณากรอกเบอร์โทรศัพท์"
+            class="inputs">
+          <button type="submit" class="btn_form">
+            สั่งซื้อตอนนี้!
+          </button>
+        </div>
+        <div class="diet-text">
+          <h5>จำหน่ายทั่วประเทศไทย</h5>
+          <div class="box-img">
+            <div class="box">
+              <img src="./images/1.png" alt="">
+            </div>
+            <div class="box">
+
+              <img src="./images/2.png" alt="">
+            </div>
+            <div class="box">
+
+              <img src="./images/3.png" alt="">
+            </div>
+            <div class="box">
+              <img src="./images/4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="block_tv">
+    <p>ตามที่ระบุไว้</p>
+    <div class="tv_icons">
+      <img src="./images/img1.png" alt="" />
+      <img src="./images/img2.png" alt="" />
+      <img src="./images/img3.png" alt="" />
+    </div>
+  </div>
+
+<div class="comments" id="comment-component-text">
+  <div id="comment_num" class="">ความคิดเห็น:</div>
+  <div class="comment">
+    <img class="comment__image" src="./images/1.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">หนูนา</h2>
+      <div class="comment__text">
+        ลองแล้วค่ะ มันดีจริง ๆ ตอนนี้ดูผลลัพธ์สิคะ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">12</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/2.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">กาญจนา</h2>
+      <div class="comment__text">
+        เราใช้แล้วค่ะ ผลลัพธ์ใช้ได้เลย เราเข้ามหาลัยปีหนึ่ง เลยอยากจะแบบเริ่มชีวิตใหม่ เข้าไปใช้ชีวิตป๊อป ๆ
+        เหมือนคนอื่นบ้าง
+        เพราะตอนเรียน ม ปลาย โดนเพื่อนล้อประจำว่าอ้วน ตอนนี้เราเริ่มลดได้ 10 กิโลแล้ว เริ่มมีกลุ่มเพื่อน ๆ สวย ๆ
+        เราจะกลายเป็นสาวป๊อปให้ได้ค่ะ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">15</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/3.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">จันจิรา</h2>
+      <div class="comment__text">
+        เคยลองคุมอาหารแล้วหรือยังคะ เหมือนตอนเป็นเด็กผู้ใหญ่คอยป้อนอาหารเรา นั่งกินข้าวด้วยกัน
+        อันนั้นเข้าใจอาจจะห้ามไม่ได้
+        แต่พอโตแล้วก็ควบคุมอาหารเอาสิ
+
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">13</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/4.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">วรางค์</h2>
+      <div class="comment__text">
+        เราเป็นคุณแม่ลูกสอง ที่พยายามลดน้ำหนักมาตลอด การคุมอาหารไม่ง่ายเลย— ทำได้สองวัน
+        จากนั้นก็หิวแล้วก็ตบะแตกกินแหลกไปเลย
+        แถมยังไม่มีเวลาออกกำลังกาย พอได้ดูวิดีโอนี้เลยสนใจผลิตภัณฑ์มากเลยค่ะ แต่ไม่รู้ว่าจะต้องทำยังไง
+        มีวิธีทานในกล่องไหมคะ
+        แล้วถ้าหยุดกินจะเป็นยังไง ช่วยตอบกลับด้วยได้ไหมคะ หรือหาคำตอบได้ที่ไหนบ้างคะขอบคุณมากค่ะ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">5</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/5.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">ศรีสุดา</h2>
+      <div class="comment__text">
+        ขอบคุณมากค่ะสำหรับคำแนะนำ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">5</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/6.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">กานดา</h2>
+      <div class="comment__text">
+        บางทีเวลาอยากลดน้ำหนักมันก็เป็นเรื่องที่น่าหงุดหงิดนะคะ ต้องมานั่งกังวลว่าจะลดได้กี่กิโล น้ำหนักจะลงไหม
+        แล้วเรื่องที่ไม่น่าเชื่อก็เกิดขึ้นค่ะ ลดน้ำหนักได้ถึง 10 กิโล แถมยังรู้สึกแข็งแรงสดใส เพื่อน ๆ
+        ก็แปลกใจมากว่าไปทำอะไรมา
+        คิดว่าฉันไปควบคุมอาหารเลยเป็นห่วง แต่ก็ไม่ได้บอกอะไรมาก เพราะกลัวเพื่อนไม่เข้าใจ :)
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">5</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/7.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">พรรณิกา</h2>
+      <div class="comment__text">
+        ทุกคนคะ เราอยากหนัก 9 กิโล แบบด่วน ๆ ทำไงดี!!! อยู่แต่บ้านมา 6 เดือน ไม่ได้รู้ตัวเลยว่าน้ำหนักค่อย ๆ เพิ่มขึ้น
+        ทำไงดีคะ
+        คุมอาหารก็ไม่ได้ หิวตลอดเวลา ไม่อยากไปฟิตเนสเลยอ่ะ มันน่าเบื่อแล้วก็ขี้เกียจด้วย
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">10</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/8.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">ดวงจันทร์</h2>
+      <div class="comment__text">
+        เพิ่งสั่งซื้อค่ะ :)
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">12</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/9.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">ฐานิดา</h2>
+      <div class="comment__text">
+        แล้วทำไมเราต้องผอมด้วยคะ ใครบอกว่ามาตรฐานที่ดีคือผอม นี่หนัก 79 สูง 167 ก็ไม่เห็นเดือดร้อนใคร
+        รู้สึกดีอีกต่างหาก
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">16</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/10.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">นกน้อย</h2>
+      <div class="comment__text">
+        อ่านแล้วตกใจเลย เพราะเหมือนมีแค่ผู้เชี่ยวชาญด้านโภชนาการเท่านั้นที่รู้เกี่ยวกับผลิตภัณฑ์นี้ ฉันทานมันมา 2
+        ปีแล้ว
+        ลดน้ำหนักได้ 14 กก. และตอนนี้ยังทานเพื่อป้องกันน้ำหนักเพิ่มและใช้เป็นวิตามินเพราะมีสารสกัดจากธรรมชาติ เพื่อน ๆ
+        ก็รู้จักผลิตภัณฑ์นี้กันนะคะ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">16</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/11.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">พรนภา</h2>
+      <div class="comment__text">
+        โชคดีค่ะทุกคน เราก็ลดได้แล้ว
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">16</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/12.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">ธาริณี</h2>
+      <div class="comment__text">
+        ซื้อได้ที่ไหนคะ ไม่เห็นมีขายที่ร้านขายยา ไม่อยากซื้อของปลอมค่ะ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">6</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/13.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">ดวงดาว</h2>
+      <div class="comment__text">
+        ดีใจมากเลยที่ผ่านมาเจอวีดีโอนี้ ไม่เคยคิดมาก่อนเลยค่ะว่าชาตินี้จะผอมกับเขา แต่พอเริ่มกิน <span
+          class="link">Regina</span> เมื่ออาทิตย์ที่แล้วเอง
+        ลดน้ำหนักไปได้ 6 กก. แล้วก็ไม่ได้แบบต้องเปลี่ยนแปลงอะไรเลย กินทุกอย่างเหมือนเดิม แต่ว่าไม่ค่อยหิว
+        เลยกินได้น้อยลง
+        แล้วก็ไม่หิวบ่อบเหมือนเมื่อก่อน อยากขอบคุณเจ้าของผลิตภัณฑ์มากค่ะที่ทำสูตรดี ๆ แบบนี้ออกมา ขอบคุณจริง ๆ ค่ะ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">6</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/14.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">พรรณา</h2>
+      <div class="comment__text">
+        พี่อายุ 50 แล้วและอยากลดน้ำหนักมาก ๆ เข้าใจว่าพออายุเท่านี้แล้ว มันไม่ใช่เรื่องง่าย แต่ก็อยากลด ก็เลยลองสั่ง
+        <span class="link">Regina</span>
+        มากินดู เห็นผลเลยภายใน 1 อาทิตย์ค่ะ เลยสั่งมาเพิ่ม เพราะผลลัพธ์รวดเร็วทันใจมาก ๆ ลดได้ 9 กิโล!!!
+        พี่มีการคุมอาหารและออกกำลังกายด้วยนะคะ แต่ก็ไม่คิดว่าจะเห็นผลได้ดีและไวขนาดนี้
+        ขอบคุณที่นี่มากเลยที่ได้ทำให้เจอผลิตภัณฑ์ดี ๆ แนะนำ <span class="link">Regina</span> เลยค่ะ
+        สำหรับคนที่อยากลดน้ำหนัก
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">16</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/15.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">รัฐฐา</h2>
+      <div class="comment__text">
+        ไม่รู้จะลดน้ำหนักได้ยังไงคะ ตอนนี้หนัก 97 ไม่อยากน้ำหนักขึ้น 100 กิโลเลย ทำยังไงได้บ้าง ซื้อ <span
+          class="link">Regina</span> ได้ที่ไหน
+        ร้านขายยามีไหม
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">17</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/16.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">มาดามกุ้งกิ้ง</h2>
+      <div class="comment__text">
+        ใช้ <span class="link">Regina</span> มาสักพักแล้วค่ะ ก่อนหน้านี้ลดไม่ลงเหมือนกัน แต่ตอนนี้ สบาย ๆ
+        อยากกินอะไรก็กินตามใจ เพราะแค่กิน <span class="link">Regina</span>
+        น้ำหนักก็ไม่เพิ่มแล้วจ้า :)
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">17</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/17.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">ภัทรลดา</h2>
+      <div class="comment__text">
+        ซื้อ <span class="link">Regina</span> ได้จากเว็บไซต์อย่างเป็นทางการแล้วค่ะที่ประเทศไทยเรา
+        หรือเขาขายจากร้านออนไลน์อื่น ๆ ได้บ้างคะ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">19</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/18.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">วิภา</h2>
+      <div class="comment__text">
+        <span class="link">Regina</span> สำหรับแต่ละคนจะได้ผลที่ไม่เหมือนกันค่ะ แต่สำหรับเราคือเห็นผลดีมาก ลดได้ 16
+        กิโล ภายใน 3 อาทิตย์
+        แค่ต้องทานต่อเรื่อย ๆ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">19</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/19.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">คิตตี้</h2>
+      <div class="comment__text">
+        สำหรับเรา <span class="link">Regina</span> คือสุดยอดมาก ๆ เลยค่ะ เมื่อไม่กี่ปีก่อน เราประสบอุบัติเหตุ
+        นอนติดเตียงประมาณ 8 เดือน น้ำหนักเพิ่มมา 32
+        กิโลกรัม! แล้วก็กลายเป็นว่าต้องเดินกับไม้ท้าว ไม่สามารถใช้ชีวิตได้ตามปกติ เพราะรู้สีกยังอ่อนแออยู่
+        แล้วพอนักหนักเพิ่มก็ยิ่งทำให้ทุกอย่างแย่ลงไปอีก จนพอได้ลองกิน <span class="link">Regina</span>
+        อันนี้ต้องขอบคุณเพื่อนที่เพิ่งกลับมาจากญี่ปุ่นเอาของที่เหลือมาให้ลอง ตอนนั้นเขาให้ประมาณ 6 กล่อง
+        ตอนแรกก็ไม่ได้คาดหวังอะไรมากมาย แต่ก็ลองทำตามคำแนะนำ แต่รู้สึกถึงการเปลี่ยนแปลงได้ตั้งแต่ครั้งแรกเลย
+        ไม่ใช่แค่น้ำหนักลดนะคะ— รู้สึกว่ากระเพาะอาหารทำงานดีขึ้นและรู้สึกว่าระบบเผาผลาญดีขึ้นภายใน 2 อาทิตย์แรกลดได้
+        10 กิโล
+        แบบที่ไม่ได้ทำอะไรเลย แล้วอีก 22 กิโล. หายไปอีกภายใน 4 อาทิตย์ ดีใจมาก ๆ เลยค่ะ ที่เพื่อนเจอ <span
+          class="link">Regina</span> ในญี่ปุ่น
+        ไม่งั้นเราคงไม่รู้ว่าจะทำยังไง สงสัยคงจะยังหนัก 89 กิโล
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">11</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/20.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">แจ๋ว</h2>
+      <div class="comment__text">
+        ก่อนกิน <span class="link">Regina</span> น้ำหนัก 90 ค่ะ ตอนสาว ๆ นี้คือผอมสวยมาตลอดเลย แต่พออายุมากขึ้น
+        ไขมันตามสะโพก ตามท้องก็เริ่มสะสมมากขึ้น
+        พออายุ 35 ก็เริ่มรู้ตัวว่าต้องระวังให้มากขึ้น ไปออกกำลังกายเกือบปี แต่ก็ไม่เห็นจะได้หุ่นดี ก็เลยเริ่มลองใช้
+        <span class="link">Regina</span>
+        ภายในไม่กี่อาทิตย์ เราก็กลับมาผอมเหมือนตอนยังสาว ตอนนี้ก็พยายามออกกำลังกาย และกิน <span
+          class="link">Regina</span> อยู่เสมอ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">11</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/21.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">กิ่งแก้ว</h2>
+      <div class="comment__text">
+        ตอนนี้กิน <span class="link">Regina</span> แล้วก็กินอาหารตามที่อยากกิน ลดน้ำหนักได้ 14 กิโล
+        เป็นผลิตภัณฑ์ลดน้ำหนักที่ดีที่สุดที่เคยลองมาเลยค่ะ
+        คือดีมาก ๆ — ไม่ต้องไปออกกำลังกายเลย ปกติก็ไม่ค่อยมีเวลาอยุ่แล้ว แนะนำเลยค่ะ ดูผลลัพธ์ของเราสิคะ
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">16</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/22.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">ชนกนันท์</h2>
+      <div class="comment__text">
+        เรากิน <span class="link">Regina</span> น้ำหนักลดไป 11 กิโลกรัม ภายในสองอาทิตย์ ผ่านมาปีนึงแล้ว
+        น้ำหนักยังไม่เพิ่มนะคะ!
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">10</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/23.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">หญิง</h2>
+      <div class="comment__text">
+        ลองกิน <span class="link">Regina</span> ได้สองอาทิตย์แล้ว ลดได้ 7 กิโลเองอ่ะ:(
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">8</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="comment">
+    <img class="comment__image" src="./images/24.jpg" alt=" " />
+    <div class="comment__content">
+      <h2 class="comment__name">กรนภา</h2>
+      <div class="comment__text">
+        ไม่รู้ว่าระยะยาวจะเป็นไง เพราะเพิ่งกิน <span class="link">Regina</span> ได้แค่ 4 วันเอง แต่รู้ไหมคะว่า 3
+        วันแรกก็ลดได้ 3 กิโลแล้ว เหลืออีก 18 กิโล
+        ต้องทำได้แน่ ๆ :)
+        <br />
+      </div>
+      <p class="comment__details">
+        <button class="comments__like">
+          <img src="./images/like-btn.svg" alt="" />
+          <span class="likes">18</span>
+          ชอบ
+        </button>
+        <button class="comments__dislike">
+          <img src="./images/dislike-btn.svg" alt="" />
+          <span class="dislikes">0</span>
+          ฉันไม่ชอบ
+        </button>
+        <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+        </a>
+        <span class="comment__time">
+          <script>
+
+            dtime("th", 0, 0, 0, true, true, true);
+          </script>
+        </span>
+      </p>
+    </div>
+  </div>
+
+
+</div>
+
+  <div class="literarure">
+    <div class="literarure-box">
+      <img src="./images/image16.png" alt="">
+      <img style="min-height: 100px;" src="./images/image20.png" alt="">
+      <img src="./images/image23.png" alt="">
+    </div>
+    <ol>
+      <li>Ex. Preuss, H. G., et al. (2004). Effects of Garcinia Cambogia extract on body weight reduction and body
+        mass index: a
+        randomized, double-blind, placebo-controlled trial. Journal of Medical Food, 7(3), 307-311.</li>
+      <li>Ex. Anderson, J. W., et al. (2009). Health benefits of dietary fiber. Nutrition Reviews, 67(4), 188-205.
+      </li>
+      <li>Ex. Nordmann, A. J., et al. (2006). Effects of low-carbohydrate vs low-fat diets on weight loss and
+        cardiovascular risk
+        factors: a meta-analysis of randomized controlled trials. Archives of Internal Medicine, 166(3), 285-293.</li>
+      <li>Ex. Lebovitz, H. E. (2001). Insulin resistance: definition and consequences. Journal of Clinical
+        Endocrinology &
+        Metabolism, 86(11), 4869-4871.</li>
+      <li>Ex. World Health Organization. (2021). Obesity and overweight. Fact Sheet.</li>
+      <li>Ex. Global weight loss and diet management market size, share, and trends analysis report, 2021.</li>
+      <li>Ex. Wang, Y., et al. (2004). Lipase-catalyzed synthesis of structured lipids: a review. Journal of Food
+        Science, 69(3),
+        75-87.</li>
+    </ol>
+  </div>
+
+  <footer>
+    <div class="footer-box">
+
+      <p>ลิขสิทธิ์ © 2568 โดย Copyrightindex.com</p>
+
+      <p>สงวนลิขสิทธิ์ ห้ามทำซ้ำ แจกจ่าย หรือส่งในรูปแบบใด ๆ หรือด้วยวิธีการใด ๆ รวมถึงการทำสำเนา บันทึก
+        หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้ เผยแพร่
+        ยกเว้นในกรณีที่มีการอ้างอิงโดยย่อในรีวิวสำคัญและการใช้งานที่ไม่ใช่เชิงพาณิชย์อื่น ๆ
+        ที่ได้รับอนุญาตตามกฎหมายลิขสิทธิ์</p>
+    </div>
+
+  </footer>
+  <script src="./js/video.js"></script>
+  <script src="./js/coments.js"></script>
+</body>
+
+</html>
