@@ -1,0 +1,1278 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title class="lt1">Dermaxil</title>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<link rel="shortcut icon" href="./img/product.png" type="image/x-icon">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+	<meta content="./img/favicon.ico" name="msapplication-TileImage">
+	<link href="./css/styles.css" rel="stylesheet">
+	<link href="./css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="top-line">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+							<div class="top-logo">
+								<a href="#"><img alt="Psorimilk" class="visible-lg" src="./img/logo-md.png"
+										width="100%"> <img alt="Psorimilk" class="hidden-lg" src="./img/logo-md.png">
+								</a>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-4 hidden-xs hidden-sm">
+							<div class="top-rekl">
+								<div class="top-rekl-item">
+									<div class="img item1"></div>
+									<div class="text lt2"><span class="green"> สินค้าขายดีประจำปี 2563 </span> <br>
+										สำหรับ <br> โรคสะเก็ดเงิน</div>
+								</div>
+								<div class="top-rekl-item">
+									<div class="img item2"></div>
+									<div class="text lt3"><span class="green"> สารสกัดจากธรรมชาติ 100% </span> <br>
+										ไม่มีส่วนผสมของฮอร์โมนและ <br> สารเคมี</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-lg-3 hidden-xs hidden-sm">
+							<div class="top-timer">
+								<div class="timer-header lt4">ช่วงราคาพิเศษ:</div>
+								<div class="timer1"></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-2 col-lg-3 hidden-xs">
+							<div class="top-callme">
+								<div class="top-callme-header visible-lg lt5">ปรึกษาผู้เชี่ยวชาญ</div>
+								<div class="top-callme-body">
+									<div class="top-callme-text lt6">โทรฟรี <br class="hidden-sm"> ทั่วประเทศ</div>
+									<a class="btn popup-send lt7" href="#order">โทรสั่งซื้อ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="top-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="header-block">
+								<h1 class="lt8">ลองวิธีอื่นแล้วไม่ได้ผล <br class="visible-sm"> ยังไม่หายจาก <br
+										class="visible-xs"> โรคสะเก็ดเงิน, <br> ลองใช้ Dermaxil</h1>
+								<p class="lt9">Dermaxil ได้ผลจริง, เพราะสามารถ “กำจัด”
+									สาเหตุและช่วยรักษาอาการของโรคสะเก็ดเงินได้</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 col-lg-6">
+							<div class="list-blok">
+								<ul>
+									<li> <i aria-hidden="true" class="fa fa-angle-right fa-3x"></i>
+										<div class="top-li-text lt10"><b> สารสกัดจากธรรมชาติ 100%! </b>
+											ที่ผ่านการคัดสรรมาอย่างดี</div>
+									</li>
+									<li> <i aria-hidden="true" class="fa fa-angle-right fa-3x"></i>
+										<div class="top-li-text lt11">ฟื้นฟูสภาพผิว <b> สู่สุขภาพผิวที่ดี </b>
+											ด้วยสารสกัดไกลโคไซด์ จากพืชตระกูลถั่วญี่ปุ่น.</div>
+									</li>
+									<li> <i aria-hidden="true" class="fa fa-angle-right fa-3x"></i>
+										<div class="top-li-text lt12">ถั่งเช่า <b> ช่วยยับยั้งปฏิกิริยาภูมิต้านทาน </b>
+										</div>
+									</li>
+									<li> <i aria-hidden="true" class="fa fa-angle-right fa-3x"></i>
+										<div class="top-li-text lt13">เมล็ดวอลนัทดำ <b> ช่วยขจัดสารพิษ </b> ,
+											ลดการอักเสบของผิวหนัง.</div>
+									</li>
+									<li> <i aria-hidden="true" class="fa fa-angle-right fa-3x"></i>
+										<div class="top-li-text lt14">ไม่เป็นอันตราย <b> ต่อร่างกาย </b>
+											ต่างจากการใช้ยาทั่วไป.</div>
+									</li>
+								</ul><img alt="Psorimilk" class="visible-lg" src="./img/product.png"> <img
+									alt="Psorimilk" class="hidden-lg" src="./img/product_small.png"> <img alt="Акция"
+									class="sale-xs visible-xs" src="./img/sale.png">
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-6 hidden-xs hidden-sm">
+							<div class="top-form clearfix">
+								<form action="<?php echo $action; ?>" class="tform order_form" method="POST"
+									id="order_form0">
+									<input type="hidden" name="subid5" value="back_vsl_form">
+									<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+									<div class="price-line">
+										<div class="old-price">
+											<div class="old-price-header lt15">ราคาเดิม:</div>
+											<div class="old-price-summ"> <span class="old-price-summ-num"><span
+														class="price_land_s4 price_old"><span
+															class="price_main_value">1980</span><span
+															class="price_main_currency">฿</span></span></span></div>
+										</div>
+										<div class="price">
+											<div class="price-header lt16">ราคาใหม่:</div>
+											<div class="price-summ"> <span class="price-summ-num x_price_current"><span
+														class="price_land_s1 price_main"><span
+															class="price_main_value">990</span><span
+															class="price_main_currency">฿</span></span></span></div>
+										</div><img alt="" class="sale" src="./img/sale.png">
+									</div>
+									<div class="timer-line visible-sm">
+										<div class="top-timer">
+											<div class="timer-header lt4">ช่วงราคาพิเศษ:</div>
+											<div class="timer6"></div>
+										</div>
+									</div>
+									<div class="input-line clearfix">
+
+										<div class="input-line-item">
+											<label class="lt18">กรอกชื่อ</label>
+											<input name="name" placeholder="ชื่อ" required="" minlength="2" type="text">
+										</div>
+										<div class="input-line-item">
+											<label  class="lt19">กรอกหมายเลขโทรศัพท์</label>
+											<input name="phone" placeholder="เบอร์โทรศัพท์" required="" minlength="8" maxlength="16" type="tel">
+										</div>
+									</div>
+									<div class="btn-line">
+										<div class="line-count">
+											<div class="line-count-descr lt20">ประกาศ! <br
+													class="visible-sm visible-lg"> ตอนนี้มี <br class="visible-md">
+												สินค้าราคาพิเศษ:</div>
+											<div class="line-count-count"><span class="count lastpack">10</span> <span
+													class="lt22">จำนวน</span> </div>
+										</div>
+										<div class="line-btn">
+
+											<button type="submit" class="send lt23">สั่งซื้อ Dermaxil</button>
+										</div>
+										<div class="line-all"> <span
+												class="line-all-text lt25">ผู้ที่สั่งซื้อแล้วในสัปดาห์นี้:</span><span
+												class="line-all-count">3748</span><span
+												class="line-all-text lt26">คน</span>
+										</div><img alt="arrow" src="./img/arrow-red.png">
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="order-form hidden-md hidden-lg">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12">
+							<div class="top-form clearfix">
+								<form action="<?php echo $action; ?>" class="tform order_form" method="POST"
+									id="order_form1">
+									<input type="hidden" name="subid5" value="back_vsl_form">
+									<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+									<div class="price-line">
+										<div class="old-price">
+											<div class="old-price-header lt15">ราคาเดิม:</div>
+											<div class="old-price-summ"><span class="old-price-summ-num"><span
+														class="price_land_s4 price_old"><span
+															class="price_main_value">1980</span><span
+															class="price_main_currency">฿</span></span></span>
+											</div>
+										</div>
+										<div class="price">
+											<div class="price-header lt16">ราคาใหม่:</div>
+											<div class="price-summ"><span class="price-summ-num"><span
+														class="price_land_s1 price_main"><span
+															class="price_main_value">990</span><span
+															class="price_main_currency">฿</span></span></span>
+											</div>
+										</div><img alt="" class="sale hidden-xs" src="./img/sale.png">
+									</div>
+									<div class="timer-line">
+										<div class="top-timer">
+											<div class="timer-header lt4">ช่วงราคาพิเศษ:</div>
+											<div class="timer6"></div>
+										</div>
+										<div class="input-line clearfix">
+											
+											<div class="input-line-item">
+												<label class="lt18">กรอกชื่อ</label>
+												<input name="name" placeholder="ชื่อ" required="" minlength="2" type="text">
+											</div>
+											<div class="input-line-item">
+												<label  class="lt19">กรอกหมายเลขโทรศัพท์</label>
+												<input name="phone" placeholder="เบอร์โทรศัพท์" required="" minlength="8" maxlength="16" type="tel">
+											</div>
+										</div>
+										<div class="btn-line">
+											<div class="line-count">
+												<div class="line-count-descr lt21">ประกาศ! <br
+														class="visible-sm visible-lg"> ตอนนี้มี <br
+														class="visible-xs visible-md"> สินค้าราคาพิเศษ:</div>
+												<div class="line-count-count"><span class="count lastpack">10</span>
+													<span class="lt22"></span> </div>
+											</div>
+											<div class="line-btn">
+
+												<button type="submit" class="send lt24">สั่งซื้อ <br class="visible-xs">
+													Dermaxil</button>
+											</div>
+											<div class="line-all"> <span
+													class="line-all-text lt25">ผู้ที่สั่งซื้อแล้วในสัปดาห์นี้:</span>
+												<br class="hidden-sm hidden-md hidden-lg"> <span
+													class="line-all-count">3748</span><span
+													class="line-all-text lt26">คน</span>
+											</div><img alt="arrow" src="./img/arrow-red.png">
+										</div>
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="hell">
+				<div class="container">
+					<div class="hell-bg">
+						<div class="row">
+							<div class="col-xs-12 col-sm col-md-12 col-lg-12">
+								<h2 class="lt27">สะเก็ดเงิน โรคที่ทำลายชีวิตผู้ป่วย</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="hell-items clearfix">
+								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+									<div class="hell-item"> <img alt="hell-01" src="./img/hell-01.png">
+										<div class="hell-item-text">
+											<div class="hell-header bold lt28">อาการเจ็บปวดบริเวณแผลสะเก็ดเงิน</div>
+											<div class="hell-body lt29">เลือดออก, เจ็บปวด, คัน <b> และรอยด่าง </b>
+												ทั่วร่างกาย</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+									<div class="hell-item"> <img alt="hell-02" src="./img/hell-02.png">
+										<div class="hell-item-text">
+											<div class="hell-header bold lt30">ไม่เป็นที่ยอมรับในสังคม</div>
+											<div class="hell-body lt31">ผู้คนมองเหมือนตัวประหลาด, <b> ถูกนินทาลับหลัง
+												</b>, หมดความมั่นใจ <b> อยากปลีกตัวออกจากสังคม </b></div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+									<div class="hell-item"> <img alt="hell-03" src="./img/hell-03.png">
+										<div class="hell-item-text third">
+											<div class="hell-header bold lt32">การปลีกตัว และ ความโดดเดี่ยว</div>
+											<div class="hell-body lt33">หมดโอกาสในการหางาน, มีความรัก, แต่งงาน,
+												สร้างครอบครัว</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="hell-footer bold red lt34">ความรู้สึกไม่ดีจากการถูกปฏิเสธ <br
+										class="hidden-xs hidden-sm"> มีผู้โชคร้ายอยู่ทั่วโลกถึง 230 ล้านคน!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="video">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h2 class="lt35">ตัวยาอะไร <br class="visible-xs"> ที่ทางการปิดเป็นความลับ?</h2>
+							<h3 class="lt36">ผู้เชี่ยวชาญ อภิรักษ์ พินิตยะกุล: “Dermaxil
+								เป็นทางออกของโรคสะเก็ดเงินที่เคยคิดว่าไม่มีรักษาหาย”</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="video-block"> <img src="./img/expert.jpg"
+									style="max-height: 100%; max-width: 100%; display: block; margin: 0 auto;"> </div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="video-text lt37">Dermaxil –
+								เป็นวิธีการรักษาโรคสะเก็ดเงินตัวแรกที่ผลิตจากส่วนผสมจากธรรมชาติ
+								โดยอ้างอิงจากวิธีการของนายแพทย์ผู้เชี่ยวชาญชาวอเมริกัน John Pagano
+								โดยนายแพทย์ผู้เชี่ยวชาญ Pagano รักษาผู้ป่วยด้วยวิธีทางธรรมชาติ
+								และประสบผลสำเร็จอย่างน่าทึ่ง.</div>
+							<div class="video-autor lt38"> อภิรักษ์ พินิตยะกุล</div>
+							<div class="video-descr lt39">ด้านธรรมชาติบำบัด, ปริญญาเอกด้านวิทยาศาสตร์การผู้เชี่ยวชาญ,
+								สมาชิกกิติมาศักดิ์ของ International Academy of Naturopathy และ Natural Methods of
+								Recovery ประสบการณ์การทำงาน 17 ปี</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="inderma-path">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h2 class="lt40">Dermaxil – วิธีทางธรรมชาติที่เชื่อถือได้ในการรักษาโรคสะเก็ดเงิน</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+							<div class="path-text">
+								<p class="lt41">การรักษาโรคสะเก็ดเงินด้วย Dermaxil ซึ่งพัฒนาขึ้นจากวิธีการของ <b>
+										ของแพทย์ผู้เชี่ยวชาญชื่อดังชาวอเมริกัน John Pagano</b> , ผู้เขียนหนังสือ
+									best-selling “ Healing Psoriasis: The Natural Alternative ”,
+									ซึ่งช่วยรักษาผู้ป่วยจากโรคนี้ไปแล้วกว่าพันคน <b> ด้วยวิธีจากธรรมชาติ </b></p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 hidden-xs hidden-sm">
+							<div class="path-img"> <img src="./img/product.png"> </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="inderma-path-items"> <img src="./img/psoriaz-left.png"> </div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="inderma-path-items"> <img src="./img/psoriaz-right.png"> </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-4">
+							<div class="photo-pegano"> <img alt="Джон Пегано" src="./img/pegano.png"> </div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+							<div class="text-pegano">
+								<p class="lt42">“สสิ่งที่คุณเห็นบนผิวหนังคือสิ่งที่กำลังเกิดขึ้นกับภายในร่างกายของคุณ
+									คุณรักษาสิ่งที่ปรากฏบนผิวให้หายไปได้ แต่มันก็จะกลับมาอีกเรื่อยๆ
+									ผู้ป่วยโรคสะเก็ดเงินจะมีโอกาสหายขาดจากความเจ็บปวด ความน่ารังเกลียด หรือไม่ คำตอบคือ
+									ใช่! ทางรักษานั้นมีอยู่จริง ซึ่งคือวิธีทางธรรมชาติ”.</p>
+								<p class="lt43">John Pagano, นายผู้เชี่ยวชาญ, ผู้เขียน “Healing Psoriasis: The Natural
+									Alternative ”, สหรัฐอเมริกา</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="order-form">
+				<div class="container">
+					<div class="row hidden-xs hidden-sm">
+						<div class="col-md-12 col-lg-12">
+							<div class="order-form-block"> <img alt="Псоримилк" class="hidden-xs"
+									src="./img/product_small.png">
+								<form action="<?php echo $action; ?>" class="order_form" method="POST" id="order_form2">
+									<input type="hidden" name="subid5" value="back_vsl_form">
+									<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+									<div class="order-form-topline">
+										<div class="top-timer">
+											<div class="timer-header lt4">ช่วงราคาพิเศษ:</div>
+											<div class="timer3"></div>
+										</div>
+										<div class="order-form-input">
+											<div class="input-line clearfix">
+												<div class="input-line-item">
+													<label class="lt17" style="display:none;">ประเทศของคุณ</label>
+													<select name="country" class="country_select"
+														style="display: none;">
+														<option value="th">ประเทศไทย</option>
+													</select>
+												</div>
+												<div class="input-line-item">
+													<label class="lt18">กรอกชื่อ</label>
+													<input name="name" placeholder="ชื่อ" required="" minlength="2" type="text">
+												</div>
+												<div class="input-line-item">
+													<label  class="lt19">กรอกหมายเลขโทรศัพท์</label>
+													<input name="phone" placeholder="เบอร์โทรศัพท์" minlength="8" maxlength="16" required=""
+														type="tel">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="order-form-bottomline">
+										<div class="price-line">
+											<div class="old-price">
+												<div class="old-price-header lt15">ราคาเดิม:</div>
+												<div class="old-price-summ"> <span class="old-price-summ-num"><span
+															class="price_land_s4 price_old"><span
+																class="price_main_value">1980</span><span
+																class="price_main_currency">฿</span></span></span>
+												</div>
+											</div>
+											<div class="price">
+												<div class="price-header lt16">ราคาใหม่:</div>
+												<div class="price-summ"> <span class="price-summ-num"><span
+															class="price_land_s1 price_main"><span
+																class="price_main_value">990</span><span
+																class="price_main_currency">฿</span></span></span>
+												</div>
+											</div><img alt="" class="sale" src="./img/sale-big.png">
+										</div>
+										<div class="btn-line">
+											<div class="line-count">
+												<div class="line-count-descr lt20">ประกาศ! <br
+														class="visible-sm visible-lg"> ตอนนี้มี <br class="visible-md">
+													สินค้าราคาพิเศษ:</div>
+												<div class="line-count-count"><span class="count lastpack">10</span>
+													<span class="lt22"></span> </div>
+											</div>
+											<div class="line-btn">
+
+												<button type="submit" class="send lt23">สั่งซื้อ Dermaxil</button>
+											</div>
+											<div class="line-all"> <span
+													class="line-all-text lt25">ผู้ที่สั่งซื้อแล้วในสัปดาห์นี้:</span>
+												<br class="hidden-sm hidden-md hidden-lg"> <span
+													class="line-all-count">3748</span><span
+													class="line-all-text lt26">คน</span>
+											</div><img alt="arrow" src="./img/arrow-red-small.png">
+										</div>
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row hidden-md hidden-lg">
+						<div class="col-xs-12 col-sm-12">
+							<div class="top-form clearfix">
+								<form action="<?php echo $action; ?>" class="tform order_form" method="POST"
+									id="order_form3">
+									<input type="hidden" name="subid5" value="back_vsl_form">
+									<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+									<div class="price-line">
+										<div class="old-price">
+											<div class="old-price-header lt15">ราคาเดิม:</div>
+											<div class="old-price-summ"> <span class="old-price-summ-num"><span
+														class="price_land_s4 price_old"><span
+															class="price_main_value">1980</span><span
+															class="price_main_currency">฿</span></span></span>
+											</div>
+										</div>
+										<div class="price">
+											<div class="price-header lt16">ราคาใหม่:</div>
+											<div class="price-summ"> <span class="price-summ-num"><span
+														class="price_land_s1 price_main"><span
+															class="price_main_value">990</span><span
+															class="price_main_currency">฿</span></span></span>
+											</div>
+										</div><img alt="" class="sale hidden-xs" src="./img/sale.png">
+									</div>
+									<div class="timer-line">
+										<div class="top-timer">
+											<div class="timer-header lt4">ช่วงราคาพิเศษ:</div>
+											<div class="timer7"></div>
+										</div>
+									</div>
+									<div class="input-line clearfix">
+										
+										<div class="input-line-item">
+											<label class="lt18">กรอกชื่อ</label>
+											<input name="name" placeholder="ชื่อ" required="" minlength="2" type="text">
+										</div>
+										<div class="input-line-item">
+											<label  class="lt19">กรอกหมายเลขโทรศัพท์</label>
+											<input name="phone" placeholder="เบอร์โทรศัพท์" required="" minlength="8" maxlength="16" type="tel">
+										</div>
+									</div>
+									<div class="btn-line">
+										<div class="line-count">
+											<div class="line-count-descr lt20">ประกาศ! <br
+													class="visible-sm visible-lg"> ตอนนี้มี <br class="visible-md">
+												สินค้าราคาพิเศษ:</div>
+											<div class="line-count-count"> <span class="count lastpack">10</span></div>
+										</div>
+										<div class="line-btn">
+
+											<button type="submit" class="send lt23">สั่งซื้อ Dermaxil</button>
+										</div>
+										<div class="line-all"> <span
+												class="line-all-text lt25">ผู้ที่สั่งซื้อแล้วในสัปดาห์นี้:</span>
+											<br class="visible-xs"> <span class="line-all-count">3748</span><span
+												class="line-all-text lt26">คน</span>
+										</div><img alt="arrow" src="./img/arrow-red.png">
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="clinical">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h2 class="lt44">การทดลองทางคลินิก: Dermaxil
+								มีประสิทธิภาพในการรักษากว่าตัวอื่นในกลุ่มยารักษาโรคสะเก็ดเงิน</h2>
+							<div class="clinical-img"> <img alt="Псоримилк" class="hidden-xs hidden-sm"
+									src="./img/clinical.png"> <img alt="Псоримилк" class="hidden-md hidden-lg"
+									src="./img/clinical01.png"> <img alt="Псоримилк" class="hidden-md hidden-lg"
+									src="./img/clinical02.png"> </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="clinical-subscr-text lt45">ผลการศึกษา Dermaxil
+								ที่สถาบันด้านโรคผิวหนังโซโคลอฟในปี 2563 จากอาสมัคร 750 คน มีเพียง 2,3%
+								ที่ไม่เห็นผลเป็นที่น่าพอใจ</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="clinical-subscr-stamp"> <img alt="Псоримилк" src="./img/stamp.png"> </div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="why">
+				<img alt="Псоримилк" class="why-img hidden-xs hidden-sm" src="./img/product_small.png">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h2 class="lt46">5 เหตุผล ทำไม Dermaxil <br class="hidden-xs hidden-sm">
+								ถึงโดดเด่นกว่าตัวยาอื่น</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p class="lt47">โดยทั่วไปยารักษาโรคสะเก็ดเงิน <b> จะรักษาตามอาการที่ปรากฏ </b>
+								ทำให้มีโอกาสที่จะกลับมาเป็นได้อีก. แต่ Dermaxil รักษา <b> ที่สาเหตุ</b>ของโรค
+								และยังมีข้อได้เปรียบ <b> ที่สำคัญ </b> คือการรักษาโรคสะเก็ดเงิน <b>
+									ด้วยวิธีการทางธรรมชาติ</b> .</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+							<div class="why-item"> <img alt="Псоримилк" src="./img/icon-natural.png">
+								<div class="why-irem-header">
+									<h3 class="lt48">1. สารสกัดจากธรรมชาติ 100% </h3>
+								</div>
+								<div class="why-irem-text lt49"><b> ไม่มีข้อห้าม </b> และผลข้างเคียง,
+									สามารถใช้ร่วมกับยาตัวอื่นได้ ไม่ต้องใช้ใบสั่งจากแพทย์</div>
+							</div>
+						</div>
+						<div
+							class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5">
+							<div class="why-item"> <img alt="Псоримилк" src="./img/icon-duble.png">
+								<div class="why-irem-header">
+									<h3 class="lt50">2. มากกว่าแค่การรักษา</h3>
+								</div>
+								<div class="why-irem-text lt51">ส่วนผสมของตัวยาไม่ใช่แค่รักษาโรค <b>
+										แต่ยังช่วยฟื้นฟูผิวหนัง </b> ที่ถูกทำลาย</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+							<div class="why-item"> <img alt="Псоримилк" src="./img/icon-md.png">
+								<div class="why-irem-header">
+									<h3 class="lt52">3. ธรรมชาติบำบัด</h3>
+								</div>
+								<div class="why-irem-text lt53"><b> กระตุ้นการฟื้นฟู </b> ระบบการทำงานของร่างกาย
+									ช่วยทำให้การขาดจากโรคนี้เป็นไปได้</div>
+							</div>
+						</div>
+						<div
+							class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-2 col-md-5 col-lg-offset-2 col-lg-5">
+							<div class="why-item"> <img alt="Псоримилк" src="./img/icon-complex.png">
+								<div class="why-irem-header">
+									<h3 class="lt54">4. กระบวนการที่ซับซ้อน</h3>
+								</div>
+								<div class="why-irem-text lt55"><b> ช่วยขับสารพิษ </b> , กระตุ้นระบบภูมิคุ้มกัน, <b>
+										ฟื้นฟูสภาพผิว </b></div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="why-item last"> <img alt="Без привыкания" src="./img/icon-whisout.png">
+								<div class="why-irem-header">
+									<h3 class="lt56">5. หลังจากหายแล้วไม่จำเป็นต้องใช้ต่อ</h3>
+								</div>
+								<div class="why-irem-text lt57"><b> เมื่อหายแล้ว </b>
+									ไม่จำเป็นต้องใช้ต่อเผื่อป้องกันการกลับมาเป็นซ้ำ<b> เห็นผลที่แน่นอน </b>
+									หลังใช้ครบคอร์ส.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="science">
+				<div class="container">
+					<img class="product" src="./img/product.png" alt="">
+					<div class="science-bg">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<h2 class="lt58">สูตรทางวิทยาศาสตร์ของ Dermaxil <br> ช่วยสร้างสารประกอบที่มีประสิทธิภาพ
+								</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+								<div class="science-item clearfix"> <img alt="Портулак"
+										src="./img/Portulaca-oleracea.png">
+									<div class="science-item-header">
+										<h3 class="lt59">1 ดอกเบี้ยใหญ่ <br> Portulaca oleracea</h3>
+									</div>
+									<div class="science-item-text lt60">ช่วย <b> บรรเทาอาการคัน </b> และ <br
+											class="hidden-xs hidden-sm lt60"> ผิวลอกอย่างรวดเร็ว</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+								<div class="science-item clearfix"> <img alt="Кактус мексиканский"
+										src="./img/Epiphyllum-dreamland.png">
+									<div class="science-item-header">
+										<h3 class="lt61">2 ดอกแคคตัส <br> Epiphyllum dreamland</h3>
+									</div>
+									<div class="science-item-text lt62">ทำความสะอาดระบบร่างกาย, <b> ฟื้นฟู </b> เซลล์ผิว
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+								<div class="science-item clearfix"> <img alt="Софора японская"
+										src="./img/Sophora-japonica.png">
+									<div class="science-item-header">
+										<h3 class="lt63">3 สารสกัดจากพืชตระกูลถั่วญี่ปุ่น <br> Sophora japonica</h3>
+									</div>
+									<div class="science-item-text lt64">เร่ง <b> การฟื้นฟู </b> สภาพผิว</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+								<div class="science-item clearfix"> <img alt="Черный орех"
+										src="./img/Juglans-nigra.png">
+									<div class="science-item-header">
+										<h3 class="lt65">4 วอลนัทดำ <br> Juglans nigra</h3>
+									</div>
+									<div class="science-item-text lt66">ทำหน้าที่ <b> ต้านแบคทีเรีย </b></div>
+								</div>
+							</div>
+							<div
+								class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
+								<div class="science-item clearfix"> <img alt="Гриб Шиитаке"
+										src="./img/Lentinus-edodes.png">
+									<div class="science-item-header">
+										<h3 class="lt67">5 เห็ดหอม <br> Lentinus edodes</h3>
+									</div>
+									<div class="science-item-text lt68">ช่วยลด <b> อาการอักเสบ</b> </div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+								<div class="science-item clearfix"> <img alt="Гриб Рейши"
+										src="./img/Ganoderma-lucidum.png">
+									<div class="science-item-header">
+										<h3 class="lt69">6 เห็ดหลินจือแดง <br> Ganoderma lucidum</h3>
+									</div>
+									<div class="science-item-text lt70"> แหล่งที่มาของไตรเทอร์พีน ตามธรรมชาติ<b> ปราศจาก
+										</b> “ฮอร์โมนสเตียรอยด์”</div>
+								</div>
+							</div>
+							<div
+								class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
+								<div class="science-item clearfix"> <img alt="Кордицепс китайский"
+										src="./img/Ophiocordyceps-sinensis.png">
+									<div class="science-item-header">
+										<h3 class="lt71">7 ถั่งเช่า <br> Ophiocordyceps sinensis</h3>
+									</div>
+									<div class="science-item-text lt72">ช่วยให้ระบบภูมิคุ้มกัน <b> ทำงานปกติ </b> </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="order-form">
+				<div class="container">
+					<div class="row hidden-xs hidden-sm">
+						<div class="col-md-12 col-lg-12">
+							<div class="order-form-block"> <img alt="Псоримилк" src="./img/product_small.png">
+								<form action="<?php echo $action; ?>" class="order-form-form order_form" method="POST"
+									id="order_form4">
+									<input type="hidden" name="subid5" value="back_vsl_form">
+									<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+									<div class="order-form-topline">
+										<div class="top-timer">
+											<div class="timer-header lt4">ช่วงราคาพิเศษ:</div>
+											<div class="timer4"></div>
+										</div>
+										<div class="order-form-input">
+											<div class="input-line clearfix">
+												
+												<div class="input-line-item">
+													<label class="lt18">กรอกชื่อ</label>
+													<input name="name" placeholder="ชื่อ" required="" minlength="2" type="text">
+												</div>
+												<div class="input-line-item">
+													<label  class="lt19">กรอกหมายเลขโทรศัพท์</label>
+													<input name="phone" placeholder="เบอร์โทรศัพท์" required="" minlength="8" maxlength="16"
+														type="tel">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="order-form-bottomline">
+										<div class="price-line">
+											<div class="old-price">
+												<div class="old-price-header lt15">ราคาเดิม:</div>
+												<div class="old-price-summ"> <span class="old-price-summ-num"><span
+															class="price_land_s4 price_old"><span
+																class="price_main_value">1980</span><span
+																class="price_main_currency">฿</span></span></span>
+												</div>
+											</div>
+											<div class="price">
+												<div class="price-header lt16">ราคาใหม่:</div>
+												<div class="price-summ"> <span class="price-summ-num"><span
+															class="price_land_s1 price_main"><span
+																class="price_main_value">990</span><span
+																class="price_main_currency">฿</span></span></span>
+												</div>
+											</div><img alt="" class="sale" src="./img/sale-big.png">
+										</div>
+										<div class="btn-line">
+											<div class="line-count">
+												<div class="line-count-descr lt20">ประกาศ! <br
+														class="visible-sm visible-lg"> ตอนนี้มี <br class="visible-md">
+													สินค้าราคาพิเศษ:</div>
+												<div class="line-count-count"> <span class="count">10</span></div>
+											</div>
+											<div class="line-btn">
+
+												<button type="submit" class="send lt23">สั่งซื้อ Dermaxil</button>
+											</div>
+											<div class="line-all"> <span
+													class="line-all-text lt25">ผู้ที่สั่งซื้อแล้วในสัปดาห์นี้:</span><span
+													class="line-all-count">3748</span><span
+													class="line-all-text lt26"></span> </div><img alt="arrow"
+												src="./img/arrow-red-small.png">
+										</div>
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="row hidden-md hidden-lg">
+						<div class="col-xs-12 col-sm-12">
+							<div class="top-form clearfix">
+								<form action="<?php echo $action; ?>" class="tform order_form" method="POST"
+									id="order_form5">
+									<input type="hidden" name="subid5" value="back_vsl_form">
+									<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+									<div class="price-line">
+										<div class="old-price">
+											<div class="old-price-header lt15">ราคาเดิม:</div>
+											<div class="old-price-summ"> <span class="old-price-summ-num"><span
+														class="price_land_s4 price_old"><span
+															class="price_main_value">1980</span><span
+															class="price_main_currency">฿</span></span></span>
+											</div>
+										</div>
+										<div class="price">
+											<div class="price-header lt16">ราคาใหม่:</div>
+											<div class="price-summ"> <span class="price-summ-num"><span
+														class="price_land_s1 price_main"><span
+															class="price_main_value">990</span><span
+															class="price_main_currency">฿</span></span></span>
+											</div>
+										</div><img alt="" class="sale hidden-xs" src="./img/sale.png">
+									</div>
+									<div class="timer-line">
+										<div class="top-timer">
+											<div class="timer-header lt4">ช่วงราคาพิเศษ:</div>
+											<div class="timer8"></div>
+										</div>
+									</div>
+									<div class="input-line clearfix">
+										
+										<div class="input-line-item">
+											<label class="lt18">กรอกชื่อ</label>
+											<input name="name" placeholder="ชื่อ" required="" minlength="2" type="text">
+										</div>
+										<div class="input-line-item">
+											<label  class="lt19">กรอกหมายเลขโทรศัพท์</label>
+											<input name="phone" placeholder="เบอร์โทรศัพท์" required="" minlength="8" maxlength="16" type="tel">
+										</div>
+									</div>
+									<div class="btn-line">
+										<div class="line-count">
+											<div class="line-count-descr lt20">ประกาศ! <br
+													class="visible-sm visible-lg"> ตอนนี้มี <br class="visible-md">
+												สินค้าราคาพิเศษ:</div>
+											<div class="line-count-count"> <span class="count lastpack">10</span></div>
+										</div>
+										<div class="line-btn">
+
+											<button type="submit" class="send lt23">สั่งซื้อ Dermaxil</button>
+										</div>
+										<div class="line-all"> <span
+												class="line-all-text lt25">ผู้ที่สั่งซื้อแล้วในสัปดาห์นี้:</span>
+											<br class="visible-xs"> <span class="line-all-count">3748</span><span
+												class="line-all-text lt26">คน</span>
+										</div><img alt="arrow" src="./img/arrow-red.png">
+									</div>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="how">
+				<div class="container">
+					<div class="how-bg">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<h2 class="lt73">Dermaxil เอาชนะโรคสะเก็ดเงินได้อย่างไร?</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="how-item"> <img alt="step-01" src="./img/how-01.png"> <i aria-hidden="true"
+										class="fa fa-angle-right fa-5x"></i>
+									<div class="how-body">
+										<div class="how-body-header">
+											<h3>1</h3>
+										</div>
+										<div class="how-body-text lt74"><b> ลดความเครียดและ </b> ขับสารพิษจากผิว <br> <b
+												class="pink"> ผลลัพธ์: </b> <b> อาการปวด </b> , อาการคัน และ ผื่น
+											จะหายไป</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="how-item"> <img alt="step-02" src="./img/how-02.png"> <i aria-hidden="true"
+										class="fa fa-angle-right fa-5x"></i>
+									<div class="how-body">
+										<div class="how-body-header">
+											<h3>2</h3>
+										</div>
+										<div class="how-body-text lt75"><b> ขจัดปัจจัย </b> ,
+											ที่ทำให้ระบบภูมิคุ้มกันทำงานผิดปกติ <br> <b class="pink"> ผลลัพธ์: </b> <b>
+												อาการอักเสบ </b> จะหายไป </div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="how-item"> <img alt="step-03" src="./img/how-03.png"> <i aria-hidden="true"
+										class="fa fa-angle-right fa-5x"></i>
+									<div class="how-body">
+										<div class="how-body-header">
+											<h3>3</h3>
+										</div>
+										<div class="how-body-text lt76"><b> ช่วยกระตุ้น</b> การะบวนการฟื้นฟูสภาพผิว <br>
+											<b class="pink"> ผลลัพธ์: </b> สุขภาพ <b> ผิว </b> ที่ดีขึ้น.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="how-footer lt77">โรคสะเก็ดเงินจะกลายเป็นอดีต <br>
+									สามารถกลับมามีชีวิตปกติอีกครั้ง!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cost">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h2 class="lt78">พวกเราลงทุนไปกว่า <br class="visible-xs visible-sm"> 20 000 000 $
+								เพื่อสร้าง Dermaxil ขึ้นมา</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div
+							class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4">
+							<div class="cost-item">
+								<div class="cost-item-digit">
+									<div class="ci-digit"> 4 </div>
+									<div class="ci-text lt79">ปี</div>
+								</div>
+								<div class="cost-item-text"> <span class="cit-header lt80">สูตรที่ใช้เวลากว่า 4 ปี <br>
+										ในการทำวิจัย</span><br> <span class="cit-body lt81">ด้วยความร่วมมือ <br>
+										ในห้องแลปปฏิบัติการระหว่าง <br> อเมริกา, ไทย และ ญี่ปุ่น. <br>
+										ได้รับการทดสองสูตรมากกว่า 120 สูตร.</span> </div>
+							</div>
+						</div>
+						<div
+							class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4">
+							<div class="cost-item">
+								<div class="cost-item-digit">
+									<div class="ci-digit"> 80 </div>
+									<div class="ci-text"> % </div>
+								</div>
+								<div class="cost-item-text"> <span class="cit-header lt82">80% ของส่วนผสม <br> ในการผลิต
+										Dermaxil - <br> ต้องนำเข้า</span><br> <span
+										class="cit-body lt83">เพราะไม่มีในประเทศ <br> ส่วนประกอบทั้งหมดต้องผ่าน <br>
+										สองขั้นตอน <br> ที่ซับซ้อน ในการ <br> สร้างสารสกัดบริสุทธิ์ <br> และคงสรรพคุณ
+									</span> </div>
+							</div>
+						</div>
+						<div
+							class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-4 col-lg-offset-0 col-lg-4">
+							<div class="cost-item">
+								<div class="cost-item-digit">
+									<div class="ci-digit"> 100 </div>
+									<div class="ci-text"> % </div>
+								</div>
+								<div class="cost-item-text"> <span class="cit-header lt84">สำหรับผลิตภัณฑ์ <br> Dermaxil
+										สามารถสั่งซื้อได้แล้ว <br> ตอนนี้</span> <span class="cit-body lt85">และสำหรับ
+										<br> ผลิตภัณฑ์ส่งออก, <br> 100% <br> ได้มาตรฐาน <br> ตามที่อเมริกากำหนด</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h2 class="lt86">รีวิวจากผู้ใช้จริง ที่หายจากโรคสะเก็ดเงิน <br class="hidden-xs"> ด้วย
+								Dermaxil</h2>
+						</div>
+					</div>
+				</div>
+				<div class="text-reviews">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+								<div class="owl-carousel">
+									<div class="item"> <img alt="reviews-01.png" src="./img/block-reviews-4.jpg">
+										<div class="owl-item-text">
+											<div class="owl-text lt87">“ ผมถูกวินิจฉัยว่าเป็นโรคสะเก็ดเงินเมื่อ7 ปีก่อน
+												ผมไม่รู้มาก่อนว่าการรักษาโรคนี้มันยากแค่ไหน
+												ในตอนแรกผมใช้น้ำมันสกัดฮอร์โมน อาการก็ดีขั้น<br
+													class="hidden-xs hidden-sm"> แต่ต้องใช้ต่อเนื่อง (((แฟนของผมแนะนำ
+												Dermaxil ... และผลที่ได้คือ <br class="hidden-xs hidden-sm">
+												มันหายไปเร็วมาก .... ไม่อยากจะเชื่อ
+												แต่สุดท้ายผมได้พบวิธีที่จะรักษาโรคนี้ได้แล้ว <br
+													class="hidden- xs hidden-sm ">”.</div>
+											<div class="owl-autor lt88">กำพล, 41 ปี, ระยอง</div>
+										</div>
+									</div>
+									<div class="item"> <img alt="reviews-02.png" src="./img/block-reviews-2.jpg">
+										<div class="owl-item-text">
+											<div class="owl-text lt89">“ลองมาหมดแล้วทุกอย่าง,
+												ทั้งฮอร์โมนและก็วิธีอื่นๆอีก. แต่ก็ไม่มีอะไรที่เห็นผล <br
+													class="hidden-xs hidden-sm"> ชัดเจน. อาการยังกำเริบเป็นระยะ
+												ตอนนี้ลองใช้ <br class="hidden-xs hidden-sm"> "Dermaxil"
+												และในที่สุดก็ไม่มีอาการอีกเลยครับ <br class="hidden-xs hidden-sm">
+												อาจจะตลอดไปเลย )”.</div>
+											<div class="owl-autor lt90">กิตติยา, 25 ปี, นนทบุรี</div>
+										</div>
+									</div>
+									<div class="item"> <img alt="reviews-03.png" src="./img/block-reviews-3.jpg">
+										<div class="owl-item-text">
+											<div class="owl-text lt91">
+												“ผลค้างเคียงจากการรักษาโรคสะเก็ดเงินด้วยฮอร์โมนสำหรับผู้ชายคือฮอร์โมนจะสะสมในร่างกาย
+												<br class="hidden-xs hidden-sm"> และนำไปสู่การเสื่อมสมรรถภาพ
+												ผมผ่านจุดนั้นมาแล้วและต้องเข้ารับการบำบัด
+												เพราะฉนั้นผมเตือนเลยว่าอย่าใช้วิธีนี้ <br class="hidden-xs hidden-sm">
+												ผมขอแนะนำให้ใช้ <br class="hidden-xs hidden-sm"> Dermaxil
+												และปฏิเสธการใช้ฮอร์โมนรักษาไปเลย”.</div>
+											<div class="owl-autor lt92"> สุรศักดิ์, 56 ปี, นครสวรรค์ </div>
+										</div>
+									</div>
+									<div class="item"> <img alt="reviews-04.png" src="./img/block-reviews-1.jpg">
+										<div class="owl-item-text">
+											<div class="owl-text lt93">“เคยเป็นโรคสะเก็ดเงินมา... เกือบ 10 ปีแล้ว
+												มันคือตลอดช่วงวัยเด็กต้องขอบคุณตัว <br class="hidden-xs hidden-sm">
+												ยานี้ของคุณ มันช่วยได้จริงๆ <br class="hidden-xs hidden-sm">
+												เป็นวิธีที่กำจัดโรคนี้อย่างได้ผล!
+												ไม่หวั่นต่อหน้าหนาวที่จะมาถึงอีกต่อไปแล้ว <br
+													class="hidden-xs hidden-sm"> หวังว่า, Dermaxil จะช่วยได้.”</div>
+											<div class="owl-autor lt94">อรุณา,28 ปี, เชียงใหม่ </div>
+										</div>
+									</div>
+									<div class="item"> <img alt="reviews-05.png" src="./img/block-reviews-5.jpg">
+										<div class="owl-item-text">
+											<div class="owl-text lt95">“เมื่อสองเดือนก่อน
+												หลังจากเครียดอย่างหนักจากการทำงาน <br class="hidden-xs hidden-sm">
+												เกิดอาการคันทั่วตัว และผิวหนังก็เริ่มลอก น้องสาวสะใภ้ของผมแนะนำให้ซื้อยา
+												<br class="hidden-xs hidden-sm"> Dermaxil,
+												เธอเล่าถึงสรรพคุณของยานี้อย่างชื่นชม ผมจึงลองซื้อมา <br
+													class="hidden-xs hidden-sm"> ซึ่งราคาก็ไม่แพง
+												และมันก็ช่วยหยุดอาการคันได้จริง นอกจากนี้ <br
+													class="hidden-xs hidden-sm">
+												ยังช่วยลดรอยแดงตามผิวหนังลงอย่างเห็นได้ชัด ผมตัดสินใจว่าจะใช้มันต่อไป”.
+											</div>
+											<div class="owl-autor lt96">อรรถพล, 34 ปี, กระบี่ </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<section class="order">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2 class="lt97">จะสั่งซื้ออย่างไร?</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="order-shema clearfix"> <img alt="Аллигатор" class="line1 hidden-xs hidden-sm"
+							src="./img/bottom-line.png"> <img alt="Аллигатор" class="line2 hidden-xs hidden-sm"
+							src="./img/bottom-line.png"> <img alt="Аллигатор" class="line3 hidden-xs"
+							src="./img/top-line.png"> <img alt="Аллигатор" class="line4 hidden-xs hidden-sm"
+							src="./img/top-line.png"> <img alt="Аллигатор" class="line5 hidden-xs hidden-md hidden-lg"
+							src="./img/line-middle.png"> <img alt="Аллигатор"
+							class="line6 hidden-xs hidden-md hidden-lg" src="./img/line-ang.png">
+						<div class="order-shema-item">
+							<div class="osi-img"> <img alt="Заявка" src="./img/order-01.png"> </div>
+							<div class="osi-header lt98">ใบสั่งซื้อ</div>
+							<div class="osi-text lt99">ส่งใบสั่งซื้อทางเว็บไซต์</div>
+						</div>
+						<div class="order-shema-item">
+							<div class="osi-img"> <img alt="Консультация" src="./img/order-02.png"> </div>
+							<div class="osi-header lt100">ที่ปรึกษา</div>
+							<div class="osi-text lt101">คุณกำลังติดต่ออยู่กับผู้เชี่ยวชาญของ Dermaxil</div>
+						</div>
+						<div class="order-shema-item">
+							<div class="osi-img"> <img alt="доставка" src="./img/order-03.png"> </div>
+							<div class="osi-header lt102">การจัดส่ง</div>
+							<div class="osi-text lt103">จัดส่งรวดเร็วและปลอดภัย <br> พัสดุ</div>
+						</div>
+						<div class="order-shema-item">
+							<div class="osi-img"> <img alt="оплата" src="./img/order-04.png"> </div>
+							<div class="osi-header lt104">การชำระเงิน</div>
+							<div class="osi-text lt105">ชำระเงินปลายทางเมื่อได้รับสินค้า</div>
+						</div>
+						<div class="order-shema-item">
+							<div class="osi-img"> <img alt="оплата" src="./img/order-05.png"> </div>
+							<div class="osi-header lt106">ผลลัพธ์</div>
+							<div class="osi-text lt107">ทา Dermaxil <br> และมีความสุข <br>
+								กับชีวิตที่ปราศจากโรคสะเก็ดเงิน.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="delivery hidden-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<h2 class="lt108">เราสามารถจัดส่งสินค้าให้คุณได้ ทุกที่ทั่วประเทศไทย</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="map-delivery"> <img alt="Псоримилк" src="./img/map.png"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="while">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2 class="red lt109">อย่าปล่อยให้โอกาสในการกำจัดโรคสะเก็ดเงิน<br class="hidden-xs hidden-sm">
+						ผ่านไปเปล่าๆ ในแต่ละวัน...</h2>
+					<p class="lt110">ถ้าคุณยังไม่เริ่มรักษาในตอนนี้ <b> อัมพาตและความพิการ </b>
+						อาจจะเกิดในอนาคตอันใกล้นี้ <b> ถ้าสุขภาพมีค่ากับคุณ</b> ลอง Dermaxil - <b> ทั้งสะดวกและไม่แพง!
+						</b> </p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bottom-form hidden-xs" id="order">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<h2 class="lt111">ลองวิธีอื่นแล้วไม่ได้ผล <br class="visible-sm"> ในการรักษาโรคสะเก็ดเงิน, <br
+							class="hidden-sm"> ลองใช้ Dermaxil สิ </h2>
+				</div>
+			</div>
+
+
+
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-8">
+					<p class="lt112">Dermaxil ได้ผลจริง, เพราะสามารถ <br class="visible-md"> “กำจัด” <br
+							class="visible-lg"> สาเหตุของโรคและ <br class="visible-md"> ช่วยรักษาโรค</p>
+				</div>
+				<div class="col-md-offset-1 col-md-5 col-lg-offset-0 col-lg-4 hidden-sm">
+					<div class="top-timer">
+						<div class="timer-header lt4">ช่วงราคาพิเศษ:</div>
+						<div class="timer2"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-lg-6">
+					<div class="list-blok">
+						<ul>
+							<li> <i aria-hidden="true" class="fa fa-angle-right fa-3x"></i>
+								<div class="top-li-text lt113"><b> สารสกัดจากธรรมชาติ 100%! </b>
+									ที่ผ่านการคัดสรรมาอย่างดี</div>
+							</li>
+							<li> <i aria-hidden="true" class="fa fa-angle-right fa-3x"></i>
+								<div class="top-li-text lt114">ฟื้นฟูสภาพผิว <b> สู่สุขภาพผิวที่ดี </b>
+									ด้วยสารสกัดไกลโคไซด์ จากพืชตระกูลถั่วญี่ปุ่น.</div>
+							</li>
+							<li> <i aria-hidden="true" class="fa fa-angle-right fa-3x"></i>
+								<div class="top-li-text lt115">ถั่งเช่า <b> ช่วยยับยั้งปฏิกิริยาภูมิต้านทาน </b> </div>
+							</li>
+							<li> <i aria-hidden="true" class="fa fa-angle-right fa-3x"></i>
+								<div class="top-li-text lt116">เมล็ดวอลนัทดำ <b> ช่วยขจัดสารพิษ </b> ,
+									ลดการอักเสบของผิวหนัง.</div>
+							</li>
+							<li> <i aria-hidden="true" class="fa fa-angle-right fa-3x"></i>
+								<div class="top-li-text lt117">ช่วยเสริม <b> ความแข็งแรงตามธรรมชาติของระบบร่างกาย </b>
+									ต่างจากยาทั่วไป.</div>
+							</li>
+						</ul><img alt="Psorimilk" class="visible-lg" src="./img/product.png"> <img alt="Psorimilk"
+							class="hidden-lg" src="./img/product_small.png">
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 hidden-sm">
+					<div class="top-form clearfix">
+						<form action="<?php echo $action; ?>" class="tform order_form" method="POST" id="order_form6">
+							<input type="hidden" name="subid5" value="back_vsl_form">
+							<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+							<div class="price-line">
+								<div class="old-price">
+									<div class="old-price-header lt15">ราคาเดิม:</div>
+									<div class="old-price-summ"> <span class="old-price-summ-num"><span
+												class="price_land_s4 price_old"><span
+													class="price_main_value">1980</span><span
+													class="price_main_currency">฿</span></span></span>
+									</div>
+								</div>
+								<div class="price">
+									<div class="price-header lt16">ราคาใหม่:</div>
+									<div class="price-summ"> <span class="price-summ-num"><span
+												class="price_land_s1 price_main"><span
+													class="price_main_value">990</span><span
+													class="price_main_currency">฿</span></span></span>
+									</div>
+								</div><img alt="" class="sale" src="./img/sale.png">
+							</div>
+							<div class="input-line clearfix">
+																<div class="input-line-item">
+									<label class="lt18">กรอกชื่อ</label>
+									<input name="name" placeholder="ชื่อ" required="" minlength="2" type="text">
+								</div>
+								<div class="input-line-item">
+									<label  class="lt19">กรอกหมายเลขโทรศัพท์</label>
+									<input name="phone" placeholder="เบอร์โทรศัพท์" required="" minlength="8" maxlength="16" type="tel">
+								</div>
+							</div>
+							<div class="btn-line">
+								<div class="line-count">
+									<div class="line-count-descr lt20">ประกาศ! <br class="visible-sm visible-lg">
+										ตอนนี้มี <br class="visible-md"> สินค้าราคาพิเศษ:</div>
+									<div class="line-count-count"> <span class="count lastpack">10</span></div>
+								</div>
+								<div class="line-btn">
+
+									<button type="submit" class="send lt23">สั่งซื้อ Dermaxil</button>
+								</div>
+								<div class="line-all"> <span
+										class="line-all-text lt25">ผู้ที่สั่งซื้อแล้วในสัปดาห์นี้:</span><span
+										class="line-all-count">3748</span><span class="line-all-text lt26">คน</span>
+								</div>
+								<img alt="arrow" src="./img/arrow-red.png">
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="order-form hidden-md hidden-lg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="top-form clearfix">
+						<form action="<?php echo $action; ?>" class="tform order_form" method="POST" id="order_form7">
+							<input type="hidden" name="subid5" value="back_vsl_form">
+							<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+							<div class="price-line">
+								<div class="old-price">
+									<div class="old-price-header lt15">ราคาเดิม:</div>
+									<div class="old-price-summ"> <span class="old-price-summ-num"><span
+												class="price_land_s4 price_old"><span
+													class="price_main_value">1980</span><span
+													class="price_main_currency">฿</span></span></span>
+									</div>
+								</div>
+								<div class="price">
+									<div class="price-header lt16">ราคาใหม่:</div>
+									<div class="price-summ"> <span class="price-summ-num"><span
+												class="price_land_s1 price_main"><span
+													class="price_main_value">990</span><span
+													class="price_main_currency">฿</span></span></span>
+									</div>
+								</div><img alt="" class="sale hidden-xs" src="./img/sale.png">
+							</div>
+							<div class="timer-line">
+								<div class="top-timer">
+									<div class="timer-header lt4">ช่วงราคาพิเศษ:</div>
+									<div class="timer9"></div>
+								</div>
+							</div>
+							<div class="input-line clearfix">								
+								<div class="input-line-item">
+									<label class="lt18">กรอกชื่อ</label>
+									<input name="name" placeholder="ชื่อ" required="" minlength="2" type="text">
+								</div>
+								<div class="input-line-item">
+									<label  class="lt19">กรอกหมายเลขโทรศัพท์</label>
+									<input name="phone" placeholder="เบอร์โทรศัพท์" required="" minlength="8" maxlength="16" type="tel">
+								</div>
+							</div>
+							<div class="btn-line">
+								<div class="line-count">
+									<div class="line-count-descr lt21">ประกาศ! <br class="visible-sm visible-lg">
+										ตอนนี้มี <br class="visible-xs visible-md"> สินค้าราคาพิเศษ:</div>
+									<div class="line-count-count"> <span class="count lastpack">10</span></div>
+								</div>
+								<div class="line-btn">
+
+									<button type="submit" class="send lt23">สั่งซื้อ Dermaxil</button>
+								</div>
+								<div class="line-all"> <span
+										class="line-all-text lt25">ผู้ที่สั่งซื้อแล้วในสัปดาห์นี้:</span>
+									<br class="visible-xs"> <span class="line-all-count">3748</span><span
+										class="line-all-text lt26">คน</span>
+								</div><img alt="arrow" src="./img/arrow-red.png">
+							</div>
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p>ลิขสิทธิ์ © 2568 โดย Copyrightindex.com</p>
+		<p>สงวนลิขสิทธิ์ ห้ามทำซ้ำ แจกจ่าย หรือส่งในรูปแบบใด ๆ หรือด้วยวิธีการใด ๆ รวมถึงการทำสำเนา บันทึก
+			หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้เผยแพร่
+			ยกเว้นในกรณีที่มีการอ้างอิงโดยย่อในรีวิวสำคัญและการใช้งานที่ไม่ใช่เชิงพาณิชย์อื่น ๆ
+			ที่ได้รับอนุญาตตามกฎหมายลิขสิทธิ์</p>
+	</footer>
+
+</body>
+
+</html>
