@@ -3,7 +3,8 @@
 <html lang="th">
 
 <head>
-  <title>อย่าซื้อยาอ่อนแอจนกว่าคุณจะดูวิดีโอนี้!</title>
+  <title>สายตาแย่ลงหรือเปล่า?
+    คุณมีเวลาเพียง 9 นาทีในการรู้ความจริง ก่อนที่จะสายเกินไป</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -19,7 +20,7 @@
 
 <body>
   <h1 class="main_title">
-    <span class="highlight">อย่าซื้อยาอ่อนแอจนกว่าคุณจะดูวิดีโอนี้!</span>
+    <span class="highlight">สายตาแย่ลงหรือเปล่า?</span> <br> คุณมีเวลาเพียง 9 นาทีในการรู้ความจริง ก่อนที่จะสายเกินไป
   </h1>
   <div id="container_video">
     <div id="play" onclick="playVideo()">
@@ -34,7 +35,7 @@
       </div>
     </div>
     <video id="video" autoplay="autoplay" muted="" playsinline="" webkit-playsinline="" poster="./images/poster.png">
-      <source src="https://pub-bbcd86335e924092a9d274baed5a5a09.r2.dev/12xe/0812.mp4" type="video/mp4" />
+      <source src="https://pub-bbcd86335e924092a9d274baed5a5a09.r2.dev/15no/7595.mp4" type="video/mp4" />
     </video>
   </div>
   <div id="progress-container" style="width: 100%; background-color: #eee; height: 10px; margin-top: 20px;">
@@ -49,7 +50,6 @@
     </div>
     <div class="diet-section text-center">
       <form class="diet-container" action="<?php getRoutelink(); ?>" method="post">
-
         <div class="img-with-button">
           <img src="./images/product.png" class="product" alt="">
         </div>
@@ -57,22 +57,17 @@
             บาท</span>
         </h2>
         <a class="main-btn" rel="nofollow">
-          รับส่วนลด 50% เปอร์เซ็นต์
-
-          <span>ใช่ครับ ผมอยากหายจากโรคต่อมลูกหมากอักเสบ!</span>
+          รับส่วนลด 50% <span>ใช่! ฉันต้องการสายตาที่ชัดเจน!</span>
           <img src="./images/small-days.png" alt="">
         </a>
         <div class="clearfix hide">
           <input type="hidden" name="subid5" value="main_vsl_form">
           <input type="hidden" id="clickId" name="click_id" value="<?php print $_SESSION['binom_click_id']; ?>">
           <span class="label">กรุณากรอกชื่อของคุณ: </span>
-
           <input name="name" type="text" required minlength="2" placeholder="กรุณากรอกชื่อของคุณ" class="inputs">
-
           <span class="label">กรุณากรอกเบอร์โทรศัพท์: </span>
           <input name="phone" type="tel" required minlength="8" maxlength="16" placeholder="กรุณากรอกเบอร์โทรศัพท์"
             class="inputs">
-
           <button type="submit" class="btn_form">
             สั่งซื้อตอนนี้!
           </button>
@@ -112,14 +107,16 @@
 
   <div class="comments" id="comment-component-text">
     <div id="comment_num" class="">ความคิดเห็น:</div>
+
+
+
+
     <div class="comment">
       <img class="comment__image" src="./images/1.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">สมชาย</h2>
+        <h2 class="comment__name">พิม</h2>
         <div class="comment__text">
-          ผมมีปัญหาต่อมลูกหมากอักเสบมานานแล้ว และได้ลองใช้วิธีการรักษาหลายอย่าง หลังจากดูวิดีโอนี้
-          ในที่สุดผมก็เข้าใจว่าจะบรรเทาอาการได้อย่างไร แม้ว่าจะไม่หายขาด
-          แต่ก็มีความเปลี่ยนแปลงไปในทางที่ดีขึ้นอย่างเห็นได้ชัด
+          ไม่เคยคิดเลยค่ะ ว่าการฟื้นฟูสายตาจะทำได้ง่ายขนาดนี้! ขอบคุณสำหรับวีดีโอที่ให้ข้อมูลดี ๆ แบบนี้ค่ะ!
 
           <br />
         </div>
@@ -148,9 +145,10 @@
     <div class="comment">
       <img class="comment__image" src="./images/2.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">วิไล</h2>
+        <h2 class="comment__name">ธาร</h2>
         <div class="comment__text">
-          วิดีโอเข้าใจง่ายและมีรายละเอียดดีมากค่ะ เป็นวีดีโอที่ให้ความรู้ดีมาก ๆ ตอนนี้เข้าใจทุกอย่างชัดเจนแล้วค่ะ
+          นี่เป็นครั้งแรก ที่ผมได้ยินว่าสายตาเสื่อมอาจมาจากการขาดสารอาหาร น่าสนใจมากเลยครับ
+          ผมจะติดตามคำแนะนำของคุณต่อไปครับ
           <br />
         </div>
         <p class="comment__details">
@@ -178,10 +176,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/3.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">อนันต์</h2>
+        <h2 class="comment__name">น้ำ</h2>
         <div class="comment__text">
-          ผมมองหาข้อมูลแบบนี้มานานแล้วครับ ที่อธิบายปัญหาจริงๆ วิดีโอนี้เปิดโลกจริง ๆ
-
+          มีข้อมูลที่มีประโยชน์มากค่ะ! คิดไม่ถึงเลย ว่าการแพทย์สมัยใหม่จะปิดบังวิธีการแบบนี้
           <br />
         </div>
         <p class="comment__details">
@@ -209,9 +206,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/4.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">อรอนงค์</h2>
+        <h2 class="comment__name">สมชาย</h2>
         <div class="comment__text">
-          วิดีโอให้ความรู้ดีมากเลย ดูกับสามี และมันทำให้เขาอยากเปลี่ยนแปลงชีวิต ข้อมูลมีประโยชน์และเข้าใจง่าย
+          ถึงเวลาที่ต้องพิจารณาเรื่องการดูแลสายตาใหม่แล้ว ขอบคุณสำหรับคำแนะนำที่มีประโยชน์
           <br />
         </div>
         <p class="comment__details">
@@ -239,9 +236,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/5.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">ศักดิ์ชัย</h2>
+        <h2 class="comment__name">ธิดา</h2>
         <div class="comment__text">
-          วิดีโอน่าสนใจมาก โดยเฉพาะที่อธิบายง่ายๆ โดยไม่มีคำโฆษณาเกินจริง ข้อมูลจริงจังและมีสาระ
+          ทุกนาทีมีคนสูญเสียการมองเห็นงั้นจริงหรือคะ น่ากลัวมากเลยค่ะ! แต่โชคดีมาก ที่มีวิธีแก้ไขแบบนี้
           <br />
         </div>
         <p class="comment__details">
@@ -269,10 +266,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/6.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">สมบัติ</h2>
+        <h2 class="comment__name">กิตติศักดิ์</h2>
         <div class="comment__text">
-          ดูวิดีโอแล้ว ผมแทบไม่เชื่อว่าตัวเองไม่เคยรู้เรื่องพวกนี้มาก่อน เสียเวลาไปตั้งหลายปีในความไม่รู้
-          แต่ตอนนี้รู้แล้วล่ะครับ
+          ผมรู้สึกทึ่งกับสถิติและการวิจัยมากครับ ผมต้องลองวิธีที่แนะนำอย่างแน่นอน
           <br />
         </div>
         <p class="comment__details">
@@ -300,10 +296,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/7.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">สายใจ</h2>
+        <h2 class="comment__name">มาลี</h2>
         <div class="comment__text">
-          นี่ดูซ้ำหลายรอบแล้วค่ะ มีคำแนะนำที่ดีมากสำหรับผู้ชาย
-          <br />
+          เรื่องจริงเกี่ยวกับการสูบบุหรี่กับสายตานี่น่าตกใจมากค่ะ ถึงเวลาที่ต้องเลิกก่อนจะสายเกินไป <br />
         </div>
         <p class="comment__details">
           <button class="comments__like">
@@ -330,9 +325,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/8.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">ธนา</h2>
+        <h2 class="comment__name">ชนันท์</h2>
         <div class="comment__text">
-          ปกติผมไม่ค่อยเชื่อวิดีโอแบบนี้ แต่เรื่องนี้ทำให้ผมคิดจริงๆ ทุกอย่างพูดตรงประเด็น ไม่มีอะไรเกินจริง
+          วีดีโอนี้ทำให้ผมนึกถึงความสำคัญของการดูแลสายตา ขอบคุณมากครับ!
           <br />
         </div>
         <p class="comment__details">
@@ -360,12 +355,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/9.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">ปกรณ์</h2>
+        <h2 class="comment__name">ชัยรัตน์</h2>
         <div class="comment__text">
-          ผมไม่เชื่อว่าจะมีอะไรช่วยได้ แต่ลองดูและหลังจากสองสัปดาห์ก็รู้สึกถึงความเปลี่ยนแปลง
-          ขอบคุณสำหรับผลิตภัณฑ์นี้จริงๆ
-          ของเขาดีต้องบอกต่อครับ
-          <br />
+          ตอนนี้ผมรู้แล้วว่าจะทำอย่างไรเพื่อไม่ให้สูญเสียสายตาในอนาคต <br />
         </div>
         <p class="comment__details">
           <button class="comments__like">
@@ -392,10 +384,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/10.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">สมพร</h2>
+        <h2 class="comment__name">สุพรรณี</h2>
         <div class="comment__text">
-          ชอบมากที่ผู้จัดทำให้ข้อมูลอย่างดี ตอนนี้ฉันรู้แล้วว่าจะช่วยสามีได้ยังไง
-
+          วิธีการนำเสนอเนื้อหานี้มีประโยชน์และเข้าใจง่ายมากค่ะ! ตอนนี้เข้าใจแล้วว่า ทำไมคนถึงมีปัญหาสายตากันเยอะมาก
           <br />
         </div>
         <p class="comment__details">
@@ -423,10 +414,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/11.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">วิไล</h2>
+        <h2 class="comment__name">ชาญวุฒิ</h2>
         <div class="comment__text">
-          สามีของฉันมีปัญหาสมรรถภาพมานาน และฉันหาวิธีแก้ปัญหามาตลอด
-          ผลิตภัณฑ์นี้น่าจะทำให้เรากลับมามีความสุขในชีวิตแต่งงานอีกครั้ง
+          ผมดูวีดีโอนี้พร้อมครอบครัวครับ มีข้อมูลที่มีประโยชน์มากสำหรับพวกเราทุกคน
           <br />
         </div>
         <p class="comment__details">
@@ -454,10 +444,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/12.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">วิทยา</h2>
+        <h2 class="comment__name">นพวัฒน์</h2>
         <div class="comment__text">
-          ผมไม่เคยคิดว่าจะสามารถกำจัดปัญหาเหล่านี้ได้ แต่หลังจากดูวิดีโอแล้ว ผมเริ่มใช้ Longex
-          และแค่หนึ่งสัปดาห์ก็รู้สึกถึงความแตกต่าง ไม่อยากเชื่อเลยว่ามันได้ผลจริงๆ
+          ภาพเกี่ยวกับการทำลายเซลล์เรตินาดูแล้วน่าตกใจมากครับ หวังว่าวิธีการนี้จะได้ผลจริง
           <br />
         </div>
         <p class="comment__details">
@@ -485,9 +474,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/13.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">สมบูรณ์</h2>
+        <h2 class="comment__name">สหชัย</h2>
         <div class="comment__text">
-          เพิ่งเริ่มใช้ผลิตภัณฑ์และผลลัพธ์ก็เห็นทันตาเลยครับ สมรรถภาพดีขึ้น ความมั่นใจกลับมาเหมือนตอนหนุ่มๆ
+          สถิติบอกว่าทุกคนที่อายุเกิน 50 มีปัญหาสายตาเกือบครึ่ง น่ากลัวจริง ๆ ขอบคุณที่เตือน
           <br />
         </div>
         <p class="comment__details">
@@ -515,10 +504,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/14.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">สายฝน</h2>
+        <h2 class="comment__name">ลูกแก้ว</h2>
         <div class="comment__text">
-          ก่อนหน้านี้สามีไม่กล้าบอกปัญหาเรื่องบนเตียงเลยค่ะ แต่ตั้งแต่ใช้ผลิตภัณฑ์นี้
-          สามีก็มีความมั่นใจมากขึ้นและความสัมพันธ์ของเราก็ดีขึ้นมาก
+          หลังจากดูวีดีโอนี้ ก็เริ่มกังวลกับการใช้หน้าจอเลยค่ะ ถึงเวลาต้องเปลี่ยนพฤติกรรมการใช้จอ
           <br />
         </div>
         <p class="comment__details">
@@ -546,10 +534,9 @@
     <div class="comment">
       <img class="comment__image" src="./images/15.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">พงษ์ศักดิ์</h2>
+        <h2 class="comment__name">วรา</h2>
         <div class="comment__text">
-          สวัสดีครับ ผมอายุ 45 ปีและเริ่มสังเกตว่าผมไม่ค่อยมีแรง และสมรรถภาพก็ไม่เหมือนเดิม ผมลองใช้ Longex
-          และในสองสัปดาห์ก็รู้สึกถึงความแตกต่าง แนะนำเลยครับ
+          วีดีโอนี้สร้างแรงบันดาลใจมากเลยค่ะ! ตอนนี้รู้แล้วว่าจะปกป้องสายตาของตัวเองได้อย่างไร
           <br />
         </div>
         <p class="comment__details">
@@ -577,16 +564,16 @@
     <div class="comment">
       <img class="comment__image" src="./images/16.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">ไกรศรี</h2>
+        <h2 class="comment__name">สงกรานต์</h2>
         <div class="comment__text">
-          ผมไม่อยากเชื่อเลยว่าสิ่งนี้ช่วยได้เร็วขนาดนี้ เพียงไม่กี่วัน ชีวิตของผมเปลี่ยนไปเลย
-          ผลลัพธ์เกินความคาดหมายจริงๆ
+          ผมใช้ Optivision มาแล้ว 3 สัปดาห์ ตอนนี้ตาผมไม่ล้าเลยหลังจากทำงานหน้าคอมพิวเตอร์ ผลิตภัณฑ์นี้ใช้ดีจริง ๆ
+          ครับ!
           <br />
         </div>
         <p class="comment__details">
           <button class="comments__like">
             <img src="./images/like-btn.svg" alt="" />
-            <span class="likes">17</span>
+            <span class="likes">10</span>
             ชอบ
           </button>
           <button class="comments__dislike">
@@ -608,16 +595,15 @@
     <div class="comment">
       <img class="comment__image" src="./images/17.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">วิภา</h2>
+        <h2 class="comment__name">สิริ</h2>
         <div class="comment__text">
-          ถ้าสามีหรือแฟนของคุณมีปัญหาลองใช้ Longex นะคะ มันช่วยได้จริง ๆ ค่ะ ตอนนี้ชีวิตแต่งงานของเราได้
-          เรากลับมามีความสุขอีกครั้ง แถมแฟนก็มั่นใจและมีความสุขกว่าเดิม
+          ตั้งแต่เริ่มกินอาหารเสริมตัวนี้ สายตาของฉันดีขึ้นอย่างเห็นได้ชัด ตอนนี้ฉันอ่านหนังสือโดยไม่ต้องใช้แว่นได้แล้ว!
           <br />
         </div>
         <p class="comment__details">
           <button class="comments__like">
             <img src="./images/like-btn.svg" alt="" />
-            <span class="likes">19</span>
+            <span class="likes">12</span>
             ชอบ
           </button>
           <button class="comments__dislike">
@@ -639,15 +625,15 @@
     <div class="comment">
       <img class="comment__image" src="./images/18.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">สมชาย</h2>
+        <h2 class="comment__name">มาลี</h2>
         <div class="comment__text">
-          ผมลองใช้ผลิตภัณฑ์นี้ตามคำแนะนำของเพื่อน และผลลัพธ์ยอดเยี่ยมมาก มีเรี่ยวแรง ชีวิตรักก็ดีขึ้นสุดๆ
+          ก่อนหน้านี้เคยปวดหัวและตาแห้งอยู่ตลอด แต่หลังจากกิน Optivision อาการเหล่านี้หายไปหมดเลยค่ะ ประทับใจมาก!
           <br />
         </div>
         <p class="comment__details">
           <button class="comments__like">
             <img src="./images/like-btn.svg" alt="" />
-            <span class="likes">19</span>
+            <span class="likes">12</span>
             ชอบ
           </button>
           <button class="comments__dislike">
@@ -669,16 +655,15 @@
     <div class="comment">
       <img class="comment__image" src="./images/19.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">วีรพล</h2>
+        <h2 class="comment__name">กิตติศักดิ์</h2>
         <div class="comment__text">
-          ผมเคยคิดว่าปัญหาสมรรถภาพเป็นเรื่องของอายุที่ต้องยอมรับ แต่กลายเป็นว่ายังมีวิธีแก้
-          ผมตื่นเต้นมากกับผลลัพธ์ที่ได้
+          ตอนแรกผมไม่เชื่อว่าจะได้ผล แต่หลังจากทานแคปซูลไป 1 เดือน สายตาผมก็ดีขึ้นเยอะเลย ขอบคุณสำหรับคำแนะนำนะครับ!
           <br />
         </div>
         <p class="comment__details">
           <button class="comments__like">
             <img src="./images/like-btn.svg" alt="" />
-            <span class="likes">11</span>
+            <span class="likes">14</span>
             ชอบ
           </button>
           <button class="comments__dislike">
@@ -700,15 +685,15 @@
     <div class="comment">
       <img class="comment__image" src="./images/20.jpg" alt=" " />
       <div class="comment__content">
-        <h2 class="comment__name">จันทร์เพ็ญ</h2>
+        <h2 class="comment__name">มาลัย</h2>
         <div class="comment__text">
-          Longex ช่วยสามีของฉันได้มาก ตอนนี้สามีกลับมามีชีวิตชีวาและมั่นใจอีกครั้ง สาวๆ ลองใช้กันดูนะคะ
+          คุณพ่อที่บ้านเคยมีอาการต้อกระจกในระยะแรก แต่พอได้ทาน Optivision ก็ช่วยชะลอการลุกลามของโรคได้จริงค่ะ!
           <br />
         </div>
         <p class="comment__details">
           <button class="comments__like">
             <img src="./images/like-btn.svg" alt="" />
-            <span class="likes">11</span>
+            <span class="likes">16</span>
             ชอบ
           </button>
           <button class="comments__dislike">
@@ -727,58 +712,364 @@
         </p>
       </div>
     </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/21.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">เลิศชัย</h2>
+        <div class="comment__text">
+          คุณแม่ทานแคปซูลนี้ค่ะ แล้วสายตาของแม่ก็ดีขึ้นจริงๆ นี่เหมือนปาฏิหาริย์เลยค่ะ!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
 
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/22.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">ตนัย</h2>
+        <div class="comment__text">
+          ผมมีปัญหาสายตาพร่ามัวมาหลายปี หลังจากทานแคปซูล รู้สึกเหมือนได้ชีวิตใหม่เลยครับ
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
 
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/23.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">ธิดาพร</h2>
+        <div class="comment__text">
+          ตอนแรกก็ไม่ค่อยเชื่อค่ะ แต่หลังจาก 1 เดือนที่ลองกิน บอกเลยค่ะ ตอนนี้ไม่ต้องใส่แว่นอ่านหนังสืออีกต่อไป
+          กินดีจริงๆ ค่ะ!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
 
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/24.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">ราม</h2>
+        <div class="comment__text">
+          ผมขอแนะนำให้ทุกคนลองซื้อมากินดูนะครับ! ตอนแรกผลลัพธ์อาจจะน้อย แต่หลังจาก 2 เดือน ผลลัพธ์มันเกินคาดจริง ๆ ครับ
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/25.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">พรพัฒน์</h2>
+        <div class="comment__text">
+          ผมกิน Optivision ตอนนี้ผมไม่กลัวว่าจะตาบอดอีกต่อไป
+          นี่เป็นผลิตภัณฑ์เพื่อการดูแลสายตาที่ดีที่สุดที่ผมเคยเจอ
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/26.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">ภิรมณ์</h2>
+        <div class="comment__text">
+          ขอบคุณอาหารเสริมนี้มากครับ ย่าของผมกลับมาอ่านหนังสือได้อีกครั้ง ย่าดีใจมากเลยครับ!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/27.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">นรา</h2>
+        <div class="comment__text">
+          การสูบบุหรี่ทำลายสายตาของฉัน แต่แคปซูลช่วยฟื้นฟูความคมชัดบางส่วนที่เสียไปได้ ขอบคุณมากค่ะ!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/28.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">กร</h2>
+        <div class="comment__text">
+          ตอนนี้ผมสามารถทำงานหน้าคอมพิวเตอร์ได้ทั้งวันโดยที่ตาไม่ล้าเลย ผลิตภัณฑ์นี้ได้ผลจริง ๆ ครับ
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/29.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">น้อย</h2>
+        <div class="comment__text">
+          ผมเห็นวิดีโอและตัดสินใจลองกินแคปซูล ตอนนี้ตาของผมไม่แดงอีกต่อไปหลังจากอ่านหนังสือมานาน
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/30.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">กฤษณา</h2>
+        <div class="comment__text">
+          ตั้งแต่กินอาหารเสริมนี้มา ตอนนี้ไม่รู้สึกตาแห้งอีกเลยค่ะ ดีใจมากที่ได้พบผลิตภัณฑ์นี้ค่ะ!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
   </div>
 
   <div class="literarure">
     <div class="literarure-box">
+      <img src="./images/image44.png" alt="">
       <img src="./images/image9.png" alt="">
-      <img src="./images/image13.png" alt="">
-      <img src="./images/image11.png" alt="">
-      <img src="./images/img4.png" alt="">
+      <img src="./images/image23.png" alt="">
     </div>
     <ol>
-      <li><b>Kawashima, Y., & Wu, H. (2018).</b> Health benefits of brown rice: A review of scientific studies.
-        <i>Journal of Nutrition & Food Sciences</i>, 8(6), 687-694.
-      </li>
-      <li><b>Zhao, L., et al. (2020).</b> The role of folate and vitamin B9 in the prevention of prostate cancer:
-        Insights from epidemiological studies. <i>Asian Journal of Urology</i>, 7(3), 192-200.</li>
-      <li><b>Chen, Y., & Zhang, W. (2021).</b> Traditional Chinese medicine in the treatment of benign prostatic
-        hyperplasia: Mechanisms and clinical evidence. <i>Journal of Ethnopharmacology,</i> 275, 114177.</li>
-      <li><a href="https://www.auanet.org/guidelines" target="_blank"><b>American Urological Association. (2022)</b>.
-          <i>Clinical guidelines on the management of benign prostatic hyperplasia (BPH)</i>.</a></li>
-      <li><a href="https://www.who.int/news-room/fact-sheets" target="_blank"><b>World Health Organization. (2021)</b>.
-          <i>Prostate cancer prevention and control: Global health perspective. Fact Sheet.</i></a></li>
-      <li><b>Wang, X., et al. (2019)</b>. Clinical efficacy of brown rice in patients with benign prostatic hyperplasia:
-        A randomized
-        controlled trial. <i>The Journal of Urology, 201(4)</i>, 753-759.</li>
-      <li><b>Zhang, W., & Chen, Z. (2020)</b>. The impact of dietary habits on prostate health in Chinese men.
-        <i>Nutrition Research
-          Reviews</i>, 33(1), 1-13.
-      </li>
-      <li><a href="https://www.nih.gov/health-information" target="_blank"><b>National Institutes of Health. (2022)</b>.
-          <i>Folate (Vitamin B9) and its effects on men’s health</i>.</a></li>
-      <li><b>Pfizer, Takeda, & Sanofi. (2022)</b>. The challenges of prostate cancer drug development. <i>Pharmaceutical
-          Industry Reports</i>,
-        45(2), 123-130.</li>
-
+      <li><a href="https://www.hsph.harvard.edu/nutritionsource/antioxidants/" target="_blank"><b>Harvard T.H. Chan
+            School
+            of Public Health.</b> “Lutein and Zeaxanthin - The Key Nutrients for Vision Health.” Harvard Health
+          Publishing,
+          Harvard Medical School, 2019.</a></li>
+      <li><a
+          href="https://ictr.johnshopkins.edu/news_announce/one-of-two-widely-used-macular-degeneration-drugs-outperforms-other-at-weaning-patients-off-treatment-at-one-year-preliminary-study-shows/#:~:text=A%20pilot%2C%20%E2%80%9Clook%2Dback,one%20year%20without%20further%20vision"
+          target="_blank"><b>Johns Hopkins Medicine.</b> “Preventing Blindness: Macular Degeneration Research.” Wilmer
+          Eye
+          Institute at Johns Hopkins Medicine, 2021.</a></li>
+      <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4528643/" target="_blank"><b>National Center for
+            Biotechnology Information (NCBI).</b> “Oxidative Stress in the Retina and Age-Related Macular Degeneration.”
+          <em>International Journal of Molecular Sciences, 2020.</em></a></li>
+      <li><a href="https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment"
+          target="_blank"><b>World Health Organization (WHO).</b> “Blindness and Vision Impairment.” <i>World Health
+            Organization, 2023.</i></a></li>
+      <li><a
+          href="https://www.health.harvard.edu/staying-healthy/top-foods-to-help-protect-your-vision#:~:text=Antioxidants%20fight%20free%20radicals%20and,pigment%20density%20in%20the%20macula"
+          target="_blank"><b>Harvard Medical School.</b> “Nutritional Support for Vision - The Importance of
+          Antioxidants.”
+          <i>Harvard Health Letter, 2022.</i></a></li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/22840421/" target="_blank"><b>National Institutes of Health
+            (NIH).</b>“Age-Related Eye Disease Study 2 (AREDS2): Dietary Supplement and Vision.” <i>NIH Office of
+            Dietary
+            Supplements, 2018.</i></a></li>
+      <li><a
+          href="https://www.healthwellfoundation.org/realworldhealthcare/american-macular-degeneration-foundation-piecing-together-the-puzzle-of-age-related-macular-degeneration/"
+          target="_blank"><b>American Macular Degeneration Foundation.</b> “Oxidative Stress and Eye Health: Protecting
+          the
+          Retina.” <i>American Macular Degeneration Foundation, 2019.</i></a></li>
+      <li><a href="https://jamanetwork.com/journals/jamaophthalmology/article-abstract/2819148?resultClick=1"
+          target="_blank"><b>Journal of the American Medical Association (JAMA Ophthalmology).</b> “Efficacy of
+          Nutritional
+          Supplements in Preventing Age-Related Macular Degeneration.” <i>JAMA Ophthalmology, 2018.</i></a></li>
     </ol>
   </div>
-
   <footer>
-    <p>ลิขสิทธิ์ © 2568 โดย Copyrightindex.com</p>
-
+    <p>ลิขสิทธิ์ © 2568 โดย Copyrightindex.com</p>    
 
     <p>สงวนลิขสิทธิ์ ห้ามทำซ้ำ แจกจ่าย หรือส่งในรูปแบบใด ๆ หรือด้วยวิธีการใด ๆ รวมถึงการทำสำเนา บันทึก
-      หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้ เผยแพร่
+      หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้เผยแพร่
       ยกเว้นในกรณีที่มีการอ้างอิงโดยย่อในรีวิวสำคัญและการใช้งานที่ไม่ใช่เชิงพาณิชย์อื่น ๆ
       ที่ได้รับอนุญาตตามกฎหมายลิขสิทธิ์</p>
   </footer>
+
   <script src="./js/video.js"></script>
   <script src="./js/coments.js"></script>
-
 </body>
 
 </html>

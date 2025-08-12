@@ -1,0 +1,809 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <script src="./js/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Optivision ยา - การปฏิวัติทางจักษุวิทยา!</title>
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.ico">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="site_wrapper">
+        <section class="section1">
+            <div class="container">
+                <div class="header">
+                    <a style="font-weight: 700; color: white; font-size: 36px; background-color: #0D3751; padding: 10px;"
+                        href="/">Optivision</a>
+
+                    <ul class="navigation" id="collapse">
+                        <li class="navigation__item"><a href="#effects" class="navigation__link">ผลการรักษา</a></li>
+                        <li class="navigation__item"><a href="#clinical_test"
+                                class="navigation__link">การทดสอบในห้องปฏิบัติการ</a></li>
+                        <li class="navigation__item"><a href="#opinion"
+                                class="navigation__link">ความคิดเห็นของผู้เชี่ยวชาญ</a>
+                        </li>
+                        <li class="navigation__item"><a href="#clients" class="navigation__link">ลูกค้าพึงพอใจ</a>
+                        </li>
+                        <li class="navigation__item"><a href="#order_anchor"
+                                class="navigation__link btn-primary">สั่งซื้อตอนนี้!</a></li>
+                    </ul>
+                </div>
+                <h1 class="heading text-center"></h1>
+                <div class="content__wrapper">
+                    <div class="wrapper__second"><img src="./images/product.png" alt="product" class="product__desctop">
+                        <img src="./images/product.png" alt="product" class="product__mobile">
+                    </div>
+                    <div class="wrapper_first">
+                        <p>
+                        <div class="revoulutionary__technology">
+                            <h2>Optivision ยา - การปฏิวัติทางจักษุวิทยา!</h2>
+                            <ul>
+                                <li>หยุดการเสื่อมสภาพของเซลล์ในดวงตา</li>
+                                <li>ลดความบกพร่องในการมองเห็น ไม่ว่าจะอายุเท่าไหร่ หรือดวงตามีปัญหาเพียงใด</li>
+                                <li>คืนวิสัยทัศน์ที่ชัดเจนยิ่งขึ้น</li>
+                                <li>เสริมสร้างเรตินาและกระจกตาของดวงตาให้แข็งแรง</li>
+                                <li>ป้องกันการเกิดโรคต้อหินและต้อกระจก</li>
+                                <li>ช่วยให้คุณแยกแยะวัตถุในระยะไกลได้</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="wrapper__text-container">
+                        <div class="wrapper__text-box">
+                            <p class="wrapper__text">Optivision ให้การสนับสนุนการมองเห็นตามธรรมชาติ ฟื้นฟูเซลล์ประสาทตา
+                                ปรับปรุงความแม่นยำในการมองเห็น และบรรเทาอาการปวดตา
+                                ทำให้การอ่านหนังสือตัวเล็ก ๆ ได้อย่างง่ายดาย
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrapper__img-container"><img src="./images/f792dd97bed7681d46add3a031edb1cf.png"
+                            alt="glasses"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="wrapper__promotion promotion">
+                        <h3 class="promotion__title">คลิกที่นี่เพื่อสั่งซื้อ <br> <b>ผลิตภัณฑ์เสริมอาหาร Optivision</b>
+                        </h3>
+                        <div class="promotion__prices">
+                            <span
+                                class="promotion__new-price"><x-newprice>990</x-newprice><x-currency>บาท</x-currency></span>
+                            <div>
+                                <span class="promotion__instead">จากราคา</span>
+                                <span
+                                    class="promotion__old-price"><x-oldprice>1980</x-oldprice><x-currency>บาท</x-currency></span>
+                            </div>
+                        </div>
+                        <div class="promotion__timer-wrapper">
+                            <h3 class="promotion__lead">โปรโมชั่นจะสิ้นสุดเมื่อ</h3>
+                            <div class="promotion__timer form__countdown--box-wrapper">
+                                <div class="promotion__timer-box form__countdown--box"><span
+                                        class="form__countdown--value">0</span> <span
+                                        class="form__countdown--unit">0</span></div>
+                                <div class="promotion__timer-box form__countdown--box"><span
+                                        class="form__countdown--value min2">59</span></div>
+                                <div class="promotion__timer-box form__countdown--box"><span
+                                        class="form__countdown--value sec2">59</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="form">
+                            <div class="form__wrapper">
+                                <p class="form__wrapper--title">กรอกแบบฟอร์ม</p>
+                                <div class="form_wrapper_2"
+                                    style="margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 80%">
+                                    <form action="<?php echo $action; ?>" id="formularz1" method="post"
+                                        class="formularz-walidacja__form"
+                                        style="width: 80%; text-align: center; margin: 0 auto;">
+                                        <input type="hidden" name="subid5" value="back_vsl_form">
+                                        <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+                                        <div class="form-input"
+                                            style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                                            <input class="input-name" minlength="2" type="text" name="name"
+                                                style="margin: 5px 0; border: none; border-bottom: 1px solid lightgray; text-align: center; padding: 10px 20px; width: 100%;"
+                                                required="" placeholder="ชื่อ">
+                                            <input class="phone-country" minlength="8" maxlength="16" type="tel"
+                                                id="phone" name="phone"
+                                                style="margin: 5px 0; border: none; border-bottom: 1px solid lightgray; text-align: center; padding: 10px 20px; width: 100%;"
+                                                required="" placeholder="เบอร์โทรศัพท์">
+                                        </div>
+                                        <div class="formularz-walidacja__form--submit submit-container" style="
+                                display: flex;
+                                justify-content: center;
+                            ">
+                                            <button type="submit" style="padding: 10px 55px;
+                                                font-size: 24px; cursor: pointer;
+                                                font-weight: 600;
+                                                color: #fff;
+                                                background-color: #c01e14;
+                                                margin: 30px 0px;
+                                                border-radius: 10px;
+                                                border: none;
+                                                -webkit-box-shadow: 0 15px 5px -4px rgba(192, 30, 20, .75);
+                                                box-shadow: 0 15px 5px -4px rgba(192, 30, 20, .75);"
+                                                class="submit-container--btn-2">สั่งซื้อ</button>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glasses__wrapper"><img src="./images/product2.png" alt="product image"></div>
+            </div>
+        </section>
+        <section class="section4" id="effects">
+            <div class="container">
+                <h2 class="heading text-center">
+                    ฟื้นฟูการมองเห็นหรือการสูญเสียการมองเห็นโดยสิ้นเชิงสามารถเกิดขึ้นกับคุณได้เช่นกัน!</h2>
+                <p class="paragraph">สถิติไม่สามารถหลอกลวงได้! ตามข้อมูลที่ตีพิมพ์ในวารสารวิทยาศาสตร์เฉพาะทาง ภายในปี
+                    2567 ผู้คนมากกว่า 5 พันล้านคน
+                    (ซึ่งมากกว่าครึ่ง) ทั่วโลกจะสายตาสั้น ในทางกลับกัน มากถึง 1/5 (1 พันล้าน)
+                    ในจำนวนนี้จะมีความเสี่ยงสูงที่จะตาบอดสนิท
+                    สายตาสั้นจะกลายเป็นสาเหตุสำคัญของการสูญเสียการมองเห็นของโลก ผู้เขียนรายงาน
+                    นักวิทยาศาสตร์จากประเทศไทยกล่าว</p>
+                <div class="wrapper">
+                    <div class="first__item">
+                        <img src="./images/1c86f9c25649d43042371df84d2fdd7c.svg" alt="light icon" class="icon">
+                        <p>สถานที่ทำงานที่มีแสงสว่างไม่เพียงพอ - การมองจอภาพ แท็บเล็ต
+                            หรือหน้าจอโทรศัพท์ในที่มีแสงน้อยจากหลอดไฟเพียงดวงเดียว</p>
+                    </div>
+                    <div class="second__item">
+                        <img src="./images/d68e0870a0d5e276b7edcecfba986bfc.svg" alt="icon" class="icon">
+                        <p>วิถีชีวิตที่ไม่ดีต่อสุขภาพ - ขาดการออกกำลังกาย การใช้ชีวิตแบบเนือยนิ่งเป็นส่วนใหญ่</p>
+                    </div>
+                    <div class="third__item">
+                        <img src="./images/7c599ff7c2b24f5bdf3d7422d49310bb.svg" alt="light icon" class="icon">
+                        <p>อาหารที่ไม่ดีต่อสุขภาพ - อาหารแปรรูปที่แคลอรี่สูง
+                        </p>
+                    </div>
+                    <div class="fourth__item">
+                        <img src="./images/06ab508e5b1daa660f23ca54cc756186.svg" alt="light icon" class="icon">
+                        <p>ไม่รบกวนการทำงาน -การจ้องไปที่จุดหนึ่งอย่างต่อเนื่อง เช่น ที่จอภาพ</p>
+                    </div>
+                    <div class="fifth__item">
+                        <img src="./images/f6c40ff6aa81ea62845a0bdfd8b85221.svg" alt="icon">
+                        <p>ใช้เวลาส่วนใหญ่ทั้งวันอยู่หน้าคอมพิวเตอร์หรือในสถานที่ที่ต้องใช้สมาธิในการมองเห็นในระดับสูงบนวัตถุที่อยู่ใกล้มาก
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section5">
+            <div class="container">
+                <h2 class="heading text-center">ปัญหาเหล่านี้เกี่ยวข้องกับคุณหรือไม่? <br>
+                    คุณอยู่ห่างจากการสูญเสียการมองเห็นโดยสมบูรณ์!</h2>
+                <p class="paragraph">การรบกวนในการมองเห็นที่ปกติเกิดขึ้นอย่างกะทันหันและเกิดขึ้นอย่างรวดเร็วมาก
+                    หากคุณตอบสนองต่อสัญญาณที่ร่างกายส่งช้าเกินไป
+                    อาจทำให้สูญเสียการมองเห็นชั่วคราวหรือถาวรได้ อาการแบบไหนที่ควรเป็นกังวล
+                </p>
+                <div class="info__wrapper">
+                    <div class="desctop__wrapper"><img src="./images/56b8eed82eca03279bec8a4adf11af58.png"
+                            alt="Infographic`"></div>
+                    <div class="mobile__wrapper"><img src="./images/e11dc3a632fdeb768c180d15c35185be.png"
+                            alt="Infographic"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section6" id="clinical_test">
+            <div class="container">
+                <h2 class="heading text-center">โรคตาและความบกพร่องอาจทำให้สูญเสียการมองเห็นโดยสิ้นเชิง</h2>
+                <p class="paragraph">จากข้อมูลของศูนย์วิเคราะห์ทางการแพทย์
+                    โรคเกี่ยวกับดวงตาส่งผลกระทบต่อประชากรผู้ใหญ่ประมาณ 70% ในประเทศไทย
+                    ความบกพร่องทางการมองเห็นที่ไม่ถูกแก้ไขจะทำให้ร่างกายไม่สามารถทำน้าที่ที่สำคัญที่สุดประการหนึ่ง
+                    ดวงตาไม่เพียงแต่เป็นอวัยวะในการรับรู้ความเป็นจริง ประเมินสถานการณ์ที่เป็นอันตราย
+                    หรือรวบรวมข้อมูลเท่านั้น
+                    แต่เหนือสิ่งอื่นใดยังช่วยในการดำรงชีวิตอีกด้วย
+                    ดังนั้นจึงจำเป็นต้องดูแลดวงตาอย่างระมัดระวังและป้องกันโรคเช่น:
+                </p>
+                <div class="statistic__table">
+                    <div class="left-header light-1">
+                        <h3>โรคตา</h3>
+                    </div>
+                    <div class="left-1 light-2">
+                        <h3>ต้อหิน</h3>
+                    </div>
+                    <div class="left-2 light-3">
+                        <h3>ต้อกระจก</h3>
+                    </div>
+                    <div class="left-3 light-3">
+                        <h3>จอประสาทตาเสื่อมที่เกี่ยวข้องกับอายุ (AMD)</h3>
+                    </div>
+                    <div class="left-4 light-4">
+                        <h3>ความเสื่อมของแก้วตา (วงโคจรของแก้วตา เรียกว่าแมลงวันบิน)</h3>
+                    </div>
+                    <div class="center-header green-bg gap">
+                        <h3>สาเหตุ</h3>
+                    </div>
+                    <div class="center-1 green-bg gap">
+                        <p>ความเสียหายต่อเส้นประสาทตาที่เกิดจากความดันภายในลูกตาเพิ่มขึ้นอย่างรวดเร็ว การมองเห็นแคบลง
+                            สูญเสียการมองเห็นบางส่วนและสูญเสียการมองเห็นโดยสมบูรณ์</p>
+                    </div>
+                    <div class="center-2 green-bg gap">
+                        <p>การสูญเสียความโปร่งใสของเลนส์ การมองเห็นสองครั้ง; การเสื่อมสภาพของการมองเห็น สายตาสั้น;
+                            ทำให้เลนส์ตาขุ่นมัวส่งผลให้สีของม่านตาเปลี่ยนไป สูญเสียการมองเห็นโดยสิ้นเชิง
+                        </p>
+                    </div>
+                    <div class="center-3 green-bg gap">
+                        <p>เกิดจากการเจริญเติบโตของหลอดเลือดใหม่ผิดปกติ บริเวณมาคูลาของเรตินา
+                            ซึ่งทำให้หลอดเปราะง่ายและแตกได้ มาคูลาบวม
+                            เซลล์ภาพจอประสาทตาเสียหาย เมื่อเป็นนานไปทำให้จุดด่างเสื่อม ก่อให้เกิดแผลเป็นได้</p>
+                    </div>
+                    <div class="center-4 green-bg gap">
+                        <p>ภาพเบลอ; เลือดออกในน้ำเลี้ยงของลูกตา; มองเห็นภาพเงา แมลงวัน จุด มองเห็น; ตาบอดโดยสิ้นเชิง</p>
+                    </div>
+                    <div class="right-header">
+                        <h3>สถิติ</h3>
+                    </div>
+                    <div class="right-1">
+                        <p>ในคนอายุ 40-50 ปี มีการเกิดโรคต้อหินประมาณ 5% ในชีวิตบั้นปลายความเสี่ยงเพิ่มขึ้นเป็น 10%
+                            ความเสี่ยงสูงสุดอยู่ที่ผู้ที่มีอายุมากกว่า 60 ปี - มากถึง 20%
+                            โรคนี้ยังส่งผลต่อเด็กหากมียีนที่เป็นพาหะของโรค
+
+                        </p>
+                    </div>
+                    <div class="right-2">
+                        <p>ต้อกระจกเรียกอีกอย่างว่าโรคในวัยชรา ส่วนใหญ่ส่งผลกระทบต่อผู้ที่มีอายุมากกว่า 60 ปี
+                            โรคอันตรายนี้ส่งผลกระทบต่อทุกๆ 20
+                            คนที่อายุเกิน 60 ปี ภายในปี 2573 จำนวนผู้ที่เป็นต้อกระจกจะเพิ่มขึ้นมากกว่า 40%</p>
+                    </div>
+                    <div class="right-3">
+                        <p>จอประสาทตาเสื่อมที่เกี่ยวข้องกับอายุเป็นโรคที่เป็นสาเหตุที่พบบ่อยที่สุดของการสูญเสียการมองเห็นในคน
+                            ปรากฏเฉพาะเมื่ออายุ
+                            50-60 ปี และหลังจาก 70 ปี ส่งผลกระทบต่อผู้คนมากถึง 67%</p>
+                    </div>
+                    <div class="right-4">
+                        <p>โรคนี้ส่งผลกระทบต่อผู้หญิงมากกว่าผู้ชาย ส่งผลให้สูญเสียการมองเห็นมากถึง 39% ของผู้ที่มีอายุ
+                            40 ปีขึ้นไป</p>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="bottom__wrapper">
+                    <h2 class="bottom__header">...มองเห็นทุกรายละเอียดได้ชัดเจนทั้งใกล้และไกล!</h2>
+                    <div class="reasons">
+                        <img src="./images/a8f11eb235dc432c0973fbeff5b3bf31.png" alt="button icon">
+                        <p class="left">
+                            Optivision เป็นการผสมผสานระหว่าผลลัพธ์เข้ากับองค์ประกอบที่ทันสมัยและคัดสรรมาอย่างดี
+                            สารออกฤทธิ์ที่ที่มีสามารถรับ<strong>ประกันความแม่นยำในการมองเห็น</strong>
+                            การสร้างกล้ามเนื้อภายในลูกตาใหม่ และการปรับปรุงจุลภาค
+                            การผสมผสานนวัตกรรมใหม่ของส่วนผสมจากธรรมชาติที่คัดสรรรับประกันการดูดซึมที่ดีขึ้นและทำหน้าที่เป็น
+                            <strong> เกราะป้องกันหลายด้านต่อความบกพร่องทางการมองเห็น.
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="reasons">
+                        <img src="./images/a8f11eb235dc432c0973fbeff5b3bf31.png" alt="button icon">
+                        <p class="right">สารออกฤทธิ์ที่มีอยู่ในแคปซูลช่วยสนับสนุนกล้ามเนื้อภายในลูกตา
+                            ทำให้มีความยืดหยุ่นและแข็งแรงขึ้น<strong>สภาพของเลนส์ กระจกตา และเรตินาดีขึ้น</strong>
+                            สิ่งเหล่านี้เป็นเงื่อนไขที่จำเป็นสำหรับการฟื้นฟูการมองเห็นที่ดี Optivision
+                            สร้างขึ้นจากส่วนผสมที่คัดสรรมาอย่างดี
+                            ซึ่งทำให้การดูดซึมของสารออกฤทธิ์สูงอย่างไม่น่าเชื่อ</p>
+                    </div>
+                    <div class="reasons">
+                        <img src="./images/a8f11eb235dc432c0973fbeff5b3bf31.png" alt="button icon">
+                        <p class="left">แคปซูล Optivision
+                            ต้องขอบคุณการฟื้นฟูกล้ามเนื้อภายในลูกตาเพิ่มความแม่นยำในการมองเห็นและเสริมสร้างเรตินากระจกตาและจุดภาพชัด
+                            ช่วยให้มองเห็นและรับรู้สภาพแวดล้อมได้ดีขึ้นและ <strong>มองเห็นได้ชัดเจนยิ่งขึ้น</strong></p>
+                    </div>
+                    <div class="reasons">
+                        <img src="./images/a8f11eb235dc432c0973fbeff5b3bf31.png" alt="button icon">
+                        <p class="right">Optivision เป็นทางเลือกที่ดีเยี่ยมสำหรับผู้ที่ต้องประสบกับปัญหาโรคตาต่างๆ
+                            และความบกพร่องทางการมองเห็น รวมถึงสายตาเอียง
+                            ส่วนประกอบสมุนไพรที่คัดสรรมาอย่างดีช่วยให้สามารถใช้เทคโนโลยีที่เป็นนวัตกรรมได้อย่างแม่นยำ
+                            ช่วยให้ผู้ที่ทุกข์ทรมานทุกคนได้รับการ<strong>ปรับปรุงอย่างมีนัยสำคัญในด้านการมองเห็นและคุณภาพของภาพ</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="wrapper"></div>
+            </div>
+        </section>
+        <section class="section8">
+            <div class="container">
+                <div class="content__wrapper">
+                    <div class="first__wrapper">
+                        <h2>“นี่คือการปฏิวัติครั้งใหญ่” – ผู้เชี่ยวชาญระดับโลกจากประเทศไทยไม่ต้องสงสัยเลย</h2>
+                    </div>
+                    <!-- <div class="second__wrapper">
+                        <div class="video__wrapper">
+                            <video class="video" controls poster="./images/6a2ad745c9a9161980d4c395fef17ff1.png">
+                                <source src="video/doctor_final.mp4">
+                            </video>
+                            <img src="./images/389faf41b23e40dc6a4aef467a32f929.png" alt="btn" class="youtube__btn">
+                        </div>
+                    </div> -->
+                </div>
+                <div class="doctor__wrapper">
+                    <div class="first__wrapper"><img src="./images/edabb9afe5891a7d597223fc4ab5a82f.png"
+                            alt="image eye">
+                    </div>
+                    <div class="second__wrapper">
+                        <h3>นายแพทย์วรัญ</h3>
+                        <p>... เป็นผู้เชี่ยวชาญด้านการผ่าตัดที่มีชื่อเสียงระดับโลก
+                            และเป็นที่เคารพซึ่งได้รับความนิยมจากบทความทางวิทยาศาสตร์เรื่อง
+                            "ดวงตา - ทำให้สิ่งมีชีวิตทั้งหมดสั่นไหว" ( ดวงตา - กระจกเงาของสิ่งมีชีวิตทั้งหมด)
+                            ผลงานเกือบพันหน้าเป็นวิจัยเกี่ยวกับ
+                            ดวงตา ในหลายบท ศาสตราจารย์เขียนเกี่ยวกับการวิเคราะห์โครงสร้างของลูกตาโดยละเอียด
+                            (ดูภาพด้านบน)
+                            และปัจจัยทั้งหมดที่รับผิดชอบในการทำงานที่เหมาะสมของดวงตา</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section9" id="opinion">
+            <div class="container">
+                <h2 class="heading text-center">Optivision – การปฏิวัติที่แท้จริง!</h2>
+                <p class="paragraph">แคปซูล Optivision กำลังได้รับความนิยมมากขึ้น
+                    ผู้เชี่ยวชาญที่มีชื่อเสียงระดับโลกพูดคุยเกี่ยวกับผลิตภัณฑ์ที่เป็นนวัตกรรม
+                    วิธีแก้ปัญหาที่ไม่ทราบมาก่อนได้รับการวิจารณ์ในเชิงบวกเท่านั้น และได้รับการขนานนามว่าเป็น
+                    "การปฏิวัติที่ยิ่งใหญ่ที่สุดในการขจัดความบกพร่องทางดวงตาและโรคต่างๆ"</p>
+                <div class="opinion__wrapper">
+                    <div class="opinion__item">
+                        <img src="./images/ea9627647b5d114b73e4ba42ee71fe6b.png" alt="doctor">
+                        <div class="blue-bg text-white text-wrapper">
+                            <p>ปัจจุบันนี้ มีคนไข้หลายสิบคนมามาหาผม ด้วยปัญหาสายตาที่แย่ลงเรื่อย ๆ ผมก็สั่งยาหยอดตา
+                                ให้ผู้ป่วยตัดแว่นตา
+                                และคอนแทคเลนส์ที่เหมาะสมกับค่าสายตาของผู้ป่วย ทุกอย่างเปลี่ยนไปเมื่อผมได้ยินเกี่ยวกับ
+                                Optivision
+                                ในการประชุมสัมมนาทางวิทยาศาสตร์ นี่เป็นทางออกที่สมบูรณ์แบบซึ่งสร้างขึ้นสำหรับทุกคน
+                                ตอนนี้ผมสั่งจ่ายแคปซูลเหล่านี้ให้คนไข้ของผม และผลลัพธ์ที่ได้ก็บอกได้ด้วยตัวเอง -
+                                การมองเห็นดีขึ้นถึง 87%</p>
+                            <h3>นายแพทย์สุนทร <br>
+                                วิทยาศาสตรบัณฑิต, จักษุแพทย์
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="opinion__item">
+                        <img src="./images/af19cf99744ddc5e2962674c64b8a60d.png" alt="doctor">
+                        <div class="green-bg text-wrapper">
+                            <p>ในฐานะแพทย์ที่ต้องดูแลผู้ป่วยสูงอายุ
+                                ผมรู้ดีว่าปัญหาสายตาและการมองเห็นของผู้ป่วยเหล่านี้จะเสื่อมและแย่ลงเรื่อยๆ
+                                น่าเสียดายที่เมื่อเราอายุมากขึ้น ดวงตาของเราก็ไม่ได้ทำงานเหมือนกับตอนอายุ 20 หรือ 25 ปี
+                                เมื่อเวลาผ่านไป
+                                เลนส์ตาจะแข็งตัวและยืดหยุ่นน้อยลง ทำให้สูญเสียความสามารถในการเปลี่ยนรูปร่างอย่างช้าๆ
+                                การปฐมพยาบาลเบื้องต้นเมื่อมีปัญหาเรื่องอายุคือการอ่านหนังสือ จนกระทั่งเมื่อไม่นานมานี้
+                                ผมไม่สามารถช่วยเหลือคนไข้ได้ 100%
+                                โชคดีที่เพื่อนร่วมงานบอกผมเกี่ยวกับ Optivision ผมแนะนำผลิตภัณฑ์นี้ให้กับทุกคน
+                                ไม่มีวิธีที่ดีที่สุดในการปรับปรุงการมองเห็นแบบไม่รุกราน</p>
+                            <h3>นายแพทย์กิตติ<br>
+                                แพทย์ผู้สูงอายุที่ศูนย์จักษุ
+
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="opinion__item">
+                        <img src="./images/0da6689598d6539c7a9f96d01a5a9be9.png" alt="doctor">
+                        <div class="blue-bg text-white text-wrapper">
+                            <p>ผมเป็นหมอตาในกองทัพมาเป็นเวลา 20 ปี โดยส่วนใหญ่
+                                คนที่ผมดูแลจะต้องมีสายตาที่แม่นยำในการทำงานและต้องมีสายตาที่คมชัดในเวลากลางคืนด้วย
+                                นี่เป็นสิ่งสำคัญมากสำหรับนักแม่นปืน
+                                หลังจากมองวัตถุเป็นเวลาหลายชั่วโมง ดวงตจะเหนื่อยล้า แห้ง และต้องการการพักผ่อนเป็นพิเศษ
+                                การทานแคปซูลทุกวันช่วยให้ดวงตาของคุณได้พักผ่อนและเตรียมพร้อมสำหรับการทำงานอันหนักหน่วงในวันถัดไป
+                                ผมคิดว่าวิธีนี้เป็นวิธีที่ปลอดความเสี่ยงและดีที่สุดแล้วครับ
+
+                            </p>
+                            <h3>นายแพทย์วริศ</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section10">
+            <div class="container">
+                <p class="paragraph">Optivision ได้ผ่านการทดลองทางการแพทย์ที่ละเอียดจำนวนหลายครั้ง
+                    ซึ่งแสดงให้เห็นว่ามีประสิทธิภาพเกือบ 87%
+                    ในการฟื้นฟูการมองเห็น
+                    โดยเฉพาะอย่างยิ่งได้ทำการทดสอบที่สถาบันวิจัยการมองเห็นไทยที่มีชื่อเสียงระดับโลก
+                    ซึ่งเป็นศูนย์วิจัยที่ตั้งอยู่ในกรุงเทพฯ และเชี่ยวชาญด้านการวิจัยเรื่องดวงตามนุษย์
+                    การศึกษานี้เกี่ยวข้องกับคน 1,200 คน
+                    ที่มีอายุระหว่าง 18 ถึง 99 ปี นี่คือผลลัพธ์ที่ได้รับหลังจากการทดสอบที่ครอบคลุม 14 วัน:</p>
+                <div class="mobile__wrapper"><img src="./images/1ee23b2a3840a8b16b212e0175434a2d.svg" alt="diagram">
+                </div>
+                <div class="desctop__wrapper"><img src="./images/5ab00787e487076dbb6a28ca509da64f.svg" alt="diagram">
+                </div>
+            </div>
+        </section>
+        <section class="section11">
+            <!-- <img src="./images/d3ffcff4dc84a4a83fdd148aae05216a.jpg" alt="phone" class="phone-desctop"> -->
+            <img src="./images/b6308a69b952907a4328a2bb7036ffd2.png" alt="phone" class="phone-mobile">
+            <div class="container">
+                <div class="content__wrapper">
+                    <div class="image__placeholder"><img src="./images/d3ffcff4dc84a4a83fdd148aae05216a.jpg" alt="">
+                    </div>
+                    <div class="list__wrapper">
+                        <div class="list__item">
+                            <h3 class="blue-bg text-white">7 วัน</h3>
+                            <p class="blue-bg text-white">การอ่านแม้แต่งานพิมพ์เล็กๆ ซึ่งก่อนหน้านี้เป็นไปไม่ได้
+                                โฟกัสภาพไปที่เรตินาของดวงตาซึ่งช่วยให้คุณรับรู้ภาพได้อย่างถูกต้อง
+                                กราฟด้านล่างแสดงความแตกต่างก่อนและหลังการใช้ Optivision</p>
+                        </div>
+                        <div class="list__item">
+                            <h3 class="gray-bg1">11 วัน</h3>
+                            <p class="gray-bg1">สามารถมองเห็นวัตถุที่อยู่ในระยะไกลมาก
+                                การแก้ไขรูปร่างของกระจกตาซึ่งมีหน้าที่ในการสะท้อนแสงที่ถูกต้อง</p>
+                        </div>
+                        <div class="list__item">
+                            <h3 class="gray-bg2">14 วัน</h3>
+                            <p class="gray-bg2">ความบกพร่องทางการมองเห็นลดลงโดยไม่คำนึงถึงอายุและระดับของโรคตา (ต้อกระจก
+                                ต้อหิน จอประสาทตาเสื่อมตามวัย แก้วตาเสื่อม)</p>
+                        </div>
+                        <div class="list__item">
+                            <h3 class="gray-bg3">21 วัน
+                            </h3>
+                            <p class="gray-bg3">ภาพที่ชัดเจนและชัดเจนยิ่งขึ้น การปรับปรุงคุณภาพการมองเห็นอย่างถาวร
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section12">
+            <div class="container">
+                <h2 class="heading">Optivision แสดงให้เห็นถึงประสิทธิภาพที่ดีที่สุด</h2>
+                <p class="paragraph">Optivision เป็นผลิตภัณฑ์มหัศจรรย์ที่ทุกคนที่มีปัญหาด้านการมองเห็นสามารถใช้ได้
+                    ผู้ที่เป็นโรคตาและความบกพร่องทางสายตาสามารถใช้ได้ มีไว้สำหรับผู้ที่มีสายตาสั้น สายตายาว
+                    ผู้ที่มีปัญหาต้อกระจก ต้อหิน
+                    จอประสาทตาเสื่อมตามอายุ และโรคอันตรายอื่นๆ
+                    ไม่สำคัญว่าบุคคลนั้นจะอายุเท่าใดหรือมีข้อบกพร่องในการมองเห็น Optivision
+                    ถูกเปรียบเทียบกับวิธีฟื้นฟูการมองเห็นยอดนิยมอื่น ๆ
+                    เทคโนโลยีทางทหารที่เป็นนวัตกรรมใหม่นี้แตกต่างจากทางเลือกอื่นอย่างไร</p>
+                <div class="table">
+                    <div class="grid-container">
+                        <div class="header-1 blue-bg">
+                            <p class="rotate table_header text-white">Optivision</p>
+                        </div>
+                        <div class="left-1 blue-light-bg">
+                            <p class="rotate table_header">ผลลัพธ์</p>
+                        </div>
+                        <div class="left-2 blue-light-bg">
+                            <p class="rotate table_header">ผลข้างเคียง</p>
+                        </div>
+                        <div class="left-3 blue-light-bg">
+                            <p class="rotate uppercase table_header">ใครที่ใช้ได้</p>
+                        </div>
+
+                        <div class="blue-light-bg">
+                            <p class="table__text table_header">ผลิตภัณฑ์</p>
+                        </div>
+                        <div class="col1-1 blue-bg">
+                            <p class="table__text text-white">หยุดความบกพร่องทางการมองเห็นที่มีอยู่
+                                การลดความบกพร่องทางการมองเห็น เพิ่มความคมชัดของภาพ
+                                การบรรเทาความบกพร่องทางสายตาที่มีอยู่ สามารถอ่านได้แม้กระทั่งงานพิมพ์ขนาดเล็ก
+                                ให้การปกป้องดวงตาอย่างครอบคลุม</p>
+                        </div>
+                        <div class="col1-2 blue-bg">
+                            <p class="table__text text-white">ไม่มี</p>
+                        </div>
+                        <div class="col1-3 blue-bg">
+                            <p class="table__text text-white">ผลิตภัณฑ์นี้มีไว้สำหรับทุกคนที่ประสบปัญหาด้านการมองเห็น
+                            </p>
+                        </div>
+
+                        <div class="header-3 gray-bg1">
+                            <p class="table__text table_header">แว่นตา</p>
+                        </div>
+                        <div class="col3-1 gray-bg1">
+                            <p class="table__text">
+                                เน้นที่เรตินาของแสงดวงตาที่ผ่านกระจกตาและเลนส์ซึ่งส่งผลต่อการรับรู้ภาพที่ถูกต้อง</p>
+                        </div>
+                        <div class="col3-2 gray-bg1">
+                            <p class="table__text">ปวดหัว อาเจียน ท้องเสีย เนื่องจากเลือกเลนส์สายตาไม่ถูกต้อง</p>
+                        </div>
+                        <div class="col3-3 gray-bg1">
+                            <p class="table__text">แว่นตาแก้ไขมีไว้สำหรับผู้ที่มีปัญหาสายตาสั้น สายตายาว
+                                และสายตาเอียงเท่านั้น</p>
+                        </div>
+
+                        <div class="header-4 gray-bg2">
+                            <p class="table__text table_header">คอนแทคเลนส์</p>
+                        </div>
+                        <div class="col4-1 gray-bg2">
+                            <p class="table__text">ไม่มีการจำกัดขอบเขตการมองเห็น ป้องกันดวงตาจากฝุ่นและลม
+                            </p>
+                        </div>
+                        <div class="col4-2 gray-bg2">
+                            <p class="table__text">การระคายเคืองและแสบตา;
+                                ความเป็นไปได้ที่จะเกิดการติดเชื้อที่เกิดจากการใส่เลนส์ที่ไม่เหมาะสม อาการแพ้;
+                                การสะสมของโปรตีนบนพื้นผิวของเลนส์</p>
+                        </div>
+                        <div class="col4-3 gray-bg2">
+                            <p class="table__text">ผลิตภัณฑ์นี้มีไว้สำหรับผู้ที่เป็นโรคตาที่ไม่รุนแรง คนไข้ที่สายตาเอียง
+                                ต้อกระจก ต้อหิน ฯลฯ ไม่สามารถใช้เลนส์ได้</p>
+                        </div>
+                        <div class="header-5 gray-bg3">
+                            <p class="table__text table_header">ยาหยอดตา</p>
+                        </div>
+                        <div class="col5-1 gray-bg3">
+                            <p class="table__text">ให้ความชุ่มชื้นแก่กระจกตาและเยื่อบุตา; ป้องกันการระคายเคืองตา</p>
+                        </div>
+                        <div class="col5-2 gray-bg3">
+                            <p class="table__text">แสบตาและการฉีกขาดอาจของกระจกตาซึ่งรบกวนการมองเห็นที่เหมาะสม</p>
+                        </div>
+                        <div class="col5-3 gray-bg3">
+                            <p class="table__text">ผลิตภัณฑ์นี้มีไว้สำหรับผู้ที่มีอายุมากกว่า 12 ปี ไม่ควรใช้โดยเด็ก
+                                สตรีมีครรภ์ หรือให้นมบุตร</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section13" id="clients">
+            <div class="container">
+                <h2 class="heading">มาดูความคิดเห็นของผู้ที่เคยใช้แคปซูล Optivision ที่ปฏิวัติวงการ</h2>
+                <div class="slider-bottom">
+                    <div>
+                        <div class="slide__content">
+                            <img src="./images/5d558c830000909b32b01b4fb1e1ecb0.png" alt="image" class="slide__image">
+                            <p class="slide__title">ณัชญา อายุ 55 ปี จาก พัทยา</p>
+                            <p class="slide__text">มีปัญหาการมองเห็นมาหลายปีแล้ว ใส่แว่นตา จะทำอะไรก็ไม่คล่องตัว
+                                เลยลองใช้คอนแทคเลนส์ แต่จริง ๆ แล้วหมอก็ไม่ได้แนะนำ
+                                พอน้องสาวบอกให้ลองทาน Optivision และบอกว่าได้ผลแน่ ๆ
+                                พอลองกินแล้วปัญหาสายตาที่มีก็หายไปเลยค่ะ
+                                พอเดือนนึงแล้วกลับมามองเห็นชัดมาก ๆ ค่ะ</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__content lighten-bg">
+                            <img src="./images/7a737aa000c4d404f545442f7765cadf.png" alt="image" class="slide__image">
+                            <p class="slide__title">กลิ่นผกา อายุ 74 จาก ภูเก็ต</p>
+                            <p class="slide__text">เป็นต้อหินเมื่อสองปีก่อน ตอนนั้นกลัวตาจะบอดมากเลย
+                                หลานเพิ่งจะเกิดกำลังซนเลย
+                                หมอเลยแนะนำการวิธีที่ครอบคลุมมากขึ้นเพื่อฟื้นฟูสายตาได้อย่างเต็มที่ หมอให้กิน Optivision
+                                ตอนนี้ได้เลี้ยงหลาน คอยดูแลหลาย
+                                มีความสุขมากค่ะ
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__content">
+                            <img src="./images/9527911e428e155a25fca6dbee0cd43a.png" alt="image" class="slide__image">
+                            <p class="slide__title">สมพงศ์ อายุ 62 ปี จาก กรุงเทพ</p>
+                            <p class="slide__text">ผมสายตาสั้น รำคาญมากที่ต้องใส่แว่นตา ใส่แว่นก็คือแก้ปัญหาตาได้จริง ๆ
+                                แต่พอตอนไหนที่ลืมแว่น หรือไม่ได้ใส่ อะไร ๆ
+                                ก็เบลอไปหมด บางครั้งแว่นก็เป็นฝ้าตอนขับรถ คือมันก็ยุ่งยาก พอผมรู้จัก Optivision
+                                เพราะเพื่อนที่ทำงานแนะนำ
+                                เพราะเพื่อนกินแล้วบอกดี ผมเลยสั่งมาลอง ตอนนี้ผมสายตาผมดีขึ้นมาก อาการต่าง ๆ
+                                ก็หายไปหมดเลย!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__content lighten-bg">
+                            <img src="./images/b8707decef4e0d2405a2c32b0f4de932.png" alt="image" class="slide__image">
+                            <p class="slide__title">น้ำตาล อายุ 30 จาก หัวหิน</p>
+                            <p class="slide__text">หมอบอกฉันว่าถึงแม้จะอายุยังน้อย แต่ก็มีโอกาสที่จะตาบอดสนิทได้
+                                และมันน่ากลัวมาก
+                                เคยได้รับการแนะนำสำหรับวิธีแก้ที่มีราคาแพงมา และคืนเงินก็ไม่ได้
+                                เสียใจและเสียดายเงินมากค่ะ
+                                พอได้อ่านกับแคปซูลนี้ในฟอรัมจักษุวิทยา ดีใจมากเลยค่ะ รีบสั่งซื้อจนคอร์สเต็ม
+                                การมองเห็นก็ค่อยๆ ดีขึ้น
+                                มองเห็นได้ดีขึ้นมากทุกวัน ขอแนะนำแคปซูลนี้ให้กับทุกคนที่มีปัญหาสายตาเลยค่ะ</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="slide__content">
+                            <img src="./images/e506400a59d775021601d98d82511eba.png" alt="image" class="slide__image">
+                            <p class="slide__title">พัชระ อายุ 43 จาก กาญจนบุรี
+                            </p>
+                            <p class="slide__text">ปกติผมขับรถส่งของ ขับทั่วประเทศเลยคับ ต้องขับรถนาน ๆ
+                                แล้วก็ต้องยกของด้วย ขับรถนาน ๆ ตลอดวันนึงผมก็มีอาการตาแดง
+                                แดงแบบหน้าตกใจ ผมเลยรีบไปหาหมอเลยคับ หมอเลยแนะนำ Optivision ให้ผมลองใช้
+                                หมอบอกว่ามันเป็นสารสกัดจากธรรมชาติด้วย
+                                ผมทานได้สองสามวัน ผมรู้สึกได้เลยครับ ว่าตาที่แดง อาการดีขึ้น การมองเห็นชัดเจนขึ้น
+                                ไม่มีอาการแสบตา
+                                ตอนนี้ผมมองเห็นได้ไกลมาก ผมไม่เคยรู้เลยว่าผมตาไม่ดี จนได้มาลองแคปซูลนี้ ภาพที่ชัดเจน
+                                ทำให้ผมอึ้งมากครับ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section16">
+            <div class="container">
+                <h2 class="heading">สั่งซื้อ Optivision ได้อย่างไร</h2>
+                <p class="paragraph">หากต้องการใช้ประโยชน์จากข้อเสนอ เพียงกรอกแบบฟอร์มด้านล่าง ผลิตภัณฑ์จัดส่งฟรี
+                    แบบเก็บเงินปลายทาง</p>
+                <div class="mobile__wrapper"><img src="./images/c6a5e5d81ad53b2bb70cacac33feddb8.svg" alt="step icon">
+                    <img src="./images/00d64220b5f31f1843182a865dd14d5d.svg" alt="step icon"> <img
+                        src="./images/be3212c1a8ee46f930f31f01a58ecfb3.svg" alt="step icon"> <img
+                        src="./images/a259de1911aa8e11b422e47081e93974.svg" alt="step icon">
+                </div>
+                <div class="desktop__wrapper"><img src="./images/bd825f004fcd3188ccc7ffa4bcc07840.svg" alt="step icon">
+                    <img src="./images/6420f63e1d4747b4239fb6a9cb137888.svg" alt="step icon"> <img
+                        src="./images/233f7b7c03e609d15893dbe412c28154.svg" alt="step icon"> <img
+                        src="./images/6907a1e6303e8eee3975403e24bf988a.svg" alt="step icon">
+                </div>
+            </div>
+        </section>
+        <section class="section16">
+            <div class="container">
+                <h2 class="heading">คำถามที่พบบ่อย</h2>
+                <ul class="accordion">
+                    <li class="accordion_item">
+                        <div class="accordion_link">Optivision ทานยังไง <span></span></div>
+                        <p class="accordion_text">เพื่อผลลัพธ์ที่ดีที่สุด ให้รับประทานครั้งละหนึ่งแคปซูลวันละสองครั้ง
+                            เช้าและเย็น พร้อมน้ำหนึ่งแก้ว
+                        </p>
+                    </li>
+                    <li class="accordion_item">
+                        <div class="accordion_link">Optivision เหมาะกับใคร</div>
+                        <p class="accordion_text">Optivision เหมาะสำหรับผู้ที่ต้องถนอมสายตาและการมองเห็นที่ชัดเจน
+                            เหมาะสำหรับทั้งชายและหญิงที่ต้องการอาหารเสริมที่เป็นธรรมชาติและดีต่อสุขภาพดวงตาและการมองเห็น
+                        </p>
+                    </li>
+                    <li class="accordion_item">
+                        <div class="accordion_link">Optivision ผลิตที่ไหน</div>
+                        <p class="accordion_text">ผลิตภัณฑ์ของเราผลิตในโรงงานผลิตที่ทันสมัยที่สุดในประเทศไทย
+                            การผสมผสานอันเป็นเอกลักษณ์ของสารต้านอนุมูลอิสระอันทรงพลัง 9
+                            ชนิดของเราได้รับการพิสูจน์ทางวิทยาศาสตร์แล้วว่าช่วยบำรุงสายตาของคุณและทำให้การมองเห็นของคุณอยู่ชัดเจนเหมือนตอนเยาว์วัย
+                        </p>
+                    </li>
+                    <li class="accordion_item">
+                        <div class="accordion_link">สามารถหาได้จากที่อื่นบนอินเทอร์เน็ตหรือในร้านขายยาหรือไม่?</div>
+                        <p class="accordion_text">Optivision สามารถซื้อได้ที่นี่เท่านั้น<br>
+                            เรารับประกันความบริสุทธิ์ของส่วนผสมโดยจัดส่งผลิตภัณฑ์ของเราโดยตรงไปยังผู้บริโภคผ่านทางเว็บไซต์อย่างเป็นทางการของเราเท่านั้น
+                            อย.: 1110635350020
+                        </p>
+                    </li>
+                    <li class="accordion_item">
+                        <div class="accordion_link">Optivision มีผลข้างเคียงหรือไม่?</div>
+                        <p class="accordion_text">ส่วนผสมจากธรรมชาติของ Optivision
+                            ได้รับการคัดสรรมาอย่างพิถีพิถันเพื่อความบริสุทธิ์และการดูดซึม การศึกษาไม่พบผลข้างเคียงใดๆ
+                        </p>
+                    </li>
+                    <li class="accordion_item">
+                        <div class="accordion_link">คำสั่งซื้อของฉันจะใช้เวลานานเท่าใดในการจัดส่ง?</div>
+                        <p class="accordion_text">คำสั่งซื้อจะถูกจัดส่งจากโรงงานของเราตั้งแต่วันจันทร์ถึงวันศุกร์ภายใน
+                            24 ชั่วโมงหลังการประมวลผลคำสั่งซื้อ Optivision
+                            จะถูกจัดส่งถึงคุณภายใน 2-5 วันทำการหลังจากนี้
+
+                        </p>
+                    </li>
+                    <li class="accordion_item">
+                        <div class="accordion_link">การรับประกันคืออะไร?</div>
+                        <p class="accordion_text">Optivision มาพร้อมกับการรับประกันคืนเงิน 100% ภายใน 60 วัน
+                            ซึ่งหมายความว่าคุณมีเวลา 2
+                            เดือนเต็มนับจากวันที่ซื้อในการตัดสินใจว่าผลิตภัณฑ์นี้เหมาะกับคุณหรือไม่
+                            หากคุณไม่พอใจไม่ว่าด้วยเหตุผลใดก็ตาม
+                            สิ่งที่คุณต้องทำคือติดต่อทีมบริการลูกค้าของเรา คืนสินค้าที่สั่งซื้อ
+                            แล้วเราจะคืนเงินตามราคาซื้อของคุณ
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="list__wrapper">
+                        <h2 class="heading">เทคโนโลยีปฏิวัติวงการในเวลาเพียง 21 วัน:</h2>
+                        <ul>
+                            <li>โดยจะช่วยให้การมองเห็นชัดยิ่งขึ้นในเวลาเพียง 3 วันของรับประทาน
+                                ทำให้คุณอ่านได้แม้กระทั่งตัวอักษรที่เล็กที่สุด</li>
+                            <li>จะช่วยให้คุณมองเห็นวัตถุในระยะไกลได้มากหลังจากใช้ผลิตภัณฑ์เพียง 7 วัน</li>
+                            <li>จะช่วยลดความบกพร่องทางการมองเห็นได้ภายในเวลาเพียง 14 วัน ไม่ว่าจะอายุ เพศ
+                                ประเภทของความบกพร่อง และความรุนแรงของอาการ
+                                มีมากแค่ไหน</li>
+                            <li>จะหยุดความบกพร่องทางการมองเห็นที่มี (ในเวลาเพียง 3 สัปดาห์) โดยไม่ต้องใช้วิธีที่เสี่ยง
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form__box">
+                        <div class="form" id="order_anchor">
+                            <div class="form__wrapper">
+                                <h3 class="promotion__title">คลิกที่นี่เพื่อสั่งซื้อ<br><span>ผลิตภัณฑ์เสริมอาหาร
+                                        Optivision</span>
+                                </h3>
+                                <div class="promotion__prices">
+                                    <span
+                                        class="promotion__new-price"><x-newprice>990</x-newprice><x-currency>บาท</x-currency></span>
+                                    <div style="text-align: center;">
+                                        <span class="promotion__instead">จากราคา</span>
+                                        <span class="old_price"><x-oldprice>1980 </x-oldprice>
+                                            <x-currency>บาท</x-currency></span>
+                                    </div>
+                                </div>
+                                <p class="form__wrapper--title">โปรโมชั่นจะสิ้นสุดเมื่อ</p>
+                                <div class="form_wrapper_2"
+                                    style="margin: 0 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 80%">
+                                    <form action="<?php echo $action; ?>" id="formularz1" method="post"
+                                        class="formularz-walidacja__form"
+                                        style="width: 80%; text-align: center; margin: 0 auto;">
+                                        <input type="hidden" name="subid5" value="back_vsl_form">
+                                        <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+                                        <div class="form-input"
+                                            style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+                                            <input class="input-name" type="text" name="name" minlength="2"
+                                                style="margin: 5px 0; border: none; border-bottom: 1px solid lightgray; text-align: center; padding: 10px 20px; width: 100%;"
+                                                required="" placeholder="ชื่อ">
+                                            <input class="phone-country" type="tel" id="phone2" name="phone"
+                                                minlength="8" maxlength="16"
+                                                style="margin: 5px 0; border: none; border-bottom: 1px solid lightgray; text-align: center; padding: 10px 20px; width: 100%;"
+                                                required="" placeholder="เบอร์โทรศัพท์">
+                                        </div>
+                                        <div class="formularz-walidacja__form--submit submit-container" style="
+                                display: flex;
+                                justify-content: center;
+                            ">
+                                            <button type="submit" style="padding: 10px 80px;
+                                                font-size: 24px; cursor: pointer;
+                                                font-weight: 600;
+                                                color: #fff;
+                                                background-color: #c01e14;
+                                                margin: 30px 0px;
+                                                border-radius: 10px;
+                                                border: none;
+                                                -webkit-box-shadow: 0 15px 5px -4px rgba(192, 30, 20, .75);
+                                                box-shadow: 0 15px 5px -4px rgba(192, 30, 20, .75);"
+                                                class="submit-container--btn-2">สั่งซื้อ</button>
+
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promotion__timer-wrapper">
+                            <h3 class="promotion__lead">จนกว่าโปรโมชั่นจะสิ้นสุด</h3>
+                            <div class="promotion__timer form__countdown--box-wrapper">
+                                <div class="promotion__timer-box form__countdown--box"><span
+                                        class="form__countdown--value">0</span> <span
+                                        class="form__countdown--unit">0</span></div>
+                                <div class="promotion__timer-box form__countdown--box"><span
+                                        class="form__countdown--value min1">24</span></div>
+                                <div class="promotion__timer-box form__countdown--box"><span
+                                        class="form__countdown--value sec1">59</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glasses__wrapper"><img src="./images/product2.png" alt="product image"></div>
+            </div>
+        </section>
+
+
+        <section class="">
+            <div class="container">
+                <div class="footer--copyrights">
+                    <div class="foot_en_center"
+                        style="text-align: center; margin: 0px auto; padding: 30px 0; font-size:15px">
+                        <p>ลิขสิทธิ์ © 2568 โดย Copyrightindex.com</p>
+                        <p>สงวนลิขสิทธิ์ ห้ามทำซ้ำ แจกจ่าย หรือส่งในรูปแบบใด ๆ หรือด้วยวิธีการใด ๆ รวมถึงการทำสำเนา
+                            บันทึก
+                            หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้
+                            เผยแพร่
+                            ยกเว้นในกรณีที่มีการอ้างอิงโดยย่อในรีวิวสำคัญและการใช้งานที่ไม่ใช่เชิงพาณิชย์อื่น ๆ
+                            ที่ได้รับอนุญาตตามกฎหมายลิขสิทธิ์</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="./js/accordion.js"></script>
+
+</body>
+
+</html>
