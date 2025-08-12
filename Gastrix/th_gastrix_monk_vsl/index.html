@@ -1,0 +1,136 @@
+<?php include("../q.php"); ?>
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <title>คนไทย 91% มีปรสิตอยู่ในร่างกายโดยไม่รู้ตัว! พระภิกษุเปิดเผยความลับโบราณที่ช่วยขับปรสิตออกจากร่างกายได้!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./images/product.png" type="image/x-icon">
+  <script src="./js/back.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.vitBack(window.location.href, true);
+    });
+  </script>
+</head>
+
+<body>
+  <h1 class="main_title accent_form">
+    <span class="highlight">คนไทย 91% มีปรสิตอยู่ในร่างกายโดยไม่รู้ตัว! </span>
+    พระภิกษุเปิดเผยความลับโบราณที่ช่วยขับปรสิตออกจากร่างกายได้!
+  </h1>
+  <div id="container_video">
+    <div id="play" onclick="playVideo()">
+      <div>
+        <h4>วิดีโอเริ่มแล้ว</h4>
+        <h4>กดเพื่อฟัง!</h4>
+      </div>
+    </div>
+    <div class="spinner-container">
+      <div class="spinner-sub-container">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <video id="video" autoplay="autoplay" muted="" playsinline="" webkit-playsinline="" poster="./images/poster.png">
+      <source src="https://pub-bbcd86335e924092a9d274baed5a5a09.r2.dev/7xi/7549.mp4" type="video/mp4" />
+    </video>
+    <div id="progress-container" style="width: 100%; background-color: #eee; height: 10px; margin-top: 20px;">
+      <div id="progress-bar" style="width: 0%; height: 100%; background-color: red;"></div>
+    </div>
+  </div>
+  <p class="sound accent_form"><img height="20" src="./images/sound.png" alt=""> (ตรวจสอบให้แน่ใจว่าเปิดเสียงไว้ วิดีโอนี้อาจใช้เวลาประมาณ 10 วินาทีในการโหลด)</p>
+
+  <div id="order">
+    <div class="terbatas">
+      <p class="accent_form">ด่วนเลย! ข้อเสนอมีเวลาจำกัด</p>
+      <img src="./images/BlPE.gif" alt="">
+    </div>
+    <div class="diet-section text-center">
+      <form class="diet-container" action="<?php getRoutelink(); ?>" method="post">
+        <div class="img-with-button">
+          <img src="./images/product.png" class="product" alt="">
+        </div>
+        <h2 class="form_title">ใกล้หมดโปรโมชั่นแล้ว! จาก <del>1980 บาท</del> เหลือเพียง <span class="green-text">990
+            บาท</span>
+        </h2>
+        <a class="main-btn" rel="nofollow">
+          รับส่วนลด 50% เปอร์เซ็นต์
+
+          <span>ใช่ ฉันต้องการกำจัดพยาธิ!</span>
+          <img src="./images/small-days.png" alt="">
+        </a>
+        <div class="clearfix hide">
+          <input type="hidden" name="subid5" value="main_vsl_form">
+          <input type="hidden" id="clickId" name="click_id" value="<?php print $_SESSION['binom_click_id']; ?>">
+          <span class="label">กรุณากรอกชื่อของคุณ: </span>
+
+          <input name="name" type="text" required minlength="2" placeholder="กรุณากรอกชื่อของคุณ" class="inputs">
+
+          <span class="label">กรุณากรอกเบอร์โทรศัพท์: </span>
+          <input name="phone" type="tel" required minlength="8" maxlength="16" placeholder="กรุณากรอกเบอร์โทรศัพท์"
+            class="inputs">
+
+          <button type="submit" class="btn_form">
+            สั่งซื้อตอนนี้!
+          </button>
+        </div>
+        <div class="diet-text">
+          <h5>จำหน่ายทั่วประเทศไทย</h5>
+          <div class="box-img">
+            <div class="box">
+              <img src="./images/1.png" alt="">
+            </div>
+            <div class="box">
+
+              <img src="./images/2.png" alt="">
+            </div>
+            <div class="box">
+
+              <img src="./images/3.png" alt="">
+            </div>
+            <div class="box">
+              <img src="./images/4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+<div class="main_text accent_form">
+  <h3>ตำรับศักดิ์สิทธิ์ต้านปรสิต</h3>
+  <p>การเปิดเผยของพระสงฆ์พุทธ: เส้นทางชำระล้างร่างกายและจิตใจ</p>
+  <p>ปรสิตไม่ใช่แค่ปัญหาของกระเพาะอาหาร</p>
+  <p>ไม่ใช่ “ความผิดปกติของระบบย่อยอาหารทั่วไป” ไม่ใช่ความอ่อนเพลียชั่วคราว และไม่ใช่เพียงความเหนื่อยล้า
+  แต่มันคือเสียงร้องจากร่างกายที่ไม่สามารถรับมือได้อีกต่อไป</p>
+  <p>คือพิษภายในที่เกิดจากความเครียด ความวิตกกังวล คืนที่นอนไม่หลับ และความเงียบที่ทำให้เราไม่ได้ยินเสียงของตัวเอง</p>
+  <p>พระจากวัดบนภูเขาเชียงใหม่กล่าวว่า</p>
+  <p>“การรักษาที่แท้จริงไม่ได้เริ่มจากยา แต่มันเริ่มจากการเข้าใจสาเหตุ
+  และจากการชำระล้างอย่างอ่อนโยนที่ทำให้ร่างกายกลับมามีแสงและพลัง”</p>
+  <p>ในช่วงหลายเดือนที่ผ่านมา ชาวไทยนับหมื่นได้เดินบนเส้นทางแห่งการชำระล้างนี้:</p>
+  <ul>
+    <li>✔ ปรสิตเริ่มออกจากร่างกายในสัปดาห์แรก</li>
+    <li>✔ ความเบาสบายและพลังงานกลับคืนมา</li>
+    <li>✔ ความกลัวต่อสุขภาพของคนที่รักหายไป</li>
+    <li>✔ การนอนหลับลึกขึ้น และร่างกายปลอดจากความหนักอึ้ง</li>
+  </ul>
+  <p>นี่เป็นครั้งแรกในรอบหลายร้อยปี ที่สูตรลับของวัดถูกส่งต่อสู่ประชาชน:</p>
+  <ul>
+    <li>– ทำไมปรสิตถึงรอดแม้ใช้ยา?</li>
+    <li>– อะไรคือสิ่งที่ทำลายสุขภาพและทำให้เลือดเป็นพิษจริง ๆ?</li>
+    <li>– ทำไมในร้านขายยาถึงไม่มีทางออกที่แท้จริง?</li>
+    <li>– และจะทำอย่างไรให้แสงสว่างภายในกลับคืนมา ซึ่งเป็นสิ่งจำเป็นต่อการมีชีวิต?</li>
+  </ul>
+  <p>ร่างกายของคุณคือวัด และทุกวัดต้องการแสงสว่าง</p>
+  <p>ชมบทสัมภาษณ์</p>
+  <p>ฟังเสียงแห่งศรัทธา</p>
+  <p>และระลึกได้อีกครั้งว่าการมีชีวิตโดยไม่มีพิษภายในนั้นเป็นอย่างไร</p>
+</div>
+ 
+
+  <script src="./js/video.js"></script>
+
+</body>
+
+</html>
