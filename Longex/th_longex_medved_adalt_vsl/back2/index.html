@@ -1,0 +1,659 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <link rel="shortcut icon" href="./images/info-pack.png" type="image/x-icon">
+    <script src="./js/jQuery.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>เริ่มต้นชีวิตใหม่ที่ปราศจากต่อมลูกหมากอักเสบ ตอนนี้เลย!</title>
+    <link rel="stylesheet" href="./css/timeTo.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="info">
+        <div class="info__body">
+            <div class="info__top">
+                <div class="info__logo">
+                    <img src="./images/info-logo.png" alt="" style="width: 100%;max-width: 330px;">
+                </div>
+                <div class="info__prefer">
+                    <ul>
+                        <li>
+                            <div class="info__icon">
+                                <img src="./images/info-icon1.png" alt="">
+                            </div>
+                            <div class="info__desc">
+                                <p>ผลิตภัณฑ์จากธรรมชาติ 100%</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info__icon">
+                                <img src="./images/info-icon2.png" alt="">
+                            </div>
+                            <div class="info__desc">
+                                <p>ไม่ต้องผ่าตัด!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info__icon">
+                                <img src="./images/info-icon3.png" alt="">
+                            </div>
+                            <div class="info__desc">
+                                <p>ผู้ชายกว่า 4,000 คนลืมเรื่องต่อมลูกหมากอักเสบไปแล้ว</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info__title">
+                <h1>เริ่มต้นชีวิตใหม่ที่ปราศจากต่อมลูกหมากอักเสบ <span>ตอนนี้เลย!</span></h1>
+            </div>
+            <div class="info__content">
+                <div class="info__left">
+                    <div class="info__list">
+                        <ul>
+                            <li>
+                                ไม่ต้องผ่าตัด!
+                            </li>
+                            <li>
+                                ไร้ความเจ็บปวด!
+                            </li>
+                            <li>
+                                ไม่มีความเสี่ยงต่อสุขภาพ!
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info__weak">
+                        <p>กำจัดต่อมลูกหมากอักเสบได้ในทุกวัย!</p>
+                    </div>
+                </div>
+                <div class="info__pack">
+                    <img class="product" src="./images/info-pack.png" alt="">
+                </div>
+                <div class="info__right">
+                    <div class="info__timer">
+                        <div class="info__timer-icon">
+                            <img src="./images/info-timer.png" alt="">
+                        </div>
+                        <div class="info__timer-body">
+                            <p>โปรโมชั่นจะสิ้นสุดในอีก:</p>
+                            <div class="countdown__wrap">
+                                <div class="countdown" id="timer1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__price">
+                        <div class="info__price-old">
+                            <p>
+                                ราคาปกติ:
+                                <span style="text-decoration: line-through">
+                                    <span class="old_price_val"><x-oldprice>1,980</x-oldprice></span><span
+                                        class="old_price_cur"><x-currency>บาท</x-currency></span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="info__price-new">
+                            <p>
+                                ราคาวันนี้:
+                                <span>
+                                    <span class="new_price_val"><x-newprice>990</x-newprice></span><span
+                                        class="new_price_cur"><x-currency>บาท</x-currency></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info__form">
+                        <form class="landing__form"  action="<?php echo $action; ?>"
+                            method="post">
+                            <input type="hidden" name="subid5" value="back_vsl_form">
+                            <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+
+                            <input type="text" name="name" placeholder="Nombre" class="ym-record-keys"
+                                 required="" minlength="2">
+                            <input type="tel" name="phone" placeholder="Número de teléfono" class="ym-record-keys"
+                                 required="" minlength="8" maxlength="16">
+                            <button type="submit">สั่งซื้อตอนนี้</button>
+                        </form>
+                    </div>
+                    <div class="info__count">
+                        <p>สินค้ามีจำนวนจำกัด</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="known">
+        <div class="known__body">
+            <div class="known__title">
+                <h2>สิ่งนี้คือความรู้สึกที่คุณเคยเจอหรือไม่?</h2>
+            </div>
+            <div class="known__list">
+                <ul>
+                    <li>
+                        ปวดแสบขณะปัสสาวะ
+                    </li>
+                    <li>
+                        ความรู้สึกกดดันในบริเวณอุ้งเชิงกราน
+                    </li>
+                    <li>
+                        ไม่สามารถแข็งตัวได้ตามปกติ
+                    </li>
+                    <li>
+                        ความสัมพันธ์ทางเพศที่สั้นลง
+                    </li>
+                    <li>
+                        ความต้องการทางเพศลดลง
+                    </li>
+                </ul>
+            </div>
+            <div class="known__atten">
+                <p>หากคุณพบอาการอย่างน้อย 2 ข้อ นั่นหมายความว่าคุณต้องการความช่วยเหลือ!</p>
+            </div>
+        </div>
+    </div>
+    <div class="forever">
+        <div class="forever__body">
+            <div class="forever__desc">
+                <p>ต่อมลูกหมากอักเสบกำลังขัดขวางการใช้ชีวิตของคุณอยู่หรือเปล่า? ความเจ็บปวด ความไม่สบายตัว
+                    และการปัสสาวะบ่อยเป็นเพียงบางส่วนของอาการไม่พึงประสงค์จากภาวะต่อมลูกหมากอักเสบเท่านั้น เริ่มทาน
+                    <span class="red">"Longex"</span> วันนี้ และลืมเรื่องต่อมลูกหมากอักเสบไปได้เลยตลอดกาล!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="consist">
+        <div class="consist__body">
+            <div class="consist__title">
+                <h2>ทำไมผู้คนนับพันถึงไว้วางใจ <span>"Longex"?</span></h2>
+            </div>
+            <div class="consist__pack dec">
+                <img class="product" src="./images/info-pack.png" alt="">
+            </div>
+            <div class="consist__list dec">
+                <ul>
+                    <li>
+                        <div class="consist__img">
+                            <img src="./images/consist-img1.png" alt="">
+                        </div>
+                        <div class="consist__desc">
+                            <h4>L-arginine </h4>
+                            <p>ลดการอักเสบของต่อมลูกหมาก</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="consist__img">
+                        </div>
+                        <div class="consist__desc">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="consist__img">
+                            <img src="./images/consist-img3.png" alt="">
+                        </div>
+                        <div class="consist__desc">
+                            <h4>Tribulus extract</h4>
+                            <p>ช่วยให้การปัสสาวะเป็นปกติและการสร้างอสุจิ</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="consist__img">
+                            <img src="./images/consist-img4.png" alt="">
+                        </div>
+                        <div class="consist__desc">
+                            <h4>Oyster extract</h4>
+                            <p>Iเพิ่มความต้องการทางเพศ ฟื้นฟูการไหลเวียนโลหิตบริเวณต่อมลูกหมาก</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="consist__img">
+                            <img src="./images/consist-img5.png" alt="">
+                        </div>
+                        <div class="consist__desc">
+                            <h4>Korean ginseng extract</h4>
+                            <p>กำจัดความเครียดและความเจ็บปวดขณะปัสสาวะและปัสสาวะได้อย่างมีประสิทธิภาพ</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="consist__slider mob">
+                <section class="regular">
+                    <div>
+                        <div class="consist__img">
+                            <img src="./images/consist-img1.png" alt="">
+                        </div>
+                        <div class="consist__desc">
+                            <h4>L-arginine </h4>
+                            <p>ลดการอักเสบของต่อมลูกหมาก</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="consist__img">
+                            <img src="./images/consist-img3.png" alt="">
+                        </div>
+                        <div class="consist__desc">
+                            <h4>Tribulus extract</h4>
+                            <p>ช่วยให้การปัสสาวะเป็นปกติและการสร้างอสุจิ</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="consist__img">
+                            <img src="./images/consist-img4.png" alt="">
+                        </div>
+                        <div class="consist__desc">
+                            <h4>Oyster extract</h4>
+                            <p>Iเพิ่มความต้องการทางเพศ ฟื้นฟูการไหลเวียนโลหิตบริเวณต่อมลูกหมาก</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="consist__img">
+                            <img src="./images/consist-img5.png" alt="">
+                        </div>
+                        <div class="consist__desc">
+                            <h4>Korean ginseng extract</h4>
+                            <p>กำจัดความเครียดและความเจ็บปวดขณะปัสสาวะและปัสสาวะได้อย่างมีประสิทธิภาพ</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="consist__pack mob">
+                <img src="./images/info-pack.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="weak">
+        <div class="weak__body">
+            <div class="weak__desc">
+                <p>สูตรธรรมชาติ 100% ของ <span class="red">"Longex"</span> ช่วยลดการอักเสบของต่อมลูกหมาก
+                    ฟื้นฟูเนื้อเยื่อที่เสียหาย ปรับการทำงานของระบบทางเดินปัสสาวะและอวัยวะสืบพันธุ์ให้เป็นปกติ
+                    และควบคุมการผลิตฮอร์โมนเทสโทสเตอโรน <span class="red">"Longex"</span>
+                    <span>กำจัดต่อมลูกหมากอักเสบได้จริง ไม่ใช่แค่ปกปิดอาการ!</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="life">
+        <div class="life__body">
+            <div class="life__title">
+                <h2>กลับมาใช้ชีวิตได้อย่างเต็มที่อีกครั้งด้วย "Longex"</h2>
+            </div>
+            <div class="life__content">
+                <div class="life__list">
+                    <ul>
+                        <li>
+                            ไม่มีความเจ็บปวดขณะปัสสาวะ
+                        </li>
+                        <li>
+                            ไม่ต้องผ่าตัดและไม่มีความเสี่ยงต่อสุขภาพ
+                        </li>
+                        <li>
+                            ไม่มีการลดลงของความต้องการทางเพศหรือคุณภาพการแข็งตัว
+                        </li>
+                    </ul>
+                </div>
+                <div class="life__pack">
+                    <img class="product" src="./images/info-pack.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="back">
+        <div class="back__body">
+            <div class="back__desc">
+                <p>สุขภาพของคุณอยู่ในมือคุณ! ด้วย <span>"Longex"</span> คุณจะมั่นใจในความเป็นชายและพลังของคุณ!</p>
+            </div>
+        </div>
+    </div>
+    <div class="take">
+        <div class="take__body">
+            <div class="take__title">
+                <h2>วิธีการรับประทาน <span>"Longex"</span> อย่างไร?</h2>
+            </div>
+            <div class="take__list dec">
+                <ul>
+                    <li>
+                        <div class="take__img">
+                            <img src="./images/take-img1.png" alt="">
+                        </div>
+                        <div class="take__desc">
+                            <p>รับประทาน <span class="red">"Longex"</span> วันละสองครั้ง</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="take__img">
+                            <img src="./images/take-img2.png" alt="">
+                        </div>
+                        <div class="take__desc">
+                            <p>ดื่มน้ำอุ่นหนึ่งแก้วพร้อมกับผลิตภัณฑ์</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="take__img">
+                            <img src="./images/take-img3.png" alt="">
+                        </div>
+                        <div class="take__desc">
+                            <p>ปริมาณที่รับประทานต่อวันไม่ควรเกิน 2 แคปซูล</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="take__slider mob">
+                <section class="regular">
+                    <div>
+                        <div class="take__number">
+                            <p>1</p>
+                        </div>
+                        <div class="take__img">
+                            <img src="./images/take-img1.png" alt="">
+                        </div>
+                        <div class="take__desc">
+                            <p>รับประทาน <span class="red">"Longex"</span> วันละสองครั้ง</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="take__number">
+                            <p>2</p>
+                        </div>
+                        <div class="take__img">
+                            <img src="./images/take-img2.png" alt="">
+                        </div>
+                        <div class="take__desc">
+                            <p>ดื่มน้ำอุ่นหนึ่งแก้วพร้อมกับผลิตภัณฑ์</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="take__number">
+                            <p>3</p>
+                        </div>
+                        <div class="take__img">
+                            <img src="./images/take-img3.png" alt="">
+                        </div>
+                        <div class="take__desc">
+                            <p>ปริมาณที่รับประทานต่อวันไม่ควรเกิน 2 แคปซูล</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="take__note">
+                <p>ระยะเวลาในการรับประทานแคปซูลควรไม่น้อยกว่า 30 วัน! ห้ามหยุดรับประทาน
+                    <span>"Longex"</span> – เป็นช่วง ๆ เพราะผลิตภัณฑ์ไม่สามารถทำงานได้อย่างมีประสิทธิภาพ
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="clinic">
+        <div class="clinic__body">
+            <div class="clinic__top">
+                <div class="clinic__title">
+                    <h2>การวิจัยทางคลินิกของ <span>"Longex"</span>เป็นอย่างไร?</h2>
+                </div>
+                <div class="clinic__info">
+                    <p> <b>การวิจัยทางคลินิกของ "Longex" ดำเนินการในปี 2566</b>
+                        โดยกลุ่มผู้ทดลองเป็นผู้ชายอายุระหว่าง 18 ถึง 85 ปี
+                        ที่มีปัญหาด้านสมรรถภาพทางเพศหรือได้รับการวินิจฉัยว่าเป็นต่อมลูกหมากอักเสบ</p>
+                </div>
+            </div>
+            <div class="clinic__list">
+                <ul>
+                    <li>
+                        <div class="clinic__img">
+                            <img src="./images/clinic-img1.png" alt="">
+                        </div>
+                        <div class="clinic__desc">
+                            <p><span>94%</span> ของคนในช่วงอายุ <span>35 ถึง 85</span> ปี
+                                กำจัดปัญหาด้านสมรรถภาพทางเพศได้ทั้งหมด</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clinic__img mob">
+                            <img src="./images/clinic-img2.png" alt="">
+                        </div>
+                        <div class="clinic__desc">
+                            <p><span>91%</span> ของผู้เข้ารับการตรวจในช่วงอายุ <span>18 ถึง 85 ปี</span>
+                                รายงานว่าอาการของต่อมลูกหมากอักเสบทั้งหมดหายไป</p>
+                        </div>
+                        <div class="clinic__img dec">
+                            <img src="./images/clinic-img2.png" alt="">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clinic__img">
+                            <img src="./images/clinic-img3.png" alt="">
+                        </div>
+                        <div class="clinic__desc">
+                            <p><span>89%</span> ของคนในช่วงอายุ <span>40 ถึง 85 ปี</span>
+                                รายงานว่าคุณภาพชีวิตทางเพศดีขึ้น และระยะเวลาของความสัมพันธ์ทางเพศยาวนานขึ้น</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="expert">
+        <div class="expert__body">
+            <div class="expert__info">
+                <div class="expert__name mob">
+                    <p><span>นายแพทย์กิตติพงษ์ ศิริกุล </span>
+                        ประสบการณ์ 23 ปี</p>
+                </div>
+                <div class="expert__title">
+                    <h2>ความคิดเห็นจากผู้เชี่ยวชาญ</h2>
+                </div>
+                <div class="expert__desc">
+                    <p>ต่อมลูกหมากอักเสบเป็นปัญหาใหญ่ของผู้ชายยุคปัจจุบัน ความเครียด ปัญหาสิ่งแวดล้อม
+                        และอาหารที่มีสารกันบูดและอาหารจีเอ็มโอ
+                        ล้วนส่งผลเสียต่อสุขภาพของผู้ชาย</p>
+                    <p><span>"Longex"</span> เป็นนวัตกรรมจากยุโรปที่ไม่เหมือนใคร สูตรธรรมชาติ 100%
+                        ของผลิตภัณฑ์มีประสิทธิภาพมากกว่าผลิตภัณฑ์อื่นที่ใช้สารเคมีถึง 4
+                        เท่า
+
+                        ผู้ป่วยของเราสังเกตเห็นการเปลี่ยนแปลงในทางที่ดีขึ้น เพียง 15 วัน อาการปวดและปัญหาการปัสสาวะหายไป
+                        ผู้ป่วยจะกลับมาแข็งแรงเต็มที่ใน 30 วันหลังจากทานแคปซูล และสามารถใช้ชีวิตได้อย่างเต็มที่!</p>
+
+                </div>
+                <div class="expert__name dec">
+                    <p><span>นายแพทย์กิตติพงษ์ ศิริกุล </span>
+                        ประสบการณ์ 23 ปี</p>
+                </div>
+            </div>
+            <div class="expert__img">
+                <img src="./images/expert-img.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="feed">
+        <div class="feed__body">
+            <div class="feed__title">
+                <h2>พวกเขาได้เริ่มต้นชีวิตใหม่กับ <span>"Longex"</span>แล้ว!</h2>
+            </div>
+            <div class="feed__slider">
+                <section class="regular">
+                    <div>
+                        <div class="feed__top">
+                            <div class="feed__img">
+                                <img src="./images/feed-img3.png" alt="" width="100">
+                            </div>
+                            <div class="feed_name">
+                                <p><span>พงศกร จันทราวงศ์</span></p>
+                            </div>
+                        </div>
+                        <div class="feed__desc">
+                            <p><span>"Longex"</span> ช่วยให้ผมหายจากความเจ็บปวดและความไม่สบายภายในเวลาเพียง 20 วัน
+                                ผมฟื้นฟูสุขภาพและชีวิตทางเพศกลับมาเป็นปกติได้อีกครั้งด้วยผลิตภัณฑ์นี้
+                                ตอนนี้ผมมีความต้องการทางเพศและการแข็งตัวดีมากครับ!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="feed__top">
+                            <div class="feed__img">
+                                <img src="./images/feed-img2.png" alt="" width="100">
+                            </div>
+                            <div class="feed_name">
+                                <p><span>ธนภัทร วงศ์สุวรรณ</span></p>
+                            </div>
+                        </div>
+                        <div class="feed__desc">
+                            <p>ผมเคยคิดว่าในวัยของผมคงไม่มีอะไรช่วยให้หายจากต่อมลูกหมากอักเสบได้ แต่ "Longex"
+                                สามารถช่วยผมได้จริง ๆ ! หลังจาก 30 วัน
+                                ผมรู้สึกสุขภาพดีและเต็มไปด้วยพลัง!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="feed__top">
+                            <div class="feed__img">
+                                <img src="./images/feed-img1.png" alt="" width="100">
+                            </div>
+                            <div class="feed_name">
+                                <p><span>อัครพล รัตนชัย</span></p>
+                            </div>
+                        </div>
+                        <div class="feed__desc">
+                            <p>ขอบคุณ "Longex" มาเลยครับ ที่ทำให้ผมหายจากความเจ็บปวดและการปวดปัสสาวะบ่อยได้
+                                ที่สำคัญที่สุดคือผลิตภัณฑ์นี้ช่วยให้ชีวิตทางเพศของผมกลับมาเต็มที่ได้อีกครั้ง!</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="info__body">
+            <div class="info__top">
+                <div class="info__logo">
+                    <img src="./images/info-logo.png" alt="" style="width: 100%;max-width: 330px;padding-top: 2px;">
+                </div>
+                <div class="info__prefer">
+                    <ul>
+                        <li>
+                            <div class="info__icon">
+                                <img src="./images/info-icon1.png" alt="">
+                            </div>
+                            <div class="info__desc">
+                                <p>ผลิตภัณฑ์จากธรรมชาติ 100%</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info__icon">
+                                <img src="./images/info-icon2.png" alt="">
+                            </div>
+                            <div class="info__desc">
+                                <p>ไม่ต้องผ่าตัด!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info__icon">
+                                <img src="./images/info-icon3.png" alt="">
+                            </div>
+                            <div class="info__desc">
+                                <p>ผู้ชายกว่า 4,000 คนลืมเรื่องต่อมลูกหมากอักเสบไปแล้ว</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info__title">
+                <h1>เริ่มต้นชีวิตใหม่ที่ปราศจากต่อมลูกหมากอักเสบ <span>ตอนนี้เลย!</span></h1>
+            </div>
+            <div class="info__content">
+                <div class="info__left">
+                    <div class="info__list">
+                        <ul>
+                            <li>
+                                ไม่ต้องผ่าตัด!
+                            </li>
+                            <li>
+                                ไร้ความเจ็บปวด!
+                            </li>
+                            <li>
+                                ไม่มีความเสี่ยงต่อสุขภาพ!
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info__weak">
+                        <p>กำจัดต่อมลูกหมากอักเสบได้ในทุกวัย!</p>
+                    </div>
+                </div>
+                <div class="info__pack">
+                    <img class="product" src="./images/info-pack.png" alt="">
+                </div>
+                <div class="info__right">
+                    <div class="info__timer">
+                        <div class="info__timer-icon">
+                            <img src="./images/info-timer.png" alt="">
+                        </div>
+                        <div class="info__timer-body">
+                            <p>โปรโมชั่นจะสิ้นสุดในอีก:</p>
+                            <div class="countdown__wrap">
+                                <div class="countdown" id="timer2"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__price">
+                        <div class="info__price-old">
+                            <p>
+                                ราคาปกติ:
+                                <span style="text-decoration: line-through">
+                                    <span class="old_price_val"><x-oldprice>1,980</x-oldprice></span><span
+                                        class="old_price_cur"><x-currency>บาท</x-currency></span>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="info__price-new">
+                            <p>
+                                ราคาวันนี้:
+                                <span>
+                                    <span class="new_price_val"><x-newprice>990</x-newprice></span><span
+                                        class="new_price_cur"><x-currency>บาท</x-currency></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="info__form">
+                        <form class="landing__form"  action="<?php echo $action; ?>"
+                            method="post">
+                            <input type="hidden" name="subid5" value="back_vsl_form">
+                            <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+                            <input type="text" name="name" placeholder="ชื่อ" class="ym-record-keys"
+                                 required="" minlength="2">
+                            <input type="tel" name="phone" placeholder="คำสั่ง" class="ym-record-keys" minlength="8"
+                                maxlength="16"  required="">
+                            <button type="submit">สั่งซื้อตอนนี้</button>
+                        </form>
+                    </div>
+                    <div class="info__count">
+                        <p>สินค้ามีจำนวนจำกัด</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <center>
+            <p>ลิขสิทธิ์ © 2568 โดย Copyrightindex.com</p>
+            <p>สงวนลิขสิทธิ์ ห้ามทำซ้ำ แจกจ่าย หรือส่งในรูปแบบใด ๆ หรือด้วยวิธีการใด ๆ รวมถึงการทำสำเนา บันทึก
+                หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้เผยแพร่
+                ยกเว้นในกรณีที่มีการอ้างอิงโดยย่อในรีวิวสำคัญและการใช้งานที่ไม่ใช่เชิงพาณิชย์อื่น ๆ
+                ที่ได้รับอนุญาตตามกฎหมายลิขสิทธิ์</p>
+        </center>
+    </footer>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
