@@ -1,0 +1,775 @@
+<?php include("../q.php"); ?>
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <title>หลังดูวิดีโอนี้ คุณจะอ่อนเยาว์ขึ้น 2 ปีภายใน 24 ชั่วโมง! และย้อนวัย 20 ปีได้ใน 21 วัน!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./images/product.png" type="image/x-icon">
+  <script src="./js/back.js"></script>
+  <script src="./js/date.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.vitBack(window.location.href, true);
+    });
+  </script>
+</head>
+
+<body>
+  <h1 class="main_title">
+    <span class="highlight">หลังดูวิดีโอนี้ คุณจะอ่อนเยาว์ขึ้น 2 ปีภายใน 24 ชั่วโมง!</span> และย้อนวัย 20 ปีได้ใน 21 วัน!
+  </h1>
+  <div id="container_video">
+
+    <div id="play" onclick="playVideo()">
+      <div>
+        <h4>วิดีโอเริ่มแล้ว</h4>
+        <h4>กดเพื่อฟัง!</h4>
+      </div>
+    </div>
+    <div class="spinner-container">
+      <div class="spinner-sub-container">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <video id="video" autoplay="autoplay" muted="" playsinline="" webkit-playsinline="" poster="./images/poster.png">
+      <source src="https://pub-bbcd86335e924092a9d274baed5a5a09.r2.dev/2ni/7638.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div id="progress-container" style="width: 100%; background-color: #eee; height: 10px; margin-top: 20px;">
+    <div id="progress-bar" style="width: 0%; height: 100%; background-color: red;"></div>
+  </div>
+  <p class="sound"><img height="20" src="./images/sound.png" alt=""> (ตรวจสอบให้แน่ใจว่าเปิดเสียงไว้
+    วิดีโอนี้อาจใช้เวลาประมาณ 10 วินาทีในการโหลด)</p>
+
+  <div id="order">
+    <div class="terbatas">
+      <p>รีบหน่อย ข้อเสนอมีจำนวนจำกัด!</p>
+      <img src="./images/BlPE.gif" alt="">
+    </div>
+    <div class="diet-section text-center">
+      <form class="diet-container" action="<?php getRoutelink(); ?>" method="post">
+
+        <div class="img-with-button">
+          <img src="./images/product.png" class="product" alt="">
+        </div>
+        <h2 class="form_title">ใกล้หมดโปรโมชั่นแล้ว! จาก <del>1980 บาท</del> เหลือเพียง <span class="green-text">990
+            บาท</span>
+        </h2>
+        <a class="main-btn" rel="nofollow">
+          รับส่วนลด 50%
+
+          <span>ใช่ค่ะ ฉันอยากดูเด็กลง!</span>
+          <img src="./images/small-days.png" alt="">
+        </a>
+        <div class="clearfix hide">
+          <input type="hidden" name="subid5" value="main_vsl_form">
+          <input type="hidden" id="clickId" name="click_id" value="<?php print $_SESSION['binom_click_id']; ?>">
+          <span class="label">กรุณากรอกชื่อของคุณ: </span>
+
+          <input name="name" type="text" required minlength="2" placeholder="กรุณากรอกชื่อของคุณ" class="inputs">
+
+          <span class="label">กรุณากรอกเบอร์โทรศัพท์: </span>
+          <input name="phone" type="tel" required minlength="8" maxlength="16" placeholder="กรุณากรอกเบอร์โทรศัพท์"
+            class="inputs">
+
+          <button type="submit" class="btn_form">
+            สั่งซื้อตอนนี้!
+          </button>
+        </div>
+        <div class="diet-text">
+          <h5>จำหน่ายทั่วประเทศไทย</h5>
+          <div class="box-img">
+            <div class="box">
+              <img src="./images/1.png" alt="">
+            </div>
+            <div class="box">
+
+              <img src="./images/2.png" alt="">
+            </div>
+            <div class="box">
+
+              <img src="./images/3.png" alt="">
+            </div>
+            <div class="box">
+              <img src="./images/4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="block_tv">
+    <p>เผยแพร่ที่</p>
+    <div class="tv_icons">
+      <img src="./images/img1.png" alt="" />
+      <img src="./images/img2.png" alt="" />
+      <img src="./images/img3.png" alt="" />
+    </div>
+  </div>
+  <div class="comments" id="comment-component-text">
+    <div id="comment_num" class="">ความคิดเห็น:</div>
+    <div class="comment">
+      <img class="comment__image" src="./images/1.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">สมศรี</h2>
+        <div class="comment__text">
+          น่าประทับใจมากเลยค่ะ! กำลังมองหาวิธีที่จะทำให้ผิวสวย แลดูอ่อนเยาว์ด้วยธรรมชาติมานานแล้ว
+          วิดีโอนี้ได้ตอบทุกคำถามที่เคยอยากรู้ได้อย่างชัดเจนเลยค่ะ
+
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">12</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/2.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">เบญจมาศ</h2>
+        <div class="comment__text">
+          ผู้หญิงทุกคนควรดูวิดีโอนี้นะคะ! ไม่เคยคิดเลยว่าผลลัพธ์แบบนี้จะเป็นไปได้โดยไม่ต้องพึ่งการศัลยกรรม
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">15</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/3.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">สุนันท์</h2>
+        <div class="comment__text">
+          ขอบคุณสำหรับวิดีโอนี้ค่ะ มีประโยชน์มากเลย! ตอนนี้พร้อมเริ่มต้นทำตามทันทีค่ะ เพื่อฟื้นคืนความอ่อนเยาว์ให้ตัวเอง
+
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">13</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/4.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">วีรนุช</h2>
+        <div class="comment__text">
+          ตอนก็ไม่ค่อยเชื่อหรอกค่ะ แต่เรื่องราวของผู้หญิงเหล่านั้นน่าประทับใจมากๆ เลย
+          วิดีโอนี้เป็นการค้นพบครั้งใหญ่สำหรับทุกคนจริง ๆ
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">5</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/5.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">กรกนก</h2>
+        <div class="comment__text">
+          น่าทึ่งมากที่ได้เรียนรู้ข้อมูลที่มีประโยชน์เกี่ยวกับผิว! เดี๋ยวต้องรีบแชร์วิดีโอนี้ให้เพื่อน ๆ ดูแล้วล่ะค่ะ
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">5</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/6.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">วราภรณ์</h2>
+        <div class="comment__text">
+          นี่เป็นครั้งแรกเลยค่ะที่ได้ยินเกี่ยวกับวิธีนี้ วีดีโอนี้เป็นตัวช่วยสำคัญสำหรับผู้ที่อยากรักษาความอ่อนเยาว์
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">5</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/7.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">อัญชลี</h2>
+        <div class="comment__text">
+          ขอบคุณที่เปิดเผยความจริงที่ถูกปิดบังจากผู้หญิงมานาน ตอนนี้รู้แล้วค่ะ ว่าต้องทำอะไรเพื่อฟื้นฟูความอ่อนเยาว์
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">10</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/8.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">จิรนันท์</h2>
+        <div class="comment__text">
+          ตอนนี้เข้าใจล่ะ แล้วว่าทำไมครีมทั่วไปถึงไม่ช่วยอะไร วีดีโอนี้เปลี่ยนมุมมองในการดูแลผิวไปเลยค่ะ
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">12</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/9.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">อภิรดี</h2>
+        <div class="comment__text">
+          ข้อมูลที่เป็นประโยชน์มาก! ดูแล้วมั่นใจเลยค่ะ ว่าจะเห็นผลลัพธ์โดยไม่ต้องทำการรักษาที่มีราคาแพง
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/10.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">รจนา</h2>
+        <div class="comment__text">
+          หลังจากดูวิดีโอนี้ รู้ทันทีเลยค่ะ ว่าเราเข้าใจผิดที่ใช้ครีมที่มีสารเคมี วิธีธรรมชาตินี่แหละคือทางออก!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/11.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">ศิริพร</h2>
+        <div class="comment__text">
+          <span class="link">Biozin</span> เปลี่ยนชีวิตฉันไปเลยค่ะ! ใช้แล้วผิวกระชับและเปล่งปลั่งภายในสัปดาห์แรกที่ใช้
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/12.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">พิม</h2>
+        <div class="comment__text">
+          เซรั่มนี้มหัศจรรย์มาก! ได้ใช้ <span class="link">Biozin</span> มาเดือนหนึ่งแล้ว และผิวดูอ่อนเยาว์ลงถึง 10 ปี
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">6</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/13.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">มาลี</h2>
+        <div class="comment__text">
+          ฉันลองผลิตภัณฑ์มาหลายตัว แต่ไม่มีอะไรได้ผลดีเท่า <span class="link">Biozin</span> ริ้วรอยหายไป ผิวกลับมาดูสุขภาพดี
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">6</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/14.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">จีน่า</h2>
+        <div class="comment__text">
+          <span class="link">Biozin</span> คืนความอ่อนเยาว์! ผลลัพธ์เห็นได้ชัดเจนหลังใช้เพียงไม่กี่ครั้ง ประทับใจมากค่ะ!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/15.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">กรณิกา</h2>
+        <div class="comment__text">
+          เป็นผลิตภัณฑ์ที่น่าทึ่งมาก! ใช้แล้วผิวของเรียบเนียนขึ้น เพื่อนร่วมงานยังถามเลยว่าไปทำอะไรมา
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">17</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/16.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">สิริวรรณ</h2>
+        <div class="comment__text">
+          <span class="link">Biozin</span> เป็นสิ่งที่ดีที่สุดที่เคยได้ใช้มาเลยค่ะ ผิวกระชับขึ้น และริ้วรอยก็หายไป!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">10</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/17.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">สุพัตรา</h2>
+        <div class="comment__text">
+          คุณแม่ที่บ้านก็ใช้ <span class="link">Biozin</span> และผลลัพธ์ก็น่าทึ่งมาก ผิวแม่ดูดีขึ้น นี่ใช้แค่แป๊ปเดียวเองนะคะ
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">12</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/18.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">จรรยา</h2>
+        <div class="comment__text">
+          เซรั่มนี้คือสิ่งที่ดิฉันตามหามานานค่ะ ผิวดูอ่อนเยาว์และสุขภาพดี แถมดูเด็กลงถึง 10 ปี
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">12</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/19.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">นิภา</h2>
+        <div class="comment__text">
+          ไม่เคยคิดว่าเซรั่มจะได้ผลดีขนาดนี้ <span class="link">Biozin</span> มันเหมือนเวทมนตร์!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">14</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+    <div class="comment">
+      <img class="comment__image" src="./images/20.jpg" alt=" " />
+      <div class="comment__content">
+        <h2 class="comment__name">สมศรี</h2>
+        <div class="comment__text">
+          หลังจากใช้ <span class="link">Biozin</span> แทบไม่เชื่อว่าผิวของจะเปลี่ยนไปมากขนาดนี้ ริ้วรอยหายไป ผิวดูสดชื่นมาก!
+          <br />
+        </div>
+        <p class="comment__details">
+          <button class="comments__like">
+            <img src="./images/like-btn.svg" alt="" />
+            <span class="likes">16</span>
+            ชอบ
+          </button>
+          <button class="comments__dislike">
+            <img src="./images/dislike-btn.svg" alt="" />
+            <span class="dislikes">0</span>
+            ฉันไม่ชอบ
+          </button>
+          <a class="make-comment"><img src="./images/comment.svg" alt="" />ความคิดเห็น
+          </a>
+          <span class="comment__time">
+            <script>
+
+              dtime("th", 0, 0, 0, true, true, true);
+            </script>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="literarure">
+    <div class="literarure-box">
+      <img src="./images/image9.jpg" alt="">
+      <img src="./images/image16.jpg" alt="">
+      <img src="./images/image23.png" alt="">
+    </div>
+    <ol>
+      <li><a href="https://www.hsph.harvard.edu/nutritionsource/antioxidants/" target="_blank"><b>Harvard T.H. Chan
+            School
+            of Public Health.</b> “Lutein and Zeaxanthin - The Key Nutrients for Vision Health.” Harvard Health
+          Publishing,
+          Harvard Medical School, 2019.</a></li>
+      <li><a
+          href="https://ictr.johnshopkins.edu/news_announce/one-of-two-widely-used-macular-degeneration-drugs-outperforms-other-at-weaning-patients-off-treatment-at-one-year-preliminary-study-shows/#:~:text=A%20pilot%2C%20%E2%80%9Clook%2Dback,one%20year%20without%20further%20vision"
+          target="_blank"><b>Johns Hopkins Medicine.</b> “Preventing Blindness: Macular Degeneration Research.” Wilmer
+          Eye
+          Institute at Johns Hopkins Medicine, 2021.</a></li>
+      <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4528643/" target="_blank"><b>National Center for
+            Biotechnology Information (NCBI).</b> “Oxidative Stress in the Retina and Age-Related Macular Degeneration.”
+          <em>International Journal of Molecular Sciences, 2020.</em></a></li>
+      <li><a href="https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment"
+          target="_blank"><b>World Health Organization (WHO).</b> “Blindness and Vision Impairment.” <i>World Health
+            Organization, 2023.</i></a></li>
+      <li><a
+          href="https://www.health.harvard.edu/staying-healthy/top-foods-to-help-protect-your-vision#:~:text=Antioxidants%20fight%20free%20radicals%20and,pigment%20density%20in%20the%20macula"
+          target="_blank"><b>Harvard Medical School.</b> “Nutritional Support for Vision - The Importance of
+          Antioxidants.”
+          <i>Harvard Health Letter, 2022.</i></a></li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/22840421/" target="_blank"><b>National Institutes of Health
+            (NIH).</b>“Age-Related Eye Disease Study 2 (AREDS2): Dietary Supplement and Vision.” <i>NIH Office of
+            Dietary
+            Supplements, 2018.</i></a></li>
+      <li><a
+          href="https://www.healthwellfoundation.org/realworldhealthcare/american-macular-degeneration-foundation-piecing-together-the-puzzle-of-age-related-macular-degeneration/"
+          target="_blank"><b>American Macular Degeneration Foundation.</b> “Oxidative Stress and Eye Health: Protecting
+          the
+          Retina.” <i>American Macular Degeneration Foundation, 2019.</i></a></li>
+      <li><a href="https://jamanetwork.com/journals/jamaophthalmology/article-abstract/2819148?resultClick=1"
+          target="_blank"><b>Journal of the American Medical Association (JAMA Ophthalmology).</b> “Efficacy of
+          Nutritional
+          Supplements in Preventing Age-Related Macular Degeneration.” <i>JAMA Ophthalmology, 2018.</i></a></li>
+    </ol>
+  </div>
+  <footer>
+    <p>ลิขสิทธิ์ © 2568 โดย Copyrightindex.com</p>
+    <p>สงวนลิขสิทธิ์ ห้ามทำซ้ำ แจกจ่าย หรือส่งในรูปแบบใด ๆ หรือด้วยวิธีการใด ๆ รวมถึงการทำสำเนา บันทึก
+      หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้เผยแพร่
+      ยกเว้นในกรณีที่มีการอ้างอิงโดยย่อในรีวิวสำคัญและการใช้งานที่ไม่ใช่เชิงพาณิชย์อื่น ๆ
+      ที่ได้รับอนุญาตตามกฎหมายลิขสิทธิ์</p>
+  </footer>
+  <script src="./js/video.js"></script>
+  <script src="./js/coments.js"></script>
+</body>
+
+</html>

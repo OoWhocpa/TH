@@ -1,0 +1,520 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	<base />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Biozin</title>
+	<link rel="icon" type="image/x-icon" href="./images/image15.png" />
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link media="all" href="./css/style.css" type="text/css" rel="stylesheet" />
+
+	<script src="./js/date-init.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="header__wrapp">
+				<div class="header__inner">
+					<img width="50" src="./images/image30.jpg" alt="" />
+					<a href="#" style="background-color: rgb(56, 182, 255); color: #000" class="header__btn">ข้อมูล</a>
+					<a href="#" style="background-color: rgb(56, 182, 255); color: #000" class="header__btn">ติดต่อ</a>
+					<a style="background-color: rgb(221, 39, 39); color: #fff" href="#" class="header__btn">สั่งซื้อ
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class="content">
+			<div class="text" id="last">
+				<img src="./images/image27.jpg" alt="" />
+
+				<div style="
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							gap: 6px;
+							padding: 20px 0;
+						">
+					<span class="new-price">เพียง 990฿</span>
+					<span class="red">ส่วนลด 50% </span>
+					<span class="old-price"> 1980฿ </span>
+					<span class="red"><b>ขายแล้ว 296 010 </b></span>
+				</div>
+
+				<div style="box-shadow: rgb(0, 0, 0) 0px 14px 8px -15px;
+							padding: 0 0 16px;
+							display: flex;
+							gap: 20px;
+							justify-content: center;
+						">
+					<span style="
+								background-color: rgb(153, 187, 152);
+								padding: 2px 6px;
+								border-radius: 10px;
+							"><b>จัดส่งฟรี </b></span><span style="
+								background-color: rgb(153, 187, 152);
+								padding: 2px 6px;
+								border-radius: 10px;
+							"><b>ชำระเงินปลายทาง </b></span><span style="
+								background-color: rgb(153, 187, 152);
+								padding: 2px 6px;
+								border-radius: 10px;
+							"><b>ไม่มีการเก็บเงินก่อน </b></span>
+				</div>
+
+				<a href="#" class="buy-button">สั่งซื้อเลย</a>
+
+				<img src="./images/image14.jpg" alt="" />
+				<img src="./images/image39.jpg" alt="" />
+				<img src="./images/image22.jpg" alt="" />
+				<div style="
+							display: flex;
+							width: 100%;
+							justify-content: center;
+							overflow: hidden;
+						">
+					<img style="width: 50%; height: auto; object-fit: contain" src="./images/image21.gif" alt="" /><img
+						style="width: 50%; height: auto; object-fit: contain" src="./images/image12.gif" alt="" />
+				</div>
+
+				<img src="./images/image34.jpg" alt="" />
+				<img src="./images/image16.jpg" alt="" />
+				<img src="./images/image37.jpg" alt="" />
+				<img src="./images/image4.jpg" alt="" />
+				<h2 style="text-align: center" class="red">
+					<i>ผิวที่มีรอยแดงเหมือนในภาพ</i>
+				</h2>
+
+				<img src="./images/image35.jpg" alt="" />
+				<img src="./images/image10.gif" alt="" />
+				<img src="./images/image20.jpg" alt="" />
+				<img src="./images/image28.jpg" alt="" />
+
+				<a href="#" class="buy-button">สั่งซื้อ</a>
+
+				<img src="./images/image24.jpg" alt="" />
+				<img src="./images/image33.jpg" alt="" />
+				<img src="./images/image10.gif" alt="" />
+				<img src="./images/image23.jpg" alt="" />
+
+
+				<div class="videos__coments" style="margin-bottom: 10px;">
+					<h2>วนิดา</h2>
+					<p class="videos__coments-text">
+						<i>
+							“ใช้เซรั่มมาหลายตัวเลยค่ะ ทั้งแบบแพงแบบถูก แต่รู้สึกว่าเซรั่ม
+							Biozin นี้ไม่แพงเลยและให้ผลลัพธ์ที่ดี แนะนำเลยค่ะ"</i>
+					</p>
+				</div>
+
+
+				<div class="videos__coments">
+					<h2>ดลยา</h2>
+					<p class="videos__coments-text">
+						<i>
+							“ผลิตภัณฑ์นี้ช่วยลดเลือนริ้วรอยได้ดีเลยค่ะ
+							หลังจากใช้แล้วผิวจะเปล่งประกายและยืดหยุ่น
+							เป็นผลิตภัณฑ์ที่มีประสิทธิภาพและราคาไม่แพงมาก”
+						</i>
+					</p>
+				</div>
+				<img src="./images/image18.jpg" alt="" />
+
+				<img src="./images/image1.jpg" alt="" />
+				<div style="
+							text-align: center;
+							padding: 20px 10px;
+							border: 2px dashed #000;
+							border-radius: 10px;
+							margin: 6px;
+						">
+					ใช้แล้วผิวขาวขึ้นและกระจ่างใสขึ้นมาก ตื่นมานี่หน้าใสมากค่ะ
+					รู้สึกเด็กลง 5 ปี ผิวเรียบเนียน ผิวกระจกมากค่ะ
+				</div>
+				<img src="./images/image38.jpg" alt="" />
+				<div style="
+							text-align: center;
+							padding: 20px 10px;
+							border: 2px dashed #000;
+							border-radius: 10px;
+							margin: 6px;
+						">
+					จุดด่างดำและริ้วรอยหายไปเลยค่ะ ผิวเรียบเนียนเหมือนผิวเด็ก
+					ตั้งแต่ใช้เซรั่มเป็นเวลา 21 วัน ทิ้งครีมอื่นลงถังขยะเลยค่ะ
+				</div>
+				<img src="./images/image6.jpg" alt="" />
+				<div style="
+							text-align: center;
+							padding: 20px 10px;
+							border: 2px dashed #000;
+							border-radius: 10px;
+							margin: 6px;
+						">
+					เซรั่ม Biozin มีราคาไม่แพงใช้แล้วได้ผลดีมากก
+					ลดเลือนจุดด่างดำและเพิ่มความกระจ่างใสกระชับให้กับผิวได้ดีเลย
+				</div>
+
+				<div class="section-1">
+					<h3 class="section-1__title">
+						ผู้เชี่ยวชาญพูดอะไรเกี่ยวกับ Biozin?
+					</h3>
+					<div class="section-1__desc">
+						<div class="section-1__left">
+							<h3 class="section-1__left-title">แพทย์หญิงกวิสรา พูลทรัพย์</h3>
+							<p class="section-1__left-text">
+								ด้วยเทคโนโลยีขั้นสูง ทำให้เซรั่ม Biozin
+								ได้รับการออกแบบมาเป็นพิเศษเพื่อการฟื้นฟูผิวที่รวดเร็วและมีประสิทธิภาพ
+							</p>
+						</div>
+						<img class="section-1__img" src="./images/image17.png" alt="" />
+					</div>
+					<div class="section-1__footer">
+						<p class="section-1__footer-text">
+							<b style="color: rgb(0, 74, 173)">ดีท็อกซ์ผิว:</b>
+							<span>
+								เอสเซนส์แทรกซึมเข้าสู่ผิวเพื่อช่วยลดเม็ดสีที่เป็นอันตรายออกจากผิว</span>
+						</p>
+
+						<p class="section-1__footer-text">
+							<b style="color: rgb(0, 74, 173)">ลดจุดด่างดำบนผิวหนัง:</b>
+							ผิวได้รับการดีท็อกซ์ช่วยลดจุดด่างดำระยะยาวได้อย่างรวดเร็ว
+						</p>
+
+						<p class="section-1__footer-text">
+							<b style="color: rgb(0, 74, 173)">วิตตามินผิว:</b>
+							ให้ความชุ่มชื้นและบำรุงผิวทำให้ผิวอ่อนนุ่มและผิวกระจก
+						</p>
+
+						<p class="section-1__footer-text">
+							<b style="color: rgb(0, 74, 173)">ช่วยลดเลือนริ้วรอย:</b>
+							ส่วนผสมคุณภาพสูงช่วยยืดผิว ลดอายุ ฟื้นฟูผิวที่อ่อนนุ่มเป็นพิเศษ
+						</p>
+					</div>
+				</div>
+
+				<img src="./images/image19.jpg" alt="" />
+				<img src="./images/image36.jpg" alt="" />
+
+				<div style="
+							text-align: center;
+							padding: 6px;
+							border: 2px solid rgb(0, 74, 173);
+							border-radius: 10px;
+							margin: 6px 0;
+						">
+					<h3 style="
+								font-size: 25px;
+								font-weight: bold;
+								line-height: 1.6;
+								color: rgb(0, 74, 173);
+							">
+						วิธีใช้
+					</h3>
+					<p><b>ทำความสะอาดใบหน้าของคุณ</b></p>
+					<p><b>ใช้เช้าและเย็น</b></p>
+					<p><b>ทาและนวดให้ทั่วใบหน้า</b></p>
+					<p><b>ไม่จำเป็นต้องล้างออก</b></p>
+				</div>
+
+				<img src="./images/image32.jpg" alt="" />
+
+				<img src="./images/image3.jpg" alt="" />
+
+				<section class="comments" id="comment-component-text">
+					<div id="comment_num" class="">ความคิดเห็น:</div>
+					<div id="new_comment" class="form-comment">
+						<div class="txt-cmt">
+							<div class="form-comment__img">
+								<img id="comment-img-dummy" src="./images/default-avatar.jpg" alt="" />
+							</div>
+							<div class="form-comment__content">
+								<input type="text" placeholder="ชื่อ" id="yourName" class="your-name" />
+								<textarea class="txt-content" placeholder="ทิ้งข้อความไว้
+			
+										"></textarea>
+								<button class="add-comment-button">ส่ง</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="comment">
+						<img class="comment__image" src="./images/image11.jpg" alt=" " />
+						<div class="comment__content">
+							<h2 class="comment__name">กฤษณา</h2>
+							<div class="comment__text">
+								เซรั่ม Biozin นี้ทำให้ฉันมีปัญหา! หนุ่ม ๆ ติดตรึมเลยค่า
+
+								<br />
+
+								<!-- <img class="comment__img" src="images/image2.jpg" alt="#" /> -->
+								<!-- <video preload="metadata" controls playsinline width="180" height="320"><source src="static/videos/comment_video-1.mp4" type="video/mp4"></video> -->
+							</div>
+							<p class="comment__details">
+								<button class="comments__like">
+									<img src="./images/like-btn.svg" alt="" />
+									<span class="likes">7</span>
+									ชอบ
+								</button>
+								<button class="comments__dislike">
+									<img src="./images/dislike-btn.svg" alt="" />
+									<span class="dislikes">0</span>
+									ฉันไม่ชอบ
+								</button>
+								<a class="make-comment" href="#new_comment"><img src="./images/comment.svg"
+										alt="" />ความคิดเห็น
+								</a>
+								<span class="comment__time">
+									<script>
+										dtime("th", 0);
+									</script>
+								</span>
+							</p>
+						</div>
+					</div>
+
+					<div class="comment">
+						<img class="comment__image" src="./images/image29.jpg" alt=" " />
+						<div class="comment__content">
+							<h2 class="comment__name">กานดา</h2>
+							<div class="comment__text">
+								อายุ 40 ปี ใช้ Biozin ถึงจะไม่ได้ดูเหมือนอายุ 20
+								แต่ริ้วรอยก็ดูจางลงจริงๆ
+								ไม่มีเซรั่มไหนที่เคยใช้แล้วทำได้ขนาดนี้เลยค่ะ
+								ตอนนี้ไม่ต้องใช้ฟิลเตอร์ ไม่ต้องฉีด! :)
+
+								<br />
+								<img class="comment__img" src="images/image5.jpg" alt="#" />
+								<!-- <video preload="metadata" controls playsinline width="180" height="320"><source src="static/videos/comment_video-1.mp4" type="video/mp4"></video> -->
+							</div>
+							<p class="comment__details">
+								<button class="comments__like">
+									<img src="./images/like-btn.svg" alt="" />
+									<span class="likes">3</span>
+									ชอบ
+								</button>
+								<button class="comments__dislike">
+									<img src="./images/dislike-btn.svg" alt="" />
+									<span class="dislikes">0</span>
+									ฉันไม่ชอบ
+								</button>
+								<a class="make-comment" href="#new_comment"><img src="./images/comment.svg"
+										alt="" />ความคิดเห็น
+								</a>
+								<span class="comment__time">
+									<script>
+										dtime("th", 1);
+									</script>
+								</span>
+							</p>
+						</div>
+					</div>
+
+					<div class="comment">
+						<img class="comment__image" src="./images/image13.jpg" alt=" " />
+						<div class="comment__content">
+							<h2 class="comment__name">ดวงฤดี</h2>
+							<div class="comment__text">
+								ตอนแรกบอกว่าจะลดริ้วรอยได้ภายใน 1 อาทิตย์ แต่ใช้จริงต้องรอ 2
+								อาทิตย์เลย
+
+								<br />
+								<img class="comment__img" src="./images/image26.jpg" alt="#" />
+								<!-- <video preload="metadata" controls playsinline width="180" height="320"><source src="static/videos/comment_video-1.mp4" type="video/mp4"></video> -->
+							</div>
+							<p class="comment__details">
+								<button class="comments__like">
+									<img src="./images/like-btn.svg" alt="" />
+									<span class="likes">12</span>
+									ชอบ
+								</button>
+								<button class="comments__dislike">
+									<img src="./images/dislike-btn.svg" alt="" />
+									<span class="dislikes">0</span>
+									ฉันไม่ชอบ
+								</button>
+								<a class="make-comment" href="#new_comment"><img src="./images/comment.svg"
+										alt="" />ความคิดเห็น
+								</a>
+								<span class="comment__time">
+									<script>
+										dtime("th", 1);
+									</script>
+								</span>
+							</p>
+						</div>
+					</div>
+
+					<div class="comment">
+						<img class="comment__image" src="./images/image31.jpg" alt=" " />
+						<div class="comment__content">
+							<h2 class="comment__name">นารี</h2>
+							<div class="comment__text">
+								ใช้ไปสองขวดแล้วค่ะ จะสั่งเพิ่ม! ใช้แล้วชอบมากค่ะ
+
+								<br />
+								<img class="comment__img" src="images/image8.jpg" alt="#" />
+								<!-- <video preload="metadata" controls playsinline width="180" height="320"><source src="static/videos/comment_video-1.mp4" type="video/mp4"></video> -->
+							</div>
+							<p class="comment__details">
+								<button class="comments__like">
+									<img src="./images/like-btn.svg" alt="" />
+									<span class="likes">4</span>
+									ชอบ
+								</button>
+								<button class="comments__dislike">
+									<img src="./images/dislike-btn.svg" alt="" />
+									<span class="dislikes">0</span>
+									ฉันไม่ชอบ
+								</button>
+								<a class="make-comment" href="#new_comment"><img src="./images/comment.svg"
+										alt="" />ความคิดเห็น
+								</a>
+								<span class="comment__time">
+									<script>
+										dtime("th", 2);
+									</script>
+								</span>
+							</p>
+						</div>
+					</div>
+				</section>
+				<img src="./images/image9.jpg" alt="" />
+
+				<div class="section-end">
+					<h2 class="section-end-title">Biozin Skin Care </h2>
+					<div style="display: flex; align-items: center; justify-content: space-around;">
+
+
+						<div>
+							<img style="max-width: 150px;" src="./images/unnamed.png" alt="">
+							<span style="display: flex; align-items: center;">
+								<svg style="width: 60px; margin-right: 10px;"
+									xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
+									xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+									xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg"
+									xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+									viewBox="-255 347 100 100" style="enable-background:new -255 347 100 100;"
+									xml:space="preserve" preserveAspectRatio="none" width="100%" height="100%" class=""
+									fill="rgba(5, 31, 77, 1)">
+									<switch>
+										<foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+											x="0" y="0" width="1" height="1"></foreignObject>
+										<g i:extraneous="self">
+											<path
+												d="M-179.5,379.5c0,0,0-0.1,0-0.1c0-0.1,0-0.1-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c-0.1-0.1-0.1-0.2-0.2-0.2    c0,0,0,0,0,0l-9-9c-0.3-0.3-0.8-0.5-1.2-0.5c0,0,0,0,0,0l-12.6,0c0,0,0,0,0,0s0,0,0,0l-12,0c-0.5,0-0.9,0.2-1.2,0.5l-9,9    c0,0,0,0,0,0c-0.1,0.1-0.1,0.2-0.2,0.2c0,0-0.1,0.1-0.1,0.1c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0,0,0.1,0,0.1    c0,0.1,0,0.2,0,0.3v37.7c0,0.9,0.8,1.7,1.7,1.7h6.4c0.2,0,0.3,0,0.5-0.1c0.5,3.2,3.3,5.7,6.7,5.7c3.3,0,6.1-2.4,6.6-5.6    c0.1,0,0.2,0,0.3,0h22.3h3.8c0.6,3.2,3.3,5.6,6.6,5.6c3.3,0,6.1-2.4,6.6-5.6h5.1c0.9,0,1.7-0.8,1.7-1.7v-17.7    c0-4.5-1.3-8.3-3.7-10.9c-2.3-2.5-5.5-3.8-9.1-3.8h-9.4v-5.3C-179.5,379.7-179.5,379.6-179.5,379.5z M-201.1,372.6l10.2,0l5.6,5.6    h-15.8V372.6z M-214.2,372.6l9.6,0v5.6h-15.2L-214.2,372.6z M-210.4,421.5c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3    s3.3,1.5,3.3,3.3S-208.6,421.5-210.4,421.5z M-183,386.8v29.1h-20.5c-0.2,0-0.4,0-0.5,0.1c-0.9-2.7-3.4-4.6-6.4-4.6    c-3,0-5.5,2-6.4,4.6c-0.2-0.1-0.5-0.2-0.7-0.2h-4.6v-34.3h39.2V386.8z M-170.8,421.5c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3    s3.3,1.5,3.3,3.3S-169,421.5-170.8,421.5z M-170.1,388.5c5.8,0,9.4,4.3,9.4,11.3v16h-3.7c-0.9-2.6-3.4-4.5-6.4-4.5    c-2.9,0-5.4,1.9-6.3,4.5h-2.3v-27.3H-170.1z M-243.7,387.7h13.1c0.9,0,1.7,0.8,1.7,1.7c0,0.9-0.8,1.7-1.7,1.7h-13.1    c-0.9,0-1.7-0.8-1.7-1.7C-245.4,388.5-244.6,387.7-243.7,387.7z M-252.7,398.7c0-0.9,0.8-1.7,1.7-1.7h20.3c0.9,0,1.7,0.8,1.7,1.7    c0,0.9-0.8,1.7-1.7,1.7h-20.3C-251.9,400.4-252.7,399.7-252.7,398.7z M-228.9,408c0,0.9-0.8,1.7-1.7,1.7h-13.1    c-0.9,0-1.7-0.8-1.7-1.7s0.8-1.7,1.7-1.7h13.1C-229.6,406.3-228.9,407-228.9,408z M-213.7,398.9c0-0.9,0.8-1.7,1.7-1.7h13.2    l-2.3-2.3c-0.7-0.7-0.7-1.8,0-2.4c0.7-0.7,1.8-0.7,2.4,0l5.2,5.2c0,0,0,0,0,0c0,0,0,0,0,0c0.1,0.1,0.1,0.2,0.2,0.2    c0,0,0,0.1,0.1,0.1c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0,0.1,0.1,0.2c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0,0.3s0,0.2,0,0.3c0,0,0,0.1,0,0.1    c0,0.1,0,0.1-0.1,0.2c0,0.1-0.1,0.1-0.1,0.2c0,0,0,0.1-0.1,0.1c-0.1,0.1-0.1,0.2-0.2,0.2c0,0,0,0,0,0c0,0,0,0,0,0l-5.5,5.5    c-0.3,0.3-0.8,0.5-1.2,0.5s-0.9-0.2-1.2-0.5c-0.7-0.7-0.7-1.8,0-2.4l2.6-2.6H-212C-212.9,400.6-213.7,399.8-213.7,398.9z">
+											</path>
+										</g>
+									</switch>
+								</svg>
+								<b>จัดส่งที่รวดเร็ว </b></span>
+						</div>
+						<div style="
+								display: flex;
+								flex-direction: column;
+								align-items: center;
+								gap: 6px;
+								padding: 10px 0;
+							">
+							<span class="new-price">990฿ </span>
+							<span style="
+									font-size: 14px;
+									font-style: italic;
+									line-height: 1.4;
+									color: rgb(5, 31, 77);
+									text-align: center;
+								">วันนี้เท่านั้น
+							</span>
+							<span class="old-price"> 1980฿ </span>
+						</div>
+					</div>
+					<div style="display: flex; justify-content: center; margin-bottom: 20px; margin-top: 10px;"
+						class="apte__form">
+						<form class="al-form" action="<?php echo $action; ?>" method="POST" id="order_form"
+							style="position: relative">
+							<input type="hidden" name="subid5" value="back_vsl_form">
+							<input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+
+
+							<div>
+								<input class="input-roulette" name="name" id="input-name" placeholder="ชื่อ:"
+									required="" minlength="2" type="text" />
+							</div>
+							<div>
+								<input class="input-roulette phone-black" name="phone" id="input-phone"
+									placeholder="หมายเลขโทรศัพท์:" autocomplete="tel" required="" minlength="7"
+									maxlength="16" type="tel" />
+							</div>
+							<input style="
+								font: bolder 22px/1.6 YahooSans VF, Yahoo Sans, YahooSans,
+									Helvetica Neue, Helvetica, Arial, sans-serif; background-color: red;
+							" class="submit-roulette" value="คำสั่ง" type="submit" />
+						</form>
+					</div>
+					<div class="quote">
+						<blockquote>
+							<i>
+								หมายเหตุ: ลูกค้าควรตรวจสอบข้อมูล ได้แก่ ชื่อ หมายเลขโทรศัพท์ ที่อยู่
+								ก่อนลงทะเบียนเพื่อหลีกเลี่ยงข้อผิดพลาดอันไม่พึงประสงค์
+								ขอขอบคุณอีกครั้งสำหรับการสนับสนุนร้าน Biozin <br>ขอบคุณมากค่ะ</i>🙏<img
+								style="display: inline;" src="./images/smile.jpg" alt="">
+
+						</blockquote>
+					</div>
+
+				</div>
+
+				<img src="./images/image2.jpg" alt="" />
+			</div>
+		</div>
+		<div class="order__wrapper d-none">
+			<div id="order" class="apte">
+				<div class="apte__inner">
+					<div class="logo"></div>
+
+					<div class="apte__wrapper">
+						<h4 style="color: #fff">
+							กรอกรายละเอียดของคุณแล้วที่ปรึกษาจะกลับคืนสู่รายละเอียด
+							ของการสั่งซื้อ เรารับประกันความเป็นส่วนตัว ชำระเงินจาก
+							ทุกช่องทางที่สะดวกโดยไม่ต้องเสียเงิน ขั้นสูง.
+						</h4>
+
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer style="
+					text-align: center;
+					padding: 10px;
+					margin-top: 20px;
+					color: #000;
+					font-size: 16px;
+					line-height: 1.2;
+				">
+			<p>ลิขสิทธิ์ © 2568 โดย Copyrightindex.com</p>
+			<p style="padding-top: 10px">
+				สงวนลิขสิทธิ์ ห้ามทำซ้ำ แจกจ่าย หรือส่งในรูปแบบใด ๆ หรือด้วยวิธีการใด
+				ๆ รวมถึงการทำสำเนา บันทึก หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ
+				โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้ เผยแพร่
+				ยกเว้นในกรณีที่มีการอ้างอิงโดยย่อในรีวิวสำคัญและการใช้งานที่ไม่ใช่เชิงพาณิชย์อื่น
+				ๆ ที่ได้รับอนุญาตตามกฎหมายลิขสิทธิ์
+			</p>
+		</footer>
+	</div>
+	<script src="./js/comments.js"></script>
+</body>
+
+</html>
