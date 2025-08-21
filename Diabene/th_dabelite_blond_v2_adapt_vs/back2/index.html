@@ -1,0 +1,710 @@
+<?php
+// Отримуємо значення clickid з URL
+$clickid = $_GET['clickid'] ?? '';
+
+// Встановлюємо параметр binom_click_id в значення clickid
+$action = "../../route.php?binom_click_id=" . urlencode($clickid);
+?>
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ซื้อ Dabelite ราคาไม่แพง สั่งซื้อ Dabelite เลยตอนนี้!</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/ico">
+  <meta name="format-detection" content="telephone=no">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body class="timer-different ev-date webp">
+  <header class="header act">
+    <div class="wrap-resp">
+      <a href="" class="logo_wrap inL_52377">
+        Dabelite
+      </a>
+      <div class="atention">
+        <p class="atention__text">
+          ข้อเสนอพิเศษสำหรับผู้พักอาศัยในประเทศไทย!
+        </p>
+        <div class="attention__timer timer">
+          <span class="timer__text">รีบ<br>สั่งซื้อ: </span>
+          <div class="timer__block">
+            <div class="timer__hours">
+              <span class="hours">0</span><span class="hours">0</span>
+            </div>
+            <span class="timer__dots">:</span>
+            <div class="timer__minutes">
+              <span class="minutes">2</span><span class="minutes">5</span>
+            </div>
+            <span class="timer__dots">:</span>
+            <div class="timer__seconds">
+              <span class="seconds">4</span><span class="seconds">7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="r_wrap b cf">
+        <div class="btn ever-popup-btn">สั่งซื้อ Dabelite</div>
+      </div>
+    </div>
+  </header>
+  <div class="main" id="top">
+    <div class="prlx">
+      <picture>
+        <source type="image/webp" srcset="./images/top_bg_l.webp">
+        <img width="51" height="68" src="./images/top_bg_l.png" alt="img" class="bg_l inL_891081"
+          data-stellar-ratio="0.6">
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="./images/top_bg_r.webp">
+        <img width="92" height="106" src="./images/top_bg_r.png" alt="img" class="bg_r inL_492337"
+          data-stellar-ratio="0.6">
+      </picture>
+    </div>
+    <div class="wrap-resp">
+      <div class="logo_wrap_ cf">
+        <span class="main-title">อะไรจะช่วยให้คุณลดระดับน้ำตาลในเลือดได้</span>
+      </div>
+      <div class="main-img-box">
+        <div class="main_img">
+          <picture>
+
+            <img src="./images/pack.png" alt="" class="main__pack">
+          </picture>
+        </div>
+      </div>
+      <div class="main_txt">
+        <ul class="adv_list">
+          <li class="">การทานอาหารที่ถูกต้อง</li>
+          <li class="">ออกกำลังกายระดับปานกลาง</li>
+          <li class="">รับประทานผลิตภัณฑ์ที่ช่วยเสริมสุขภาพ</li>
+        </ul>
+        <div class="sale_wrap">
+          <div class="prices">
+            <span class="old_price a_spr js_old_price price_old">
+              <span class="price x_price_previous">1980</span>
+              <span class="x_currency">฿</span>
+            </span>
+            <span class="new_price price_main">
+              <span class="price x_price_current">990</span>
+              <span class="x_currency">฿</span>
+            </span>
+          </div>
+          <div class="btn big ever-popup-btn">สั่งซื้อ</div>
+        </div>
+        <span>สินค้าคุณภาพมีจำนวนจำกัด ในราคาพิเศษ
+          <span>สำหรับคุณ</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="jimnema" id="about">
+    <div class="wrap">
+      <div class="jimnema-cont">
+        <div class="item">
+          <picture>
+            <source media="(max-width:768px)"
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+            <source type="image/webp" srcset="./images/jimnema.webp">
+            <img src="./images/jimnema.png" alt="img" class="img wow fadeIn inL_511103" data-wow-duration="2s"
+              data-wow-offset="40">
+          </picture>
+        </div>
+        <div class="item">
+          <div class="txt">
+            <p>
+              เมื่อระดับน้ำตาลในเลือดเพิ่มขึ้นทำให้รบกวนการทำงานของร่างกายทั้งหมด
+              และสูญเสียความสามารถในการผลิตและใช้อินซูลิน
+            </p>
+            <p>
+              อินซูลินเป็นฮอร์โมนพิเศษที่ตับอ่อนผลิตได้
+              ฮอร์โมนนี้จำเป็นสำหรับการถ่ายโอนน้ำตาล (กลูโคส)
+              จากเลือดไปยังเซลล์ของร่างกาย
+              เป็นเพราะกลูโคสที่ร่างกายได้รับพลังงานเพื่อคงสถานะปกติของระบบและกระบวนการทั้งหมด
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accent grn a">
+    <div class="action__body">
+      <h2 class="action__title2 title">
+        พิเศษ: <span class="accent-red">โปรโมชั่น!</span>
+      </h2>
+      <div class="action__product dn-767">
+        <picture>
+
+          <img src="./images/pack.png" alt="product" class="product">
+        </picture>
+      </div>
+      <div class="action__content">
+        <h2 class="action__title title">
+          พิเศษ: <span class="accent-red">โปรโมชั่น!</span>
+        </h2>
+        <div class="action__timer">
+          <div class="sale_wrap sale_wrap-box">
+            <div class="prices">
+              <span class="old_price a_spr js_old_price price_old">
+                <span class="price x_price_previous">1980</span>
+                <span class="x_currency">฿</span>
+              </span>
+              <span class="new_price price_main">
+                <span class="price x_price_current">990</span>
+                <span class="x_currency">฿</span>
+              </span>
+            </div>
+          </div>
+          <div class="action__timer-wrapper timer timer--action">
+            <p class="timer__title">รีบ<br>สั่งซื้อ:</p>
+            <div class="attention__timer timer">
+              <div class="hours timer__cell">0</div>
+              <div class="hours timer__cell">0</div>
+              <p class="timer__colon">:</p>
+              <div class="minutes minutes-m timer__cell">2</div>
+              <div class="minutes timer__cell">5</div>
+              <p class="timer__colon">:</p>
+              <div class="seconds timer__cell">5</div>
+              <div class="seconds timer__cell">6</div>
+            </div>
+          </div>
+        </div>
+
+        <form action="<?php echo $action; ?>" method="post" class="x_order_form action__form">
+          <input type="hidden" name="subid5" value="back_vsl_form">
+          <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+
+
+          <div class="action__field input">
+
+            <label>
+              <input type="text" name="name" minlength="2" class="input__element" placeholder="ชื่อ-นามสกุล" required
+                autocomplete="name">
+            </label>
+          </div>
+          <div class="action__field input">
+            <label>
+              <input type="tel" name="phone" minlength="8" maxlength="16" class="input__element"
+                placeholder="เบอร์โทรศัพท์" required autocomplete="tel">
+            </label>
+          </div>
+          <div class="action__button-wrapper">
+            <button class="btn" type="submit">
+              สั่งซื้อ
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="consist" id="consist">
+    <div class="prlx">
+      <picture>
+        <source media="(max-width:1100px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+        <img width="148" height="788" src="./images/mol_l.png" alt="img" class="bg_l inL_873870"
+          data-stellar-ratio="0.6">
+      </picture>
+      <picture>
+        <source media="(max-width:1100px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+        <img width="157" height="729" src="./images/mol_r.png" alt="img" class="bg_r inL_65677"
+          data-stellar-ratio="0.6">
+      </picture>
+      <picture>
+        <source media="(max-width:1100px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+        <img width="148" height="706" src="./images/cons_l.png" alt="img" class="leaf left inL_542900"
+          data-stellar-ratio="1.6">
+      </picture>
+      <picture>
+        <source media="(max-width:1100px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+        <img width="157" height="702" src="./images/cons_r.png" alt="img" class="leaf right inL_934809"
+          data-stellar-ratio="1.6">
+      </picture>
+    </div>
+    <div class="wrap">
+      <span class="title s_title">ใครบ้างอยู่ในกลุ่มเสี่ยงเป็นเบาหวาน?</span>
+      <div class="cnst_img wow fadeInUp inL_505222" data-wow-offset="30" data-wow-duration="1s">
+        <span class="txt_1 turq">ผู้ที่อายุมากกว่า <br>
+          30 ปีขึ้นไป</span>
+        <span class="txt_2 brown">ความเครียด<br>จากการทำงาน</span>
+        <span class="txt_3 vinous inL_262971">การติดเชื้อไวรัส<br>บางประเภท</span>
+        <span class="txt_4 d_green">ปัญหาสุขภาพ<br>เกี่ยวกับตับอ่อน</span>
+        <span class="txt_5 green inL_905294">การถ่ายทอด<br>ทางกรรมพันธุ์</span>
+        <span class="txt_6 blue">ปัญหา<br>น้ำหนักเกิน</span>
+      </div>
+      <div class="cnst_txt">
+        <div>
+          <div class="img img_1 spr">
+            <div class="wow zoomIn inL_534275" data-wow-offset="20" data-wow-duration="0.5s"></div>
+          </div>
+          <span class="title blue">ปัญหาน้ำหนักเกิน</span> <span></span>
+          <p>
+            <span>คนที่มีน้ำหนักเกินอาจมีโอกาสเป็นเบาหวานได้มากกว่า</span>
+          </p>
+        </div>
+        <div>
+          <div class="img img_2 spr">
+            <div class="wow zoomIn inL_983113" data-wow-offset="20" data-wow-duration="0.5s" data-wow-delay="0.3s">
+            </div>
+          </div>
+          <span class="title turq">ผู้ที่มีอายุ 30 ปีขึ้นไป </span>
+          <span></span>
+          <p>
+            <span>อายุที่เพิ่มขึ้น
+              ทำให้โอกาสเสี่ยงในการเป็นเบาหวานเพิ่มขึ้น</span>
+          </p>
+        </div>
+        <div>
+          <div class="img img_3 spr">
+            <div class="wow zoomIn inL_72076" data-wow-offset="20" data-wow-duration="0.5s" data-wow-delay="0.5s"></div>
+          </div>
+          <span class="title brown">ความเครียด</span> <span></span>
+          <p>
+            <span>การประสบกับภาวะเครียดและความกำลังวลใจเป็นประจำ
+              จะเพิ่มโอกาสเสี่ยงในการเกิดเบาหวาน</span>
+          </p>
+        </div>
+        <div>
+          <div class="img img_4 spr">
+            <div class="wow zoomIn inL_381194" data-wow-offset="30" data-wow-duration="0.5s"></div>
+          </div>
+          <span class="title green">กรรมพันธุ์</span> <span></span>
+          <p>
+            <span>มีโอกาสเป็นไปได้ที่เบาหวานจะได้รับการถ่ายทอดจากพ่อแม่สู่ลูก</span>
+          </p>
+        </div>
+        <div>
+          <div class="img img_5 spr">
+            <div class="wow zoomIn inL_263309" data-wow-offset="30" data-wow-duration="0.5s" data-wow-delay="0.3s">
+            </div>
+          </div>
+          <span class="title d_green">ปัญหาสุขภาพเกี่ยวกับตับอ่อน</span>
+          <span></span>
+          <p>
+            <span>อาการอื่นที่เกี่ยวข้องกับตับอ่อน
+              จะยิ่งเพิ่มโอกาสในการเป็นเบาหวาน</span>
+          </p>
+        </div>
+        <div>
+          <div class="img img_6 spr">
+            <div class="wow zoomIn inL_24383" data-wow-offset="30" data-wow-duration="0.5s" data-wow-delay="0.5s"></div>
+          </div>
+          <span class="title vinous">การติดเชื้อไวรัส</span> <span></span>
+          <p>
+            <span>การติดเชื้อไวรัสตับอักเสบ หัดเยอรมัน อีสุกอีใส ฯลฯ</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accent grn a">
+    <div class="action__body">
+      <h2 class="action__title2 title">
+        พิเศษ: <span class="accent-red">โปรโมชั่น!</span>
+      </h2>
+      <div class="action__product dn-767">
+        <picture>
+
+          <img src="./images/pack.png" alt="product" class="product">
+        </picture>
+      </div>
+      <div class="action__content">
+        <h2 class="action__title title">
+          พิเศษ: <span class="accent-red">โปรโมชั่น!</span>
+        </h2>
+        <div class="action__timer">
+          <div class="sale_wrap sale_wrap-box">
+            <div class="prices">
+              <span class="old_price a_spr js_old_price price_old">
+                <span class="price x_price_previous">1980</span>
+                <span class="x_currency">฿</span>
+              </span>
+              <span class="new_price price_main">
+                <span class="price x_price_current">990</span>
+                <span class="x_currency">฿</span>
+              </span>
+            </div>
+          </div>
+          <div class="action__timer-wrapper timer timer--action">
+            <p class="timer__title">รีบ<br>สั่งซื้อ:</p>
+            <div class="attention__timer timer">
+              <div class="hours timer__cell">0</div>
+              <div class="hours timer__cell">0</div>
+              <p class="timer__colon">:</p>
+              <div class="minutes minutes-m timer__cell">2</div>
+              <div class="minutes timer__cell">5</div>
+              <p class="timer__colon">:</p>
+              <div class="seconds timer__cell">5</div>
+              <div class="seconds timer__cell">6</div>
+            </div>
+          </div>
+        </div>
+        <form action="<?php echo $action; ?>" method="post" class="x_order_form action__form">
+          <input type="hidden" name="subid5" value="back_vsl_form">
+          <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+
+          <div class="action__field input">
+
+            <label>
+              <input type="text" name="name" minlength="2" class="input__element" placeholder="ชื่อ-นามสกุล" required
+                autocomplete="name">
+            </label>
+          </div>
+          <div class="action__field input">
+
+            <label>
+              <input type="tel" name="phone" minlength="8" maxlength="16" class="input__element"
+                placeholder="เบอร์โทรศัพท์" required autocomplete="tel">
+            </label>
+          </div>
+          <div class="action__button-wrapper">
+            <button class="btn" type="submit">
+              สั่งซื้อ
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="prop">
+    <div class="wrap">
+      <span class="title s_title bl">
+        วิธีรับประทาน <strong>Dabelite</strong></span>
+      <p>ข้อแนะนำการรับประทาน:</p>
+      <div class="items">
+        <div class="item_1 a_spr fadeInLeft inL_683041" data-wow-offset="20" data-wow-duration="0.8s">
+          <picture>
+
+            <img class="items__pack" src="./images/pack.png" alt="img">
+          </picture>
+          <span>เพียงแค่</span>
+          <p>รับประทานวันละ 1-2 แค๊ปซูล พร้อมมื้ออาหาร</p>
+        </div>
+        <div class="item_2 b_spr wow zoomIn" data-wow-offset="20" data-wow-duration="0.8s" data-wow-delay="0.1s">
+          <span>ง่ายๆ </span>
+          <p>เพียงแค่ดื่มน้ำเปล่าตาม</p>
+        </div>
+      </div>
+      <p class="prop-info">
+        อ่านคำแนะนำก่อนรับประทานอย่างเคร่งครัด
+      </p>
+    </div>
+  </div>
+
+  <div class="danger">
+    <div class="wrap">
+      <span class="title s_title red">อะไรคือความเสี่ยงของการเป็นเบาหวานประเภทที่ 2?</span>
+      <p>
+        แม้จะอยู่ระหว่างเข้ารับดูแลแล้ว แต่อาการก็สามารถทรุดลงได้ตลอดเวลา!
+        <br>และสามารถนำไปสู่อาการแทรกซ้อนที่รุนแรงหลายอย่าง:
+      </p>
+      <div class="items">
+        <div class="item_1 b_spr wow zoomIn" data-wow-offset="20" data-wow-duration="0.3s">
+          <span>เส้นเลือดในสมองแตก</span>
+          <p>
+            ภาวะที่สมองขาดเลือดและออกซิเจน เนื่องจากหลอดเลือดตีบ อุดตัน
+            หรือแตก ขาดเลือดไปเลี้ยงสมอง เซลล์สมองจึงตาย
+          </p>
+        </div>
+        <div class="item_2 b_spr wow zoomIn" data-wow-offset="20" data-wow-duration="0.3s" data-wow-delay="0.1s">
+          <span>กล้ามเนื้อหัวใจตาย</span>
+          <p>เซลล์กล้ามเนื้อหัวใจตาย จากการขาดเลือดไปเลี้ยง</p>
+        </div>
+        <div class="item_3 b_spr wow zoomIn" data-wow-offset="20" data-wow-duration="0.3s" data-wow-delay="0.2s">
+          <span>ปัญหาหลอดเลือด</span>
+          <p>
+            ความผิดปกติของหลอดเลือดทั้ง ตีบ แตก หรือตัน
+            ซึ่งล้วนนำไปสู่การเสียชีวิต
+          </p>
+        </div>
+        <div class="item_4 b_spr wow zoomIn" data-wow-offset="20" data-wow-duration="0.3s" data-wow-delay="0.3s">
+          <span>ปัญหาไต</span>
+          <p>การทำงานของไตผิดปกติ ทำให้ร่างกายขาดสมดุล</p>
+        </div>
+        <div class="item_5 b_spr wow zoomIn" data-wow-offset="30" data-wow-duration="0.3s">
+          <span>ปัญหาระบบประสาท</span>
+          <p>
+            การทำงานที่ผิดปกิตของระบบประสาท
+            อาจส่งผลต่อการทำงานของหลอดเลือดด้วย
+          </p>
+        </div>
+        <div class="item_6 b_spr wow zoomIn" data-wow-offset="30" data-wow-duration="0.3s" data-wow-delay="0.1s">
+          <span>เนื้อตาย</span>
+          <p>เนื้อเยื่อตาย อาจทำให้ต้องเสียแขนขาได้</p>
+        </div>
+        <div class="item_7 b_spr wow zoomIn" data-wow-offset="30" data-wow-duration="0.3s" data-wow-delay="0.2s">
+          <span>ตาบอด</span>
+          <p>สูญเสียการมองเห็น</p>
+        </div>
+        <div class="item_8 b_spr wow zoomIn" data-wow-offset="30" data-wow-duration="0.3s" data-wow-delay="0.3s">
+          <span>ไตวายเรื้อรัง</span>
+          <p>เนื้อเยื่อไตค่อยๆ เสื่อมสภาพอย่างต่อเนื่อง</p>
+        </div>
+      </div>
+      <span class="title s_title bl">Dabelite - ดูแลตัวเองตั้งแต่ตอนนี้!</span>
+      <p>
+        โภชนาการที่เหมาะสม การออกกำลังกายอย่างเหมาะสม และการใช้ชีวิตที่คำนึงถึงสุขภาพ
+        ทั้งหมดนี้มีเป็นสิ่งสำคัญที่ช่วยให้ระดับน้ำตาลในเลือดเป็นปกติ
+      </p>
+      <div class="arr_wrap">
+        <div class="arrow"></div>
+        <picture>
+
+          <img src="./images/pack.png" alt="img" class="dialek_1 b_spr wow zoomIn" data-wow-offset="20"
+            data-wow-duration="0.3s">
+        </picture>
+      </div>
+    </div>
+  </div>
+  <div class="order">
+    <div class="prlx">
+      <picture>
+        <source media="(max-width:1100px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+        <source type="image/webp" srcset="./images/top_bg_l.webp">
+        <img src="./images/top_bg_l.png" alt="img" class="bg_l inL_254147" data-stellar-ratio="0.8">
+      </picture>
+      <picture>
+        <source media="(max-width:1100px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+        <source type="image/webp" srcset="./images/top_bg_r.webp">
+        <img src="./images/top_bg_r.png" alt="img" class="bg_r inL_924610" data-stellar-ratio="0.8">
+      </picture>
+      <picture>
+        <source media="(max-width:1100px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+        <source type="image/webp" srcset="./images/top_l.webp">
+        <img src="./images/top_l.png" alt="img" class="left inL_427861" data-stellar-ratio="0.8">
+      </picture>
+      <picture>
+        <source media="(max-width:1100px)"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg==">
+        <source type="image/webp" srcset="./images/bottom_r.webp">
+        <img src="./images/bottom_r.png" alt="img" class="right inL_761091" data-stellar-ratio="0.8">
+      </picture>
+    </div>
+    <div class="wrap">
+      <div class="order_wrap cf">
+        <div class="slider_wrap b">
+          <span class="title">ความคิดเห็นจากผู้ใช้จริง
+            <span class="notice">ผลลัพธ์ที่ได้ขึ้นอยู่กับแต่ละบุคคล</span>
+          </span>
+          <div class="slider owl-carousel owl-theme">
+            <div class="item inL_654189">
+              <div>
+                <div class="slide_item">
+                  <picture>
+                    <source type="image/webp" srcset="./images/ava3.webp">
+                    <img src="./images/ava3.jpg" alt="img">
+                  </picture>
+                  <p>
+                    ผมสั่ง “Dabelite” มาให้คุณพ่อทานครับ
+                    เมื่อตอนที่คุณพ่อเริ่มมีอาการเบาหวานในระยะแรกๆ
+                    ถึงตอนนี้คุณพ่ออายุ 65 ปี แล้ว แต่ยังแข็งแรงดีอยู่ครับ
+                    ผลิตภัณฑ์นี้ช่วยคุณพ่อผมไว้จริงๆ ครับ ตอนนี้ตัวผมเองก็ทาน
+                    “Dabelite” ไว้ก่อนครับ
+                    อย่างที่รู้กันว่ามันเป็นอาการที่ส่งต่อกันทางกรรมพันธุ์
+                    ตอนนี้ทั้งผมและคุณพ่อมีระดับน้ำตาลในเลือดที่คงด้วยกันทั้งคู่เลยครับ!
+                    ดีมากๆ เลยครับ
+                  </p>
+                  <span class="name">แม็ค อดิสร อายุ 27 ปี</span>
+                  <span class="city">จังหวัดแม่ฮ่องสอน</span>
+                </div>
+              </div>
+            </div>
+            <div class="item inL_922499">
+              <div>
+                <div class="slide_item">
+                  <picture>
+                    <source type="image/webp" srcset="./images/rev.webp">
+                    <img src="./images/rev.png" alt="img">
+                  </picture>
+                  <p>
+                    ผมเริ่มกิน “Dabelite” ตามคำแนะนำของเพื่อน
+                    ทันทีหลังจากผมรู้ว่าผมเป็นเบาหวานครับ หลังจากกิน “Dabelite”
+                    ระดับน้ำตาลในเลือดลดลง สำหรับคนอายุ 56
+                    แล้วอย่างผมแล้วมันดีมากเลย
+                    ต้องขอบคุณคุณเพื่อนที่แนะนำผลิตภัณฑ์นี้ให้ผม “Dabelite”
+                    ช่วยชีวิตผมไว้จริงๆ!
+                  </p>
+                  <span class="name">อมรินทร์ ออมสุข อายุ 56 ปี</span>
+                  <span class="city">จังหวัดมหาสารคาม</span>
+                </div>
+              </div>
+            </div>
+            <div class="item inL_754810">
+              <div>
+                <div class="slide_item">
+                  <picture>
+                    <source type="image/webp" srcset="./images/ava2.webp">
+                    <img src="./images/ava2.jpg" alt="img">
+                  </picture>
+                  <p>
+                    ดิฉันเพิ่งรู้ตัวว่าดิฉันเป็นเบาหวานประเภทที่ 2
+                    เมื่อปีที่แล้วค่ะ ดิฉันเตรียมใจไว้เลยค่ะ
+                    <b>ไม่คิดว่าตัวเองจะอยู่ได้นาน</b>
+                    ที่ผ่านมาผู้ที่ประสบปัญหาเบาหวานชนิดที่ 2
+                    ต้องฝากชีวิตไว้กับการฉีดอินซูอินอย่างเดียวเลยค่ะ
+                    ไม่มีทางกำจัดปัญหาได้
+                    แล้วระดับน้ำตาลในเลือดก็ยังอยู่ในเกณฑ์อันตรายเกือบตลอดเวลา
+                    จนเพื่อนของดิฉันเล่าให้ฟังเรื่อง “Dabelite”
+                    เพราะแม่ของเพื่อนก็ทานผลิตภัณฑ์ตัวนี้อยู่ และได้ผลดีด้วย
+                    ผ่านไปหนึ่งเดือน
+                    <b>ระดับน้ำตาลในเลือดลดลงเกือบอยู่ในเกณฑ์ปกติเลยค่ะ</b>
+                    และดิฉันมั่นใจมากว่าเป็นเพราะ Dabelite...
+                  </p>
+                  <span class="name">ฝน ชลธร อายุ 44 ปี</span>
+                  <span class="city">จังหวัดตรัง</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order_forma order_forma-bottom">
+          <div class="title_wrap a">
+            <span class="title">สั่งซื้อ «Dabelite»
+              <span class="dib">พร้อมส่วนลด 50%</span></span>
+            <span>ถึงวันที่ <span class="date-0">เท่านั้น</span></span>
+            <span class="percent"></span>
+          </div>
+          <div class="form_wrap">
+            <form action="<?php echo $action; ?>" method="post" class="order_form x_order_form" id="orderForm">
+              <input type="hidden" name="subid5" value="back_vsl_form">
+              <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+
+
+              <div class="sale_wrap">
+                <div class="prices">
+                  <span class="old_price a_spr js_old_price price_old">
+                    <span class="price x_price_previous">1980</span>
+                    <span class="x_currency">฿</span>
+                  </span>
+                  <span class="new_price price_main">
+                    <span class="price x_price_current">990</span>
+                    <span class="x_currency">฿</span>
+                  </span>
+                </div>
+              </div>
+              <strong>ชื่อ-นามสกุล:</strong>
+              <br>
+              <label>
+                <input type="text" name="name" minlength="2" class="grid-9 order__form_input" required
+                  autocomplete="name">
+              </label>
+              <strong>เบอร์โทรศัพท์:</strong>
+              <br>
+              <label>
+                <input type="tel" name="phone" minlength="8" maxlength="16"
+                  class="input_num only_number order__form_input" required autocomplete="tel">
+              </label>
+              <button class="btn big" type="submit">สั่งซื้อ</button>
+            </form>
+          </div>
+        </div>
+        <div class="slider_wrap a">
+          <span class="title">คำถามที่พบบ่อย
+            <span class="notice">ผลลัพธ์ที่ได้ขึ้นอยู่กับแต่ละบุคคล</span>
+          </span>
+          <div class="slider right owl-carousel owl-theme">
+            <div class="item inL_469615">
+              <div>
+                <div class="slide_item">
+                  <span class="title">ต้องทานผลิตภัณฑ์ “Dabelite” นานแค่ไหน?</span>
+                  <p>
+                    คอร์สในการทาน “Dabelite” ขึ้นอยู่กับอาการของแต่ละบุคคล
+                    รการทานผลิตภัณฑ์ “Dabelite”
+                    ควรปฏิบัติตามข้อแนะนำบนฉลากอย่างเคร่งครัด
+                    การทานผลิตภัณฑ์หนึ่งคอร์สขั้นต่ำอยู่ที่ 30 วัน
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item inL_204782">
+              <div>
+                <div class="slide_item">
+                  <span class="title">“Dabelite” ปลอดภัยไหม?</span>
+                  <p>
+                    “Dabelite” ปลอดภัย 100%
+                    เนื่องจากส่วนผสมนั้นมีคุณภาพสูง
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="item inL_398802">
+              <div>
+                <div class="slide_item">
+                  <span class="title">ทำไม “Dabelite” ไม่มีจำหน่ายตามร้านขายผลิตภัณฑ์เพื่อสุขภาพ?</span>
+                  <p>
+                    หากตัวผลิตภัณฑ์นี้วางจำหน่ายที่ร้านขายผลิตภัณฑ์เพื่อสุขภาพราคาจะสูงกว่านี้หลายเท่าตัว
+                    นอกจากนี้ตัวผลิตภัณฑ์ผลิตจากส่วนผสมมีคุณภาพสูงทำให้ต้องใช้เวลาในการผลิตและผลิตได้ครั้งละไม่มาก
+                    ของจึงขาดตลาดอยู่เสมอ
+                    โดยปกติแล้วร้านขายผลิตภัณฑ์เพื่อสุขภาพมักจะไม่แนะนำให้คุณซื้อผลิตภัณฑ์ดีราคาถูกแบบนี้
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer cf">
+    <p>ลิขสิทธิ์ © <script>document.write(new Date().getFullYear()+543)</script> โดย Copyrightindex.com</p>
+    <p>สงวนลิขสิทธิ์ ห้ามทำซ้ำ แจกจ่าย หรือส่งในรูปแบบใด ๆ หรือด้วยวิธีการใด ๆ รวมถึงการทำสำเนา บันทึก
+    หรือวิธีการทางอิเล็กทรอนิกส์หรือเชิงกลอื่น ๆ โดยไม่ได้รับอนุญาตเป็นลายลักษณ์อักษรจากผู้เผยแพร่
+    ยกเว้นในกรณีที่มีการอ้างอิงโดยย่อในรีวิวสำคัญและการใช้งานที่ไม่ใช่เชิงพาณิชย์อื่น ๆ ที่ได้รับอนุญาตตามกฎหมายลิขสิทธิ์</p>
+  </footer>
+
+  <div class="ever-popup-build">
+    <div class="my-popup" id="cloneThis">
+      <picture>
+
+        <img src="./images/pack.png" class="popup-product" alt="product">
+      </picture>
+      <div class="order_forma">
+        <div class="title_wrap a">
+          <span class="title">สั่งซื้อ «Dabelite» <span class="dib">พร้อมส่วนลด 50%</span></span>
+          <span>ถึงวันที่ <span class="date-0">เท่านั้น</span></span>
+          <span class="percent"></span>
+        </div>
+        <div class="form_wrap" id="rev">
+          <form action="<?php echo $action; ?>" method="post" class="order_form x_order_form">
+            <input type="hidden" name="subid5" value="back_vsl_form">
+            <input type="hidden" name="click_id" value="<?php echo $clickid; ?>" />
+
+            <div class="sale_wrap">
+              <div class="prices">
+                <span class="old_price a_spr js_old_price price_old">
+                  <span class="price x_price_previous">1980</span>
+                  <span class="x_currency">฿</span>
+                </span>
+                <span class="new_price price_main">
+                  <span class="price x_price_current">990</span>
+                  <span class="x_currency">฿</span>
+                </span>
+              </div>
+            </div>
+            <strong>ชื่อ-นามสกุล:</strong>
+            <br>
+            <label>
+              <input type="text" name="name" minlength="2" class="grid-9 order__form_input" required
+                autocomplete="name">
+            </label>
+            <strong>เบอร์โทรศัพท์:</strong>
+            <br>
+            <label>
+              <input type="tel" name="phone" minlength="8" maxlength="16"
+                class="input_num only_number order__form_input" required autocomplete="tel">
+            </label>
+            <button type="submit" class="btn big">สั่งซื้อ</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
