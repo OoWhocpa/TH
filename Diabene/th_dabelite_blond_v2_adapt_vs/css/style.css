@@ -792,7 +792,7 @@ h2 {
 }
 
 .pr img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -868,4 +868,34 @@ h2 {
 
 .open_land {
     cursor: pointer;
+}
+
+
+.pr_list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.pr_list li {
+    max-width: 250px;
+    background-color: #97c14830;
+    border-radius: 5px;
+    padding: 10px;
+}
+.pr_list img {
+    min-height: 153px;
+}
+
+.pr_list span {
+    display: block;
+   height: 50px;
+   margin: auto;
+   text-align: center;
+   font-weight: bold;
 }
