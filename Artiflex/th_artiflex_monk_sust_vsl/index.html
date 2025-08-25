@@ -1,0 +1,134 @@
+<?php include("../q.php"); ?>
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <title>17 วัน — กลับมาเดินได้โดยไม่มีความเจ็บปวด!
+    สูตรลับของพระสงฆ์ไทยถูกเปิดเผยแล้ว!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./images/product.png" type="image/x-icon">
+  <script src="./js/back.js"></script>
+  <script src="./js/date.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      window.vitBack(window.location.href, true);
+    });
+  </script>
+</head>
+
+<body>
+  <h1 class="main_title accent_form">
+    <span class="highlight">17 วัน — กลับมาเดินได้โดยไม่มีความเจ็บปวด!
+    </span> <br> สูตรลับของพระสงฆ์ไทยถูกเปิดเผยแล้ว!
+  </h1>
+  <div id="container_video">
+
+
+    <div id="play" onclick="playVideo()">
+      <div>
+        <h4>วีดีโอเริ่มขึ้นแล้ว</h4>
+        <h4>คลิกเพื่อฟัง!</h4>
+      </div>
+    </div>
+    <div class="spinner-container">
+      <div class="spinner-sub-container">
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <video id="video" autoplay="autoplay" muted="" playsinline="" webkit-playsinline="" poster="./images/poster.png">
+      <source src="https://pub-bbcd86335e924092a9d274baed5a5a09.r2.dev/1xe/7995.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div id="progress-container" style="width: 100%; background-color: #eee; height: 10px; margin-top: 20px;">
+    <div id="progress-bar" style="width: 0%; height: 100%; background-color: #f20;"></div>
+  </div>
+  </div>
+  <div id="order">
+    <div class="terbatas">
+      <p class="accent_form">รีบหน่อย ข้อเสนอมีจำนวนจำกัด!</p>
+      <img src="./images/BlPE.gif" alt="">
+    </div>
+    <form class="diet-container" action="<?php getRoutelink(); ?>" method="post">
+
+      <img src="./images/product.png" class="product" alt="">
+      <h2 class="form_title">ใกล้หมดโปรโมชั่นแล้ว! จาก <del>1980 บาท</del> เหลือเพียง <span class="green-text">990
+          บาท</span>
+      </h2>
+      <a class="main-btn" rel="nofollow">
+        รับส่วนลด 50% เปอร์เซ็นต์
+
+        <span>ใช่ค่ะ ฉันต้องการกำจัดเบาหวาน!</span>
+        <img src="./images/small-days.png" alt="">
+      </a>
+      <div class="clearfix hide">
+        <input type="hidden" name="subid5" value="main_vsl_form">
+        <input type="hidden" id="clickId" name="click_id" value="<?php print $_SESSION['binom_click_id']; ?>">
+        <span class="label">กรุณากรอกชื่อของคุณ: </span>
+
+        <input name="name" type="text" required minlength="2" placeholder="กรุณากรอกชื่อของคุณ" class="inputs">
+
+        <span class="label">กรุณากรอกเบอร์โทรศัพท์: </span>
+        <input name="phone" type="tel" required minlength="8" maxlength="16" placeholder="กรุณากรอกเบอร์โทรศัพท์"
+          class="inputs">
+
+        <button type="submit" class="btn_form">
+          สั่งซื้อตอนนี้!
+        </button>
+      </div>
+      <div class="diet-text">
+        <h5>จำหน่ายทั่วประเทศไทย</h5>
+        <div class="box-img">
+          <div class="box">
+            <img src="./images/1.png" alt="">
+          </div>
+          <div class="box">
+
+            <img src="./images/2.png" alt="">
+          </div>
+          <div class="box">
+
+            <img src="./images/3.png" alt="">
+          </div>
+          <div class="box">
+            <img src="./images/4.png" alt="">
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="main_text accent_form">
+    <h3>สูตรศักดิ์สิทธิ์แบบพุทธ: เส้นทางสู่การชำระล้างร่างกายและจิตใจจากความเจ็บปวดในข้อต่อ</h3>
+    <p>ความเจ็บปวดในข้อต่อไม่ใช่แค่ความเสื่อมทางร่างกาย แต่มันคือสัญญาณว่าพลังชีวิตในข้อนั้นหยุดไหลเวียนแล้ว</p>
+    <p>เรื่องนี้ไม่ใช่เพียงปัญหากระดูกหรือความชรา แต่มันคือ “ไฟภายใน” ที่ค่อย ๆ ทำลายข้อต่อ เส้นเอ็น
+      และของเหลวที่ควรปกป้องเรา</p>
+    <p>“การเยียวยาที่แท้จริงไม่ได้เริ่มจากยา แต่มันเริ่มจากการเข้าใจสาเหตุ
+      และการฟื้นฟูอย่างอ่อนโยนที่ปลุกพลังงานของร่างกาย”</p>
+    <p>ชาวไทยนับพันได้เดินบนเส้นทางนี้แล้ว</p>
+    <p>พวกเขากลับมาเดินได้โดยไม่มีความเจ็บปวด</p>
+    <p>บันไดไม่ใช่อุปสรรคอีกต่อไป</p>
+    <p>อาการบวม แดง และตึงหายไปภายในไม่กี่วัน</p>
+    <p>พระสงฆ์ไทยเปิดเผยความจริงที่ไม่เคยถูกกล่าว:</p>
+    <ul>
+      <li>— อะไรคือสาเหตุที่แท้จริงของโรคข้อเสื่อมและการอักเสบ?</li>
+      <li>— ทำไมยาแก้ปวดถึงบรรเทาได้เพียงชั่วคราว?</li>
+      <li>— จะฟื้นฟู “พลังชีวิต” ของข้อต่อได้อย่างไร?</li>
+      <li>— และทำไมการเยียวยาที่แท้จริงต้องเริ่มจากธรรมชาติ ไม่ใช่โรงพยาบาล?</li>
+    </ul>
+    <p>ครั้งแรกในรอบ 500 ปี</p>
+    <p>สูตรโบราณแบบไทยเพื่อฟื้นฟูความอ่อนเยาว์ของข้อต่อ</p>
+    <p>ชำระเลือด บำรุงกระดูก และปลุกพลังชีวิต</p>
+    <p>ร่างกายของคุณคือวัดศักดิ์สิทธิ์ ถึงเวลาฟื้นฟูและฟังเสียงภายในของคุณแล้ว</p>
+    <p>ชมวิดีโอ</p>
+    <p>ฟังคำสอนของครู</p>
+    <p>และกลับมารู้สึกถึงการเคลื่อนไหวโดยไร้ความเจ็บปวดอีกครั้ง</p>
+  </div>
+
+
+  <script src="./js/video.js"></script>
+
+</body>
+
+</html>
